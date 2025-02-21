@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+// import { RouterLink, RouterView } from 'vue-router'
+</script>
 
 <template>
   <section class="navigation">
@@ -60,11 +62,11 @@
       column-gap: 0.5rem;
       height: 100%;
       padding: 0 1rem;
-      transition: 0.15s ease;
+      transition: 0.1s ease;
 
       h4 {
         color: var(--clr-gray-70);
-        transition: 0.15s ease;
+        transition: 0.1s ease;
       }
 
       .icon {
