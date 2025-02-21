@@ -1,0 +1,5 @@
+@mixin page-grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 2rem;
+}

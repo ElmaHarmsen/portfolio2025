@@ -9,7 +9,9 @@
   --clr-gray-90: #262626;
   --clr-gray-80: #393939;
   --clr-gray-70: #525252;
+  --clr-gray-50: rgba(141, 141, 141, 0.12);
   --clr-gray-40: #a8a8a8;
+  --clr-gray-30: #c6c6c6;
   --clr-gray-20: #e0e0e0;
 
   --clr-blue-70: #0043ce;
@@ -65,4 +67,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(var(--clr-gray-30) 1px, transparent 0);
+  background-attachment: fixed;
+  background-size: 1.25rem 1.25rem;
 }
