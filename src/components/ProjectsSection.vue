@@ -42,8 +42,6 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
-  height: 100vh;
-  margin: 4rem 0;
 
   &__content {
     display: grid;
