@@ -2,7 +2,7 @@
 
 <template>
   <section class="section">
-    <h1>and I do some Development on the side</h1>
+    <h1>and some Development on the side</h1>
     <div class="section__content">
       <div class="about-item">
         <div class="picture"></div>
@@ -41,19 +41,20 @@
     .about-item {
       display: flex;
       flex-flow: column nowrap;
-      justify-content: space-between;
-      background-color: var(--clr-white);
       border: 1px solid var(--clr-gray-40);
       aspect-ratio: 3 / 4;
 
       .picture {
-        background-color: var(--clr-blue-10);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
         border-bottom: 1px solid var(--clr-gray-40);
         width: 100%;
         aspect-ratio: 1 / 1;
       }
 
       .content {
+        flex-grow: 1;
+        background-color: var(--clr-white);
         padding: 1rem;
       }
     }

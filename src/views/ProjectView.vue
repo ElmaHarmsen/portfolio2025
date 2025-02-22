@@ -1,19 +1,17 @@
 <script setup>
 import ProjectHeader from '@/components/ProjectHeader.vue'
-import DesignNavigation from '@/components/DesignNavigation.vue'
-import DesignGallery from '@/components/DesignGallery.vue'
-import PortraitGallery from '@/components/PortraitGallery.vue'
-import LandscapeGallery from '@/components/LandscapeGallery.vue'
+import ProjectNavigation from '@/components/ProjectNavigation.vue'
+import ProjectGallery from '@/components/ProjectGallery.vue'
+import ProcessSection from '@/components/ProcessSection.vue'
 import BlueContainer from '@/components/BlueContainer.vue'
 </script>
 
 <template>
   <main class="view">
     <ProjectHeader />
-    <DesignNavigation />
-    <DesignGallery />
-    <PortraitGallery />
-    <LandscapeGallery />
+    <ProjectNavigation />
+    <ProjectGallery />
+    <ProcessSection />
     <BlueContainer />
   </main>
 </template>

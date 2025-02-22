@@ -4,23 +4,23 @@
   <section class="section">
     <div class="section__content">
       <!-- variable property based on page -->
-      <h1>Page Title Here</h1>
+      <h1>Project Title Here</h1>
       <div class="page-navigation">
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Section Item</h3>
+          <h3>Gallery</h3>
         </div>
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Section Item</h3>
+          <h3>Process Title</h3>
         </div>
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Section Item</h3>
+          <h3>Process Title</h3>
         </div>
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Section Item</h3>
+          <h3>Outcomes</h3>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
       display: flex;
       flex-flow: column nowrap;
       row-gap: 0.5rem;
-      margin: 2rem 0;
+      margin-top: 2rem;
 
       .item {
         display: flex;
