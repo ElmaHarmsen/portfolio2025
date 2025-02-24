@@ -20,7 +20,7 @@
         </div>
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Outcomes</h3>
+          <h3>Project Outcomes</h3>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@
       <div class="about-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Something</h3>
+          <h3>Functional</h3>
         </div>
       </div>
       <div class="about-item">
@@ -43,8 +43,12 @@
       flex-flow: column nowrap;
       border: 1px solid var(--clr-gray-40);
       aspect-ratio: 3 / 4;
+      transition: 0.2s ease;
 
       .picture {
+        background-image: url('../assets/bulbasaur.png');
+        background-position: center;
+        background-size: cover;
         background-color: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(2px);
         border-bottom: 1px solid var(--clr-gray-40);
@@ -57,6 +61,11 @@
         background-color: var(--clr-white);
         padding: 1rem;
       }
+    }
+
+    .about-item:hover {
+      transform: scale(1.01) rotate(0.25deg);
+      box-shadow: 0 0 10px var(--clr-gray-20);
     }
   }
 }

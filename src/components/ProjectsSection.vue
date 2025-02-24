@@ -1,37 +1,45 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
   <section class="section">
     <div class="section__content">
-      <div class="project-item">
-        <h1>Daily UI Designs</h1>
-        <div class="elements">
-          <div class="container">
-            <span class="tag black">UI Design</span>
+      <RouterLink to="/uidesigns">
+        <div class="project-item ui-designs">
+          <h1>Daily UI Designs</h1>
+          <div class="elements">
+            <div class="container">
+              <span class="tag black">UI Design</span>
+            </div>
+            <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
           </div>
-          <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
         </div>
-      </div>
-      <div class="project-item">
-        <h1>Project</h1>
-        <div class="elements">
-          <div class="container">
-            <span class="tag blue">UX Research</span>
-            <span class="tag black">UI Design</span>
+      </RouterLink>
+      <RouterLink to="/project">
+        <div class="project-item">
+          <h1>Project Title</h1>
+          <div class="elements">
+            <div class="container">
+              <span class="tag blue">UX Research</span>
+              <span class="tag black">UI Design</span>
+            </div>
+            <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
           </div>
-          <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
         </div>
-      </div>
-      <div class="project-item">
-        <h1>Hello World</h1>
-        <div class="elements">
-          <div class="container">
-            <span class="tag gray">Development</span>
-            <span class="tag black">UI Design</span>
+      </RouterLink>
+      <RouterLink to="/development">
+        <div class="project-item">
+          <h1>UI Development</h1>
+          <div class="elements">
+            <div class="container">
+              <span class="tag gray">Development</span>
+              <span class="tag black">UI Design</span>
+            </div>
+            <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
           </div>
-          <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
         </div>
-      </div>
+      </RouterLink>
       <div class="project-item empty-item"></div>
     </div>
   </section>
@@ -56,6 +64,10 @@
       border: 1px solid var(--clr-gray-40);
       padding: 1rem;
       aspect-ratio: 1 / 1;
+
+      h1 {
+        color: var(--clr-gray-100);
+      }
 
       .elements,
       .container {
@@ -96,6 +108,12 @@
         }
       }
     }
+
+    .ui-designs {
+      background-image: url('../assets/daily-ui.png');
+      background-size: cover;
+    }
+
     .empty-item {
       background-color: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(2px);

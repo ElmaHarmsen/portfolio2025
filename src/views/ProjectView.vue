@@ -3,6 +3,7 @@ import ProjectHeader from '@/components/ProjectHeader.vue'
 import ProjectNavigation from '@/components/ProjectNavigation.vue'
 import ProjectGallery from '@/components/ProjectGallery.vue'
 import ProcessSection from '@/components/ProcessSection.vue'
+import OutcomesSection from '@/components/OutcomesSection.vue'
 import BlueContainer from '@/components/BlueContainer.vue'
 </script>
 
@@ -12,6 +13,7 @@ import BlueContainer from '@/components/BlueContainer.vue'
     <ProjectNavigation />
     <ProjectGallery />
     <ProcessSection />
+    <OutcomesSection />
     <BlueContainer />
   </main>
 </template>

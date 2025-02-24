@@ -7,13 +7,13 @@
       <div class="about-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Something</h3>
+          <h3>Practical mentality</h3>
         </div>
       </div>
       <div class="about-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Something</h3>
+          <h3>Passionate for details</h3>
         </div>
       </div>
     </div>
@@ -37,6 +37,7 @@
       flex-flow: column nowrap;
       border: 1px solid var(--clr-gray-40);
       aspect-ratio: 3 / 4;
+      transition: 0.2s ease;
 
       .picture {
         background-color: rgba(255, 255, 255, 0.1);
@@ -51,6 +52,11 @@
         background-color: var(--clr-white);
         padding: 1rem;
       }
+    }
+
+    .about-item:hover {
+      transform: scale(1.01) rotate(0.25deg);
+      box-shadow: 0 0 10px var(--clr-gray-20);
     }
   }
 }

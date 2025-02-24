@@ -27,7 +27,12 @@ import { RouterLink } from 'vue-router'
         <a href="https://github.com/ElmaHarmsen" class="link-element" target="_blank"
           ><h4>github.com/ElmaHarmsen</h4></a
         >
-        <a><h4>Curriculum Vitae</h4></a>
+        <a
+          href="https://drive.google.com/file/d/1Lvo313Ju4-CGauQBNB02DeypoxZ1TM1f/view?usp=sharing"
+          class="link-element"
+          target="_blank"
+          ><h4>Curriculum Vitae</h4></a
+        >
       </div>
       <h4 class="text-element">Last updated 21 Feburary 2025</h4>
     </div>
@@ -56,6 +61,7 @@ import { RouterLink } from 'vue-router'
 
       .link-element {
         transition: 0.1s ease;
+        letter-spacing: 1px;
       }
 
       .link-element:hover {
