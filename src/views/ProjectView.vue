@@ -22,7 +22,7 @@ import BlueContainer from '@/components/BlueContainer.vue'
 .view {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  gap: 10rem 2rem;
+  gap: 0 2rem;
   width: 100%;
   min-height: 100vh;
 }

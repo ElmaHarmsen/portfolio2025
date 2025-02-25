@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <section class="section">
+  <section class="section" id="process-section">
     <div class="section__content">
       <RouterLink to="/uidesigns">
         <div class="project-item ui-designs">
@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router'
       </RouterLink>
       <RouterLink to="/project">
         <div class="project-item">
-          <h1>Project Title</h1>
+          <h1>Fast Fashion Project</h1>
           <div class="elements">
             <div class="container">
               <span class="tag blue">UX Research</span>
@@ -29,8 +29,8 @@ import { RouterLink } from 'vue-router'
         </div>
       </RouterLink>
       <RouterLink to="/development">
-        <div class="project-item">
-          <h1>UI Development</h1>
+        <div class="project-item web-dev">
+          <h1>Web Development</h1>
           <div class="elements">
             <div class="container">
               <span class="tag gray">Development</span>
@@ -60,13 +60,14 @@ import { RouterLink } from 'vue-router'
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
-      background-color: var(--clr-white);
+      background-color: var(--clr-gray-100);
       border: 1px solid var(--clr-gray-40);
       padding: 1rem;
       aspect-ratio: 1 / 1;
+      transition: all 0.2s ease;
 
       h1 {
-        color: var(--clr-gray-100);
+        color: var(--clr-white-10);
       }
 
       .elements,
@@ -103,6 +104,7 @@ import { RouterLink } from 'vue-router'
         }
 
         .icon {
+          display: none;
           width: 1.5rem;
           height: 1.5rem;
         }
@@ -111,6 +113,12 @@ import { RouterLink } from 'vue-router'
 
     .ui-designs {
       background-image: url('../assets/daily-ui.png');
+      background-size: cover;
+      transition: all 5s ease;
+    }
+
+    .web-dev {
+      background-image: url('../assets/web-dev.png');
       background-size: cover;
     }
 

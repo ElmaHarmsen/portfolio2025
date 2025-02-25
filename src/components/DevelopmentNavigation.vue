@@ -3,8 +3,7 @@
 <template>
   <section class="section">
     <div class="section__content">
-      <!-- variable property based on page -->
-      <h1>Project Title Here</h1>
+      <h1>Daily UI Designs</h1>
       <div class="page-navigation">
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
@@ -12,15 +11,11 @@
         </div>
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Process Title</h3>
+          <h3>Something</h3>
         </div>
         <div class="item">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Process Title</h3>
-        </div>
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Project Outcomes</h3>
+          <h3>Something</h3>
         </div>
       </div>
     </div>

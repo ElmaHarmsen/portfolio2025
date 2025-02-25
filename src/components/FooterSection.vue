@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <section class="section">
-    <div class="container buttons">
+    <div class="container buttons" id="footer-section">
       <!-- needs to be dynamic based on the current page -->
       <RouterLink to="/uidesigns" class="button">
         <div>
@@ -61,7 +61,7 @@ import { RouterLink } from 'vue-router'
 
       .link-element {
         transition: 0.1s ease;
-        letter-spacing: 1px;
+        letter-spacing: 0.9px;
       }
 
       .link-element:hover {

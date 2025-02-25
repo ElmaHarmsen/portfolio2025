@@ -4,22 +4,22 @@
   <section class="section">
     <h1>I do UI & UX Design</h1>
     <div class="section__content">
-      <div class="about-item">
+      <div class="about-item first-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Functional</h3>
+          <h3>Usability first</h3>
         </div>
       </div>
-      <div class="about-item">
+      <div class="about-item second-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Something</h3>
+          <h3>User-Centred Design</h3>
         </div>
       </div>
-      <div class="about-item">
+      <div class="about-item third-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Something</h3>
+          <h3>Functionality focussed</h3>
         </div>
       </div>
     </div>
@@ -46,11 +46,6 @@
       transition: 0.2s ease;
 
       .picture {
-        background-image: url('../assets/bulbasaur.png');
-        background-position: center;
-        background-size: cover;
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(2px);
         border-bottom: 1px solid var(--clr-gray-40);
         width: 100%;
         aspect-ratio: 1 / 1;
@@ -66,6 +61,12 @@
     .about-item:hover {
       transform: scale(1.01) rotate(0.25deg);
       box-shadow: 0 0 10px var(--clr-gray-20);
+    }
+
+    .first-item,
+    .second-item,
+    .third-item {
+      backdrop-filter: blur(2px);
     }
   }
 }

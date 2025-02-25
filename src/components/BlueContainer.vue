@@ -13,5 +13,6 @@
   border-bottom: 1px solid var(--clr-gray-20);
   width: 100%;
   height: 500px;
+  margin-top: 10rem;
 }
 </style>

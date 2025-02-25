@@ -1,5 +1,13 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
+
+const scrollIntoView = (id) => {
+  if (!id) return
+  const sectionElement = document.getElementById(id)
+  console.log(id)
+  if (!sectionElement) return
+  sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+}
 </script>
 
 <template>
@@ -7,15 +15,15 @@
     <div class="navigation__content">
       <h2 class="name">Elma Harmsen</h2>
       <span class="divider"></span>
-      <div class="item">
+      <div class="item" @click="scrollIntoView('process-section')">
         <h4>Selected Works</h4>
         <img src="../assets/icons/chevron--down.svg" class="icon" alt="chevron down" />
         <!-- <img src="../assets/icons/chevron--up.svg" alt="chevron up" /> -->
       </div>
-      <div class="item">
+      <div class="item" @click="scrollIntoView('about-section')">
         <h4>About Me</h4>
       </div>
-      <div class="item">
+      <div class="item" @click="scrollIntoView('footer-section')">
         <h4>Contact</h4>
       </div>
     </div>

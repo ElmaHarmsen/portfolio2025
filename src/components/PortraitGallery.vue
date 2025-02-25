@@ -18,6 +18,7 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
+  padding-top: 10rem;
 
   &__content {
     display: grid;

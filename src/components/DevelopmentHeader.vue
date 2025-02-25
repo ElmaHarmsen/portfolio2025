@@ -29,7 +29,7 @@
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     gap: 0;
-    background-image: url('../assets/ui-designs-header.png');
+    background-image: url('../assets/web-dev-header.png');
     background-size: cover;
 
     .container {

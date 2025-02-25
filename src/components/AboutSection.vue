@@ -1,13 +1,13 @@
 <script setup></script>
 
 <template>
-  <section class="section">
+  <section class="section" id="about-section">
     <h1>I'm a Design Enthusiast</h1>
     <div class="section__content">
       <div class="about-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Practical mentality</h3>
+          <h3>Advocate for practicality</h3>
         </div>
       </div>
       <div class="about-item">
