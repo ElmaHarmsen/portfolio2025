@@ -37,8 +37,8 @@
       height: 5rem;
 
       .icon {
-        width: 20px;
-        height: 20px;
+        width: 1.5rem;
+        height: 1.5rem;
         color: (var(--clr-white));
       }
     }

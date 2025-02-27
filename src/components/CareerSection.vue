@@ -9,10 +9,10 @@
           worked with User Interface Design as well as Web Development, and I have just recently
           completed a master’s degree in Human-Computer Interaction at the Uppsala University. I
           would like to continue working with User Interface Design and Interaction Design, possibly
-          expanding the scope to User Research, and I am open to Web Development as well. In my next
-          employment I am looking for companies offering full-time and on-site or hybrid positions
-          in a collaborative and professional work environment. If you are interested I would be
-          delighted to hear from you 🙌
+          expanding the scope to User Research and Usability Testing, and I am open to Web
+          Development as well. In my next employment I am looking for companies offering full-time
+          and on-site or hybrid positions in a collaborative and professional work environment. If
+          you are interested I would be delighted to hear from you 🙌
         </h1>
       </div>
     </div>
