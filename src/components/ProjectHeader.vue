@@ -1,18 +1,24 @@
-<script setup></script>
+<script setup>
+const scrollIntoView = (id) => {
+  if (!id) return
+  const sectionElement = document.getElementById(id)
+  console.log(id)
+  if (!sectionElement) return
+  sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+}
+</script>
 
 <template>
   <section class="section">
     <div class="section__content">
       <div class="container left"></div>
-      <div class="container middle">
-        <!-- variable property based on page -->
-        <h1>Something</h1>
-        <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
+      <div class="container middle" @click="scrollIntoView('first-ui')">
+        <h1>Purchase Receipt UI</h1>
+        <img src="../assets/icons/arrow--forward-1.svg" class="icon-default" alt="arrow right" />
       </div>
-      <div class="container right">
-        <!-- variable property based on page -->
-        <h1>Something</h1>
-        <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
+      <div class="container right" @click="scrollIntoView('second-ui')">
+        <h1>Analysis Chart UI</h1>
+        <img src="../assets/icons/arrow--forward-1.svg" class="icon-default" alt="arrow right" />
       </div>
     </div>
   </section>
@@ -46,7 +52,7 @@
         color: var(--clr-white-10);
       }
 
-      .icon {
+      .icon-default {
         width: 2rem;
         height: 2rem;
         align-self: end;

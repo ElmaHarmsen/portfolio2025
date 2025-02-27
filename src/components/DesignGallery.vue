@@ -1,15 +1,23 @@
 <script setup></script>
 
 <template>
-  <section class="section">
+  <section class="section" id="ui-gallery">
     <div class="section__content">
-      <div class="picture pic-a"></div>
-      <div class="picture pic-b"></div>
-      <div class="picture pic-c"></div>
-      <div class="picture pic-d"></div>
-      <div class="picture pic-e"></div>
-      <div class="picture pic-f"></div>
-      <div class="picture pic-g"></div>
+      <img src="../assets/photos/boarding-pass--ui.png" class="picture pic-a" />
+      <img
+        src="../assets/photos/festival-countdown--ui.png"
+        class="picture pic-b"
+        alt="analysis chart"
+      />
+      <img
+        src="../assets/photos/gradient-picker--ui.png"
+        class="picture pic-c"
+        alt="analysis chart"
+      />
+      <img src="../assets/photos/boarding-pass--ui-2.png" class="picture pic-d" />
+      <img src="../assets/photos/calculator--ui.png" class="picture pic-e" />
+      <img src="../assets/photos/dj-player--ui.png" class="picture pic-f" />
+      <img src="../assets/photos/popup-overlay--ui.png" class="picture pic-g" />
     </div>
   </section>
 </template>
@@ -29,10 +37,14 @@
     .picture {
       background-color: var(--clr-white);
       aspect-ratio: 2 / 3;
+      width: 100%;
+      height: 100%;
     }
 
-    .pic-d {
+    .pic-d,
+    .pic-g {
       aspect-ratio: 1 / 1;
+      height: auto;
     }
 
     .pic-e,

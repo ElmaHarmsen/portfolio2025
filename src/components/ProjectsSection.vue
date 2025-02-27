@@ -11,20 +11,32 @@ import { RouterLink } from 'vue-router'
           <div class="elements">
             <div class="container">
               <span class="tag black">UI Design</span>
+              <span class="tag purple">Figma</span>
             </div>
-            <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
+            <img
+              src="../assets/icons/arrow--forward-1.svg"
+              class="icon-default"
+              alt="arrow right"
+            />
+            <img src="../assets/icons/arrow--forward-2.svg" class="icon-hover" alt="arrow right" />
           </div>
         </div>
       </RouterLink>
       <RouterLink to="/project">
-        <div class="project-item">
-          <h1>Fast Fashion Project</h1>
+        <div class="project-item project">
+          <h1>Project Title</h1>
           <div class="elements">
             <div class="container">
-              <span class="tag blue">UX Research</span>
               <span class="tag black">UI Design</span>
+              <span class="tag blue">UX Research</span>
+              <span class="tag purple">Figma</span>
             </div>
-            <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
+            <img
+              src="../assets/icons/arrow--forward-1.svg"
+              class="icon-default"
+              alt="arrow right"
+            />
+            <img src="../assets/icons/arrow--forward-2.svg" class="icon-hover" alt="arrow right" />
           </div>
         </div>
       </RouterLink>
@@ -33,10 +45,15 @@ import { RouterLink } from 'vue-router'
           <h1>Web Development</h1>
           <div class="elements">
             <div class="container">
-              <span class="tag gray">Development</span>
               <span class="tag black">UI Design</span>
+              <span class="tag gray">Development</span>
             </div>
-            <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
+            <img
+              src="../assets/icons/arrow--forward-1.svg"
+              class="icon-default"
+              alt="arrow right"
+            />
+            <img src="../assets/icons/arrow--forward-2.svg" class="icon-hover" alt="arrow right" />
           </div>
         </div>
       </RouterLink>
@@ -93,6 +110,11 @@ import { RouterLink } from 'vue-router'
           color: var(--clr-white);
         }
 
+        .purple {
+          background-color: var(--clr-purple-20);
+          color: var(--clr-purple-70);
+        }
+
         .gray {
           background-color: var(--clr-gray-20);
           color: var(--clr-gray-100);
@@ -103,10 +125,35 @@ import { RouterLink } from 'vue-router'
           color: var(--clr-blue-70);
         }
 
-        .icon {
+        .icon-default,
+        .icon-hover {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .icon-hover {
           display: none;
-          width: 1.5rem;
-          height: 1.5rem;
+        }
+      }
+    }
+
+    .ui-designs:hover,
+    .project:hover,
+    .web-dev:hover {
+      background-image: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(2px);
+
+      h1 {
+        color: var(--clr-gray-100);
+      }
+
+      .elements {
+        .icon-default {
+          display: none;
+        }
+        .icon-hover {
+          display: block;
         }
       }
     }
@@ -114,7 +161,7 @@ import { RouterLink } from 'vue-router'
     .ui-designs {
       background-image: url('../assets/daily-ui.png');
       background-size: cover;
-      transition: all 5s ease;
+      transition: all 0.2ss ease;
     }
 
     .web-dev {

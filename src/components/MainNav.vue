@@ -1,5 +1,6 @@
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
+import { ref } from 'vue'
+const mainNavOpen = ref(false)
 
 const scrollIntoView = (id) => {
   if (!id) return
@@ -15,10 +16,28 @@ const scrollIntoView = (id) => {
     <div class="navigation__content">
       <h2 class="name">Elma Harmsen</h2>
       <span class="divider"></span>
-      <div class="item" @click="scrollIntoView('process-section')">
-        <h4>Selected Works</h4>
-        <img src="../assets/icons/chevron--down.svg" class="icon" alt="chevron down" />
+      <div class="item">
+        <h4 @click="scrollIntoView('process-section')">Selected Works</h4>
+        <img
+          src="../assets/icons/chevron--down.svg"
+          @click="mainNavOpen = !mainNavOpen"
+          v-if="!mainNavOpen"
+          class="icon"
+          alt="chevron down"
+        />
+        <img
+          src="../assets/icons/chevron--up.svg"
+          @click="mainNavOpen = !mainNavOpen"
+          v-if="mainNavOpen"
+          class="icon"
+          alt="chevron up"
+        />
         <!-- <img src="../assets/icons/chevron--up.svg" alt="chevron up" /> -->
+        <div class="navigation__submenu" v-if="mainNavOpen">
+          <h4 class="submenu-item">Daily UI Desings</h4>
+          <h4 class="submenu-item">Project Title</h4>
+          <h4 class="submenu-item">Web Development</h4>
+        </div>
       </div>
       <div class="item" @click="scrollIntoView('about-section')">
         <h4>About Me</h4>
@@ -90,6 +109,27 @@ const scrollIntoView = (id) => {
       h4 {
         color: var(--clr-gray-100);
       }
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    z-index: 101;
+    top: calc(3rem - 1px);
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: -1rem;
+    background-color: var(--clr-white);
+    border-radius: 0 0 0.25rem 0.25rem;
+    color: var(--clr-gray-100);
+    width: 160px;
+
+    .submenu-item {
+      padding: 1rem;
+    }
+
+    .submenu-item:hover {
+      background-color: var(--clr-gray-50);
     }
   }
 }

@@ -1,14 +1,34 @@
 <script setup></script>
 
 <template>
-  <section class="section">
-    <h1>Purchase Receipt UI</h1>
+  <section class="section" id="first-ui">
+    <h1>Steam Purchase Receipt Redesign</h1>
     <div class="section__content">
-      <div class="picture pic-a"></div>
-      <div class="picture pic-b"></div>
-      <div class="picture pic-c"></div>
-      <div class="picture pic-d"></div>
-      <div class="picture pic-e"></div>
+      <img
+        src="../assets/photos/purchase-receipt--steam.jpg"
+        class="picture pic-a"
+        alt="purchase receipt"
+      />
+      <img
+        src="../assets/photos/purchase-receipt--1.png"
+        class="picture pic-b"
+        alt="purchase receipt"
+      />
+      <img
+        src="../assets/photos/purchase-receipt--2.png"
+        class="picture pic-c"
+        alt="purchase receipt"
+      />
+      <img
+        src="../assets/photos/purchase-receipt--colours.png"
+        class="picture pic-d"
+        alt="purchase receipt colour sceme"
+      />
+      <img
+        src="../assets/photos/purchase-receipt--3.png"
+        class="picture pic-e"
+        alt="purchase receipt colour sceme"
+      />
     </div>
   </section>
 </template>
@@ -27,13 +47,15 @@
     margin-top: 4rem;
 
     .picture {
-      background-color: var(--clr-white);
       aspect-ratio: 2 / 3;
+      height: 100%;
+      width: 100%;
     }
 
     .pic-d,
     .pic-e {
       aspect-ratio: 1 / 1;
+      height: auto;
     }
 
     .pic-e {

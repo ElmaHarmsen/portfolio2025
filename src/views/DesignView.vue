@@ -4,7 +4,7 @@ import DesignNavigation from '@/components/DesignNavigation.vue'
 import DesignGallery from '@/components/DesignGallery.vue'
 import PortraitGallery from '@/components/PortraitGallery.vue'
 import LandscapeGallery from '@/components/LandscapeGallery.vue'
-import BlueContainer from '@/components/BlueContainer.vue'
+import DesignBlueContainer from '@/components/DesignBlueContainer.vue'
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import BlueContainer from '@/components/BlueContainer.vue'
     <DesignGallery />
     <PortraitGallery />
     <LandscapeGallery />
-    <BlueContainer />
+    <DesignBlueContainer />
   </main>
 </template>
 

@@ -2,7 +2,7 @@
 
 <template>
   <section class="section">
-    <h1>and I do Web Development</h1>
+    <h1>I'm a Web Developer</h1>
     <div class="section__content">
       <div class="about-item">
         <div class="picture"></div>

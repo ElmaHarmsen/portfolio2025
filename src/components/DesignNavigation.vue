@@ -1,19 +1,27 @@
-<script setup></script>
+<script setup>
+const scrollIntoView = (id) => {
+  if (!id) return
+  const sectionElement = document.getElementById(id)
+  console.log(id)
+  if (!sectionElement) return
+  sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+}
+</script>
 
 <template>
   <section class="section">
     <div class="section__content">
       <h1>Daily UI Designs</h1>
       <div class="page-navigation">
-        <div class="item">
+        <div class="item" @click="scrollIntoView('ui-gallery')">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Gallery</h3>
+          <h3>UI Gallery</h3>
         </div>
-        <div class="item">
+        <div class="item" @click="scrollIntoView('first-ui')">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
           <h3>Purchase Receipt UI</h3>
         </div>
-        <div class="item">
+        <div class="item" @click="scrollIntoView('second-ui')">
           <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
           <h3>Analysis Chart UI</h3>
         </div>

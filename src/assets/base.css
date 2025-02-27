@@ -18,6 +18,9 @@
   --clr-blue-20: #d0e2ff;
   --clr-blue-10: #edf5ff;
 
+  --clr-purple-70: #6929c4;
+  --clr-purple-20: #e8daff;
+
   --clr-text-light: var(--clr-gray-100);
   --clr-text-dark: var(--clr-white);
 

@@ -2,7 +2,7 @@
 
 <template>
   <section class="section">
-    <h1>I do UI & UX Design</h1>
+    <h1>I'm a UI Designer and Interaction Designer</h1>
     <div class="section__content">
       <div class="about-item first-item">
         <div class="picture"></div>

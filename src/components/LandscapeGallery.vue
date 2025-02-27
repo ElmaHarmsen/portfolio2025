@@ -1,13 +1,29 @@
 <script setup></script>
 
 <template>
-  <section class="section">
-    <h1>Analysis Chart UI</h1>
+  <section class="section" id="second-ui">
+    <h1>Analysis Chart Design</h1>
     <div class="section__content">
-      <div class="picture pic-a"></div>
-      <div class="picture pic-b"></div>
-      <div class="picture pic-c"></div>
-      <div class="picture pic-d"></div>
+      <img
+        src="../assets/photos/analysis-chart--1.png"
+        class="picture pic-a"
+        alt="analysis chart"
+      />
+      <img
+        src="../assets/photos/analysis-chart--2.png"
+        class="picture pic-b"
+        alt="analysis chart"
+      />
+      <img
+        src="../assets/photos/analysis-chart--colours.png"
+        class="picture pic-c"
+        alt="analysis chart"
+      />
+      <img
+        src="../assets/photos/analysis-chart--4.png"
+        class="picture pic-d"
+        alt="analysis chart"
+      />
     </div>
   </section>
 </template>
@@ -26,13 +42,15 @@
     margin-top: 4rem;
 
     .picture {
-      background-color: var(--clr-white);
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 3 / 2;
+      width: 100%;
+      height: 100%;
     }
 
     .pic-b,
     .pic-c {
       aspect-ratio: 1 / 1;
+      height: auto;
     }
 
     .pic-a {

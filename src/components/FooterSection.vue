@@ -34,7 +34,7 @@ import { RouterLink } from 'vue-router'
           ><h4>Curriculum Vitae</h4></a
         >
       </div>
-      <h4 class="text-element">Last updated 21 Feburary 2025</h4>
+      <h4 class="text-element">Last updated 27 Feburary 2025</h4>
     </div>
   </section>
 </template>

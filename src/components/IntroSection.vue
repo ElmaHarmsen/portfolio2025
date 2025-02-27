@@ -1,0 +1,50 @@
+<script setup></script>
+
+<template>
+  <section class="container">
+    <div class="container__content">
+      <div class="inside-container">
+        <h1 class="text">
+          Greetings✌️ My name is Elma Harmsen and I am a design enthusiast based in Sweden. My
+          interest in design and technology has inspired me to become a UI Designer and Interaction
+          Designer. I have a pragmatic and practical mentality for design, and I believe in
+          straightforward solutions. I enjoy collaborating with people, and I take care to
+          contribute to a positive and inclusive environment.
+        </h1>
+      </div>
+    </div>
+  </section>
+</template>
+
+<style scoped lang="scss">
+.container {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  background-color: var(--clr-blue-10);
+  border-top: 1px solid var(--clr-gray-20);
+  border-bottom: 1px solid var(--clr-gray-20);
+  width: 100%;
+  height: 500px;
+  margin-top: 10rem;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 32px;
+
+    .inside-container {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      padding: 4rem 0;
+    }
+
+    .text {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+  }
+}
+</style>
