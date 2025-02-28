@@ -2,24 +2,42 @@
 
 <template>
   <section class="section">
-    <h1>I'm a UI Designer and Interaction Designer</h1>
+    <h1>Something</h1>
     <div class="section__content">
       <div class="about-item first-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Usability first</h3>
+          <p class="paragraph">Short paragraph</p>
         </div>
       </div>
       <div class="about-item second-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>User-Centred Design</h3>
+          <p class="paragraph">Short paragraph</p>
         </div>
       </div>
       <div class="about-item third-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Functionality focussed</h3>
+          <p class="paragraph">Short paragraph</p>
+        </div>
+      </div>
+      <div class="about-item first-item">
+        <div class="picture"></div>
+        <div class="content">
+          <p class="paragraph">Short paragraph</p>
+        </div>
+      </div>
+      <div class="about-item second-item">
+        <div class="picture"></div>
+        <div class="content">
+          <p class="paragraph">Short paragraph</p>
+        </div>
+      </div>
+      <div class="about-item third-item">
+        <div class="picture"></div>
+        <div class="content">
+          <p class="paragraph">Short paragraph</p>
         </div>
       </div>
     </div>
@@ -55,6 +73,11 @@
         flex-grow: 1;
         background-color: var(--clr-white);
         padding: 1rem;
+
+        .paragraph {
+          font-family: 'IBMPlexSans-Regular';
+          font-size: 0.875rem;
+        }
       }
     }
 

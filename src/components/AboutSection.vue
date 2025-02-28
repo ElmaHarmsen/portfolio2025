@@ -2,18 +2,20 @@
 
 <template>
   <section class="section" id="about-section">
-    <h1>I'm a Design Enthusiast</h1>
+    <h1>About me</h1>
     <div class="section__content">
       <div class="about-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Advocate for practicality</h3>
+          <h3>I'm a Design Enthusiast</h3>
+          <p class="paragraph">Something</p>
         </div>
       </div>
       <div class="about-item">
         <div class="picture"></div>
         <div class="content">
-          <h3>Passionate for details</h3>
+          <h3>I’m a UI & Interaction Designer</h3>
+          <p class="paragraph">Something</p>
         </div>
       </div>
     </div>
@@ -49,8 +51,16 @@
 
       .content {
         flex-grow: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 1rem;
         background-color: var(--clr-white);
         padding: 1rem;
+
+        .paragraph {
+          font-family: 'IBMPlexSans-Regular';
+          font-size: 0.875rem;
+        }
       }
     }
 

@@ -1,9 +1,17 @@
-<script setup></script>
+<script setup>
+const scrollIntoView = (id) => {
+  if (!id) return
+  const sectionElement = document.getElementById(id)
+  console.log(id)
+  if (!sectionElement) return
+  sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+}
+</script>
 
 <template>
   <section class="section">
     <div class="section__content">
-      <button>
+      <button @click="scrollIntoView('intro-section')">
         <h3>Click me</h3>
         <img src="../assets/icons/cursor.svg" class="icon" alt="cursor" />
       </button>
@@ -23,13 +31,13 @@
   align-items: start;
 
   &__content {
-    margin-bottom: 64px;
+    margin-bottom: 10rem;
 
     button {
       display: flex;
       flex-flow: row nowrap;
       align-items: start;
-      column-gap: 32px;
+      column-gap: 1rem;
       background-color: var(--clr-blue-70);
       color: var(--clr-white);
       padding: 1rem;
