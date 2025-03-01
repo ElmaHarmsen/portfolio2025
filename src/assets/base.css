@@ -14,12 +14,13 @@
   --clr-gray-30: #c6c6c6;
   --clr-gray-20: #e0e0e0;
 
+  --clr-purple-70: #6929c4;
+  --clr-purple-60: #8a3ffc;
+  --clr-purple-20: #e8daff;
+  --clr-purple-10: #f6f2ff;
+
   --clr-blue-70: #0043ce;
   --clr-blue-20: #d0e2ff;
-  --clr-blue-10: #edf5ff;
-
-  --clr-purple-70: #6929c4;
-  --clr-purple-20: #e8daff;
 
   --clr-text-light: var(--clr-gray-100);
   --clr-text-dark: var(--clr-white);

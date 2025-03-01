@@ -1,38 +1,36 @@
 <script setup></script>
 
 <template>
-  <section class="section">
-    <h1>My Design Principles</h1>
+  <section class="section" id="skills-section">
+    <h1>Skills & Services</h1>
     <div class="section__content">
       <div class="about-item first-item">
         <div class="content">
-          <h3>Functional</h3>
+          <h3>UI Design</h3>
         </div>
       </div>
       <div class="about-item second-item">
         <div class="content">
-          <h3>Usable</h3>
+          <h3>Interaction Design</h3>
         </div>
       </div>
       <div class="about-item third-item">
         <div class="content">
-          <h3>Inclusive</h3>
+          <h3>Web Development</h3>
         </div>
       </div>
       <div class="about-item first-item">
         <div class="content">
-          <h3>Human-Centred</h3>
+          <h3>User Research</h3>
         </div>
       </div>
       <div class="about-item second-item">
         <div class="content">
-          <h3>Heuristic</h3>
+          <h3>Usability Testing</h3>
         </div>
       </div>
-      <div class="about-item third-item">
-        <div class="content">
-          <h3>Innovative</h3>
-        </div>
+      <div class="about-item empty-item">
+        <div class="content"></div>
       </div>
     </div>
   </section>

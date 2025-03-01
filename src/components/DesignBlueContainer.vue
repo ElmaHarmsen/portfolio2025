@@ -24,7 +24,7 @@
 .container {
   grid-column-start: 1;
   grid-column-end: 17;
-  background-color: var(--clr-blue-10);
+  background-color: var(--clr-purple-10);
   border-top: 1px solid var(--clr-gray-20);
   border-bottom: 1px solid var(--clr-gray-20);
   width: 100%;
@@ -49,12 +49,12 @@
       grid-column-end: 4;
 
       .link {
-        color: var(--clr-blue-70);
+        color: var(--clr-purple-70);
         transition: 0.1s ease;
       }
 
       .link:hover {
-        text-decoration: var(--clr-blue-70) underline 1.5px;
+        text-decoration: var(--clr-purple-70) underline 1.5px;
       }
     }
   }

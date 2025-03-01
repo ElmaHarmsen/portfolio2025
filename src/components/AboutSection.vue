@@ -2,20 +2,26 @@
 
 <template>
   <section class="section" id="about-section">
-    <h1>About me</h1>
+    <h1>Who am I?</h1>
     <div class="section__content">
       <div class="about-item">
-        <div class="picture"></div>
+        <div class="picture picture-design"></div>
         <div class="content">
-          <h3>I'm a Design Enthusiast</h3>
-          <p class="paragraph">Something</p>
+          <h1>I'm a Design Enthusiast</h1>
+          <p class="paragraph">
+            I have a strong interest in design, and I am fascinated by the relationship between
+            human behaviour and technology.
+          </p>
         </div>
       </div>
       <div class="about-item">
-        <div class="picture"></div>
+        <div class="picture picture-interaction"></div>
         <div class="content">
-          <h3>I’m a UI & Interaction Designer</h3>
-          <p class="paragraph">Something</p>
+          <h1>I’m a UI & Interaction Designer</h1>
+          <p class="paragraph">
+            I believe in a user-centred design approach as well as straightforward and functional
+            solutions to design problems.
+          </p>
         </div>
       </div>
     </div>
@@ -44,9 +50,18 @@
       .picture {
         background-color: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(2px);
-        border-bottom: 1px solid var(--clr-gray-40);
         width: 100%;
         aspect-ratio: 1 / 1;
+      }
+
+      .picture-design {
+        background-image: url('../assets/design-enthusiast.png');
+        background-size: cover;
+      }
+
+      .picture-interaction {
+        background-image: url('../assets/interaction-design.png');
+        background-size: cover;
       }
 
       .content {

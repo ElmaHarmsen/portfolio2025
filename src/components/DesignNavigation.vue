@@ -60,7 +60,7 @@ const scrollIntoView = (id) => {
 
       .item:hover {
         cursor: pointer;
-        color: var(--clr-blue-70);
+        color: var(--clr-purple-70);
       }
     }
   }

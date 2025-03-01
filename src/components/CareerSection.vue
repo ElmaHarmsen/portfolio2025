@@ -5,7 +5,7 @@
     <div class="container__content">
       <div class="inside-container">
         <h1 class="text">
-          I am currently pursuing an inspiring design career in the nordics. I have previously
+          I am currently pursuing an ✨ inspiring design career ✨ in the nordics. I have previously
           worked with User Interface Design as well as Web Development, and I have just recently
           completed a master’s degree in Human-Computer Interaction at the Uppsala University. I
           would like to continue working with User Interface Design and Interaction Design, possibly
@@ -23,7 +23,7 @@
 .container {
   grid-column-start: 1;
   grid-column-end: 17;
-  background-color: var(--clr-blue-10);
+  background-color: var(--clr-purple-10);
   border-top: 1px solid var(--clr-gray-20);
   border-bottom: 1px solid var(--clr-gray-20);
   width: 100%;

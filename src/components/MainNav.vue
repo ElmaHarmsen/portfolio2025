@@ -55,6 +55,13 @@ const scrollIntoView = (id) => {
           </div>
         </div>
       </div>
+      <div class="nav-item" @click="scrollIntoView('skills-section')">
+        <div class="nav-item__container">
+          <div class="item-container">
+            <h4 class="item">Skills & Services</h4>
+          </div>
+        </div>
+      </div>
       <div class="nav-item" @click="scrollIntoView('footer-section')">
         <div class="nav-item__container">
           <div class="item-container">

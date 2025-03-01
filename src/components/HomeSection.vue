@@ -38,7 +38,7 @@ const scrollIntoView = (id) => {
       flex-flow: row nowrap;
       align-items: start;
       column-gap: 1rem;
-      background-color: var(--clr-blue-70);
+      background-color: var(--clr-purple-60);
       color: var(--clr-white);
       padding: 1rem;
       border: none;

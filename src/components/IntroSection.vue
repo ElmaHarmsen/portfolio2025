@@ -7,14 +7,14 @@
         <div class="inside-container">
           <h1 class="text">
             Greetings✌️ My name is Elma Harmsen and I am a design enthusiast based in Sweden. My
-            interest in design and technology has inspired me to become a UI Designer and
-            Interaction Designer. I have a pragmatic and practical mentality for design, and I
-            believe in straightforward solutions. I value open-mindedness as well as sharing
-            knowledge, and I like to be diligent in my work and to take opportunities to learn. I
-            enjoy collaborating with people, and I take care to contribute to a positive and
-            inclusive environment. While seeking out my next career opportunity, I am working to
-            improve my design and development skills. Be sure to check out my latest projects and
-            designs by scrolling further⚡
+            interest in design and technology has inspired me to become a UI and Interaction
+            Designer. I have a pragmatic and practical mentality for design, and I believe in
+            straightforward solutions. I value open-mindedness as well as sharing knowledge, and I
+            like to be diligent in my work and to take opportunities to learn. I enjoy collaborating
+            with people, and I take care to contribute to a positive and inclusive environment.
+            While seeking out my next career opportunity, I am working to improve my design and
+            development skills. Be sure to check out my latest projects and designs by scrolling
+            further⚡
           </h1>
         </div>
       </div>
@@ -29,7 +29,7 @@
   padding-top: calc(3rem - 1px);
 
   .container {
-    background-color: var(--clr-blue-10);
+    background-color: var(--clr-purple-10);
     border-top: 1px solid var(--clr-gray-20);
     border-bottom: 1px solid var(--clr-gray-20);
     width: 100%;
