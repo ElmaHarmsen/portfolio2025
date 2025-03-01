@@ -14,8 +14,8 @@ import CareerSection from '../components/CareerSection.vue'
     <IntroSection />
     <ProjectsSection />
     <AboutSection />
-    <DesignerSection />
     <SkillsSection />
+    <DesignerSection />
     <CareerSection />
   </main>
 </template>

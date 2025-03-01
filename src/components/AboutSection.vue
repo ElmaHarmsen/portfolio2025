@@ -2,7 +2,7 @@
 
 <template>
   <section class="section" id="about-section">
-    <h1>Who am I?</h1>
+    <h1>About me</h1>
     <div class="section__content">
       <div class="about-item">
         <div class="picture picture-design"></div>
@@ -24,6 +24,20 @@
           </p>
         </div>
       </div>
+      <!-- <div class="about-item">
+        <div class="picture picture-design"></div>
+        <div class="content">
+          <h1>I have a technical background</h1>
+          <p class="paragraph">Some paragraph</p>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="picture picture-design"></div>
+        <div class="content">
+          <h1>I have studied internationally</h1>
+          <p class="paragraph">Some paragraph</p>
+        </div>
+      </div> -->
     </div>
   </section>
 </template>
