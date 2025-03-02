@@ -1,11 +1,11 @@
 <script setup></script>
 
 <template>
-  <section class="smth" id="intro-section">
+  <section class="section-wide" id="intro-section">
     <div class="container">
       <div class="container__content">
         <div class="inside-container">
-          <h1 class="text">
+          <h1 class="text-container">
             Greetings✌️ My name is Elma Harmsen and I am a design enthusiast based in Sweden. My
             interest in design and technology has inspired me to become a UI and Interaction
             Designer. I have a pragmatic and practical mentality for design, and I believe in
@@ -23,7 +23,7 @@
 </template>
 
 <style scoped lang="scss">
-.smth {
+.section-wide {
   grid-column-start: 1;
   grid-column-end: 17;
   padding-top: calc(3rem - 1px);
@@ -46,11 +46,11 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
         padding: 4rem 0;
-      }
 
-      .text {
-        grid-column-start: 2;
-        grid-column-end: 4;
+        .text-container {
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
       }
     }
   }

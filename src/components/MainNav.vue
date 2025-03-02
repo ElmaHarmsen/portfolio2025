@@ -38,7 +38,7 @@ const scrollIntoView = (id) => {
           </RouterLink>
           <RouterLink to="/project">
             <div class="submenu-item">
-              <h4>Project Title</h4>
+              <h4>Design Project</h4>
             </div>
           </RouterLink>
           <RouterLink to="/development">

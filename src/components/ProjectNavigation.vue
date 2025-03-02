@@ -1,26 +1,39 @@
-<script setup></script>
+<script setup>
+const scrollIntoView = (id) => {
+  if (!id) return
+  const sectionElement = document.getElementById(id)
+  console.log(id)
+  if (!sectionElement) return
+  sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+}
+</script>
 
 <template>
-  <section class="section">
-    <div class="section__content">
-      <!-- variable property based on page -->
-      <h1>Project Title Here</h1>
-      <div class="page-navigation">
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Gallery</h3>
+  <section class="section-wide">
+    <div class="container">
+      <div class="container__content">
+        <div class="page-intro">
+          <h1>Reduce Fashion Waste</h1>
+          <h3>University project</h3>
+          <h3>2022.08.29 to 2022.11.02</h3>
         </div>
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Process Title</h3>
-        </div>
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Process Title</h3>
-        </div>
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Project Outcomes</h3>
+        <div class="page-navigation">
+          <div class="item" @click="scrollIntoView('project-gallery')">
+            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+            <h3>Gallery</h3>
+          </div>
+          <div class="item" @click="scrollIntoView('project-objective')">
+            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+            <h3>Objective</h3>
+          </div>
+          <div class="item" @click="scrollIntoView('project-description')">
+            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+            <h3>Description</h3>
+          </div>
+          <div class="item" @click="scrollIntoView('project-outcomes')">
+            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+            <h3>Outcomes</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -28,36 +41,51 @@
 </template>
 
 <style scoped lang="scss">
-.section {
-  grid-column-start: 4;
-  grid-column-end: 14;
+.section-wide {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  background-color: var(--clr-white);
+  border-top: 1px solid var(--clr-gray-20);
+  border-bottom: 1px solid var(--clr-gray-20);
   width: 100%;
-  padding-top: 10rem;
 
-  &__content {
-    .page-navigation {
-      display: flex;
-      flex-flow: column nowrap;
-      row-gap: 0.5rem;
-      margin-top: 2rem;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 32px;
+    padding: 4rem 0 10rem 0;
 
-      .item {
+    &__content {
+      grid-column-start: 4;
+      grid-column-end: 14;
+
+      .page-intro,
+      .page-navigation {
         display: flex;
-        flex-flow: row nowrap;
-        column-gap: 0.5rem;
-        align-items: center;
-        width: fit-content;
-        transition: 0.2s ease;
-
-        .icon {
-          width: 1.25rem;
-          height: 1.25rem;
-        }
+        flex-flow: column nowrap;
+        row-gap: 0.5rem;
+        margin-top: 2rem;
       }
 
-      .item:hover {
-        cursor: pointer;
-        color: var(--clr-purple-70);
+      .page-navigation {
+        .item {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 0.5rem;
+          align-items: center;
+          width: fit-content;
+          transition: 0.2s ease;
+
+          .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+          }
+        }
+
+        .item:hover {
+          cursor: pointer;
+          color: var(--clr-purple-70);
+        }
       }
     }
   }

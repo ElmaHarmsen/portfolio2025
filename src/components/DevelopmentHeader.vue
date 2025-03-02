@@ -5,12 +5,10 @@
     <div class="section__content">
       <div class="container left"></div>
       <div class="container middle">
-        <!-- variable property based on page -->
         <h1>Something</h1>
         <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
       </div>
       <div class="container right">
-        <!-- variable property based on page -->
         <h1>Something</h1>
         <img src="../assets/icons/arrow--right.svg" class="icon" alt="arrow right" />
       </div>

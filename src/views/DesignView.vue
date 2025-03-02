@@ -1,20 +1,20 @@
 <script setup>
-import ProjectHeader from '@/components/ProjectHeader.vue'
+import DesignHeader from '@/components/DesignHeader.vue'
 import DesignNavigation from '@/components/DesignNavigation.vue'
 import DesignGallery from '@/components/DesignGallery.vue'
 import PortraitGallery from '@/components/PortraitGallery.vue'
 import LandscapeGallery from '@/components/LandscapeGallery.vue'
-import DesignBlueContainer from '@/components/DesignBlueContainer.vue'
+import DesignOutcomes from '@/components/DesignOutcomes.vue'
 </script>
 
 <template>
   <main class="view">
-    <ProjectHeader />
+    <DesignHeader />
     <DesignNavigation />
     <DesignGallery />
     <PortraitGallery />
     <LandscapeGallery />
-    <DesignBlueContainer />
+    <DesignOutcomes />
   </main>
 </template>
 

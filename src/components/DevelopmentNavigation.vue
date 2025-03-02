@@ -1,21 +1,23 @@
 <script setup></script>
 
 <template>
-  <section class="section">
-    <div class="section__content">
-      <h1>Daily UI Designs</h1>
-      <div class="page-navigation">
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Gallery</h3>
-        </div>
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Something</h3>
-        </div>
-        <div class="item">
-          <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-          <h3>Something</h3>
+  <section class="section-wide">
+    <div class="container">
+      <div class="container__content">
+        <h1>This page is a work in progress still, but will be updated soon</h1>
+        <div class="page-navigation">
+          <div class="item">
+            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+            <h3>Something</h3>
+          </div>
+          <div class="item">
+            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+            <h3>Something</h3>
+          </div>
+          <div class="item">
+            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+            <h3>Something</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -23,36 +25,51 @@
 </template>
 
 <style scoped lang="scss">
-.section {
-  grid-column-start: 4;
-  grid-column-end: 14;
+.section-wide {
+  grid-column-start: 1;
+  grid-column-end: 17;
+  background-color: var(--clr-white);
+  border-top: 1px solid var(--clr-gray-20);
+  border-bottom: 1px solid var(--clr-gray-20);
   width: 100%;
-  padding-top: 10rem;
 
-  &__content {
-    .page-navigation {
-      display: flex;
-      flex-flow: column nowrap;
-      row-gap: 0.5rem;
-      margin-top: 2rem;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 32px;
+    padding: 4rem 0 10rem 0;
 
-      .item {
+    &__content {
+      grid-column-start: 4;
+      grid-column-end: 14;
+
+      .page-intro,
+      .page-navigation {
         display: flex;
-        flex-flow: row nowrap;
-        column-gap: 0.5rem;
-        align-items: center;
-        width: fit-content;
-        transition: 0.2s ease;
-
-        .icon {
-          width: 1.25rem;
-          height: 1.25rem;
-        }
+        flex-flow: column nowrap;
+        row-gap: 0.5rem;
+        margin-top: 2rem;
       }
 
-      .item:hover {
-        cursor: pointer;
-        color: var(--clr-purple-70);
+      .page-navigation {
+        .item {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 0.5rem;
+          align-items: center;
+          width: fit-content;
+          transition: 0.2s ease;
+
+          .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+          }
+        }
+
+        .item:hover {
+          cursor: pointer;
+          color: var(--clr-purple-70);
+        }
       }
     }
   }

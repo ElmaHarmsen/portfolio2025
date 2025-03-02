@@ -2,9 +2,11 @@
 import ProjectHeader from '@/components/ProjectHeader.vue'
 import ProjectNavigation from '@/components/ProjectNavigation.vue'
 import ProjectGallery from '@/components/ProjectGallery.vue'
-import ProcessSection from '@/components/ProcessSection.vue'
-import OutcomesSection from '@/components/OutcomesSection.vue'
-import BlueContainer from '@/components/BlueContainer.vue'
+import ProjectObjective from '@/components/ProjectObjective.vue'
+import ProcessGallery from '@/components/ProcessGallery.vue'
+import ProjectDescription from '@/components/ProjectDescription.vue'
+import PrototypeGallery from '@/components/PrototypeGallery.vue'
+import OutcomesSection from '@/components/ProjectOutcomes.vue'
 </script>
 
 <template>
@@ -12,9 +14,11 @@ import BlueContainer from '@/components/BlueContainer.vue'
     <ProjectHeader />
     <ProjectNavigation />
     <ProjectGallery />
-    <ProcessSection />
+    <ProjectObjective />
+    <ProcessGallery />
+    <ProjectDescription />
+    <PrototypeGallery />
     <OutcomesSection />
-    <BlueContainer />
   </main>
 </template>
 

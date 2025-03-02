@@ -12,12 +12,12 @@ const scrollIntoView = (id) => {
   <section class="section">
     <div class="section__content">
       <div class="container left"></div>
-      <div class="container middle" @click="scrollIntoView('project-gallery')">
-        <h1>UI Gallery</h1>
+      <div class="container middle" @click="scrollIntoView('first-ui')">
+        <h1>Purchase Receipt UI</h1>
         <img src="../assets/icons/arrow--forward-1.svg" class="icon-default" alt="arrow right" />
       </div>
-      <div class="container right" @click="scrollIntoView('process-gallery')">
-        <h1>Process Gallery</h1>
+      <div class="container right" @click="scrollIntoView('second-ui')">
+        <h1>Analysis Chart UI</h1>
         <img src="../assets/icons/arrow--forward-1.svg" class="icon-default" alt="arrow right" />
       </div>
     </div>
@@ -35,7 +35,7 @@ const scrollIntoView = (id) => {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     gap: 0;
-    background-color: var(--clr-gray-100);
+    background-image: url('../assets/ui-designs-header.png');
     background-size: cover;
 
     .container {
@@ -74,22 +74,11 @@ const scrollIntoView = (id) => {
       border: none;
     }
 
-    // .middle:hover,
-    // .right:hover {
-    //   cursor: pointer;
-    //   background-color: var(--clr-gray-100);
-    //   color: var(--clr-white-10);
-    // }
-
-    //only for case with background colour gray-100
     .middle:hover,
     .right:hover {
       cursor: pointer;
-      background-color: var(--clr-white);
-
-      h1 {
-        color: var(--clr-gray-100);
-      }
+      background-color: var(--clr-gray-100);
+      color: var(--clr-white-10);
     }
   }
 }

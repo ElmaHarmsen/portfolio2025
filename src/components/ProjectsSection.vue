@@ -24,11 +24,11 @@ import { RouterLink } from 'vue-router'
       </RouterLink>
       <RouterLink to="/project">
         <div class="project-item project">
-          <h1>Project Title</h1>
+          <h1>Design Project</h1>
           <div class="elements">
             <div class="container">
               <span class="tag black">UI Design</span>
-              <span class="tag blue">UX Research</span>
+              <span class="tag blue">User Research</span>
               <span class="tag purple">Figma</span>
             </div>
             <img

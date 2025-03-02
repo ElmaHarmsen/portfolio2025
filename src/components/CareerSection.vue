@@ -4,7 +4,7 @@
   <section class="container">
     <div class="container__content">
       <div class="inside-container">
-        <h1 class="text">
+        <h1 class="text-container">
           I am currently pursuing an ✨ inspiring design career ✨ in the nordics. I have previously
           worked with User Interface Design as well as Web Development, and I have just recently
           completed a master’s degree in Human-Computer Interaction at the Uppsala University. I
@@ -41,11 +41,11 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
       padding: 4rem 0;
-    }
 
-    .text {
-      grid-column-start: 2;
-      grid-column-end: 4;
+      .text-container {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
     }
   }
 }
