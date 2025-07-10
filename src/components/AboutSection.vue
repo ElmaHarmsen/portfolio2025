@@ -2,7 +2,6 @@
 
 <template>
   <section class="section" id="about-section">
-    <h1>About me</h1>
     <div class="section__content">
       <div class="about-item">
         <div class="picture picture-design"></div>
@@ -52,7 +51,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    margin-top: 4rem;
 
     .about-item {
       display: flex;

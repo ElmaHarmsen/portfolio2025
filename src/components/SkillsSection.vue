@@ -2,35 +2,36 @@
 
 <template>
   <section class="section" id="skills-section">
-    <h1>Skills & Services</h1>
     <div class="section__content">
       <div class="about-item first-item">
         <div class="content">
-          <h3>UI Design</h3>
+          <h1>UI Design</h1>
         </div>
       </div>
       <div class="about-item second-item">
         <div class="content">
-          <h3>Interaction Design</h3>
+          <h1>Interaction Design</h1>
         </div>
       </div>
       <div class="about-item third-item">
         <div class="content">
-          <h3>Web Development</h3>
+          <h1>Web Development</h1>
         </div>
       </div>
       <div class="about-item first-item">
         <div class="content">
-          <h3>User Research</h3>
+          <h1>User Research</h1>
         </div>
       </div>
       <div class="about-item second-item">
         <div class="content">
-          <h3>Usability Testing</h3>
+          <h1>Usability Testing</h1>
         </div>
       </div>
-      <div class="about-item empty-item">
-        <div class="content"></div>
+      <div class="about-item third-item">
+        <div class="content">
+          <h1>User-Centred Design</h1>
+        </div>
       </div>
     </div>
   </section>
@@ -46,12 +47,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    margin-top: 4rem;
+    margin-bottom: calc(10rem - (3rem - 1px));
 
     .about-item {
       display: flex;
       flex-flow: column nowrap;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: var(--clr-white);
       backdrop-filter: blur(2px);
       border: 1px solid var(--clr-gray-40);
       aspect-ratio: 4 / 3;

@@ -5,22 +5,21 @@ const mainNavOpen = ref(false)
 const scrollIntoView = (id) => {
   if (!id) return
   const sectionElement = document.getElementById(id)
-  console.log(id)
   if (!sectionElement) return
   sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
 }
 </script>
 
 <template>
-  <section class="navigation">
+  <section class="navigation" id="main-nav">
     <div class="navigation__content">
-      <RouterLink to="/">
+      <RouterLink to="/" @click="scrollIntoView('home-section')">
         <h2 class="name">Elma Harmsen</h2>
       </RouterLink>
       <span class="divider"></span>
       <div class="nav-item">
         <div class="nav-item__container">
-          <div class="item-container" @click="scrollIntoView('process-section')">
+          <div class="item-container" @click="scrollIntoView('projects-section')">
             <h4 class="item">Selected Works</h4>
           </div>
           <div class="icon-container" @click="mainNavOpen = !mainNavOpen" v-if="!mainNavOpen">
@@ -38,17 +37,32 @@ const scrollIntoView = (id) => {
           </RouterLink>
           <RouterLink to="/project">
             <div class="submenu-item">
-              <h4>Design Project</h4>
+              <h4>Fynder Project</h4>
             </div>
           </RouterLink>
-          <RouterLink to="/development">
+          <RouterLink to="/maptyproject">
             <div class="submenu-item">
-              <h4>Web Development</h4>
+              <h4>Mapty</h4>
+            </div>
+          </RouterLink>
+          <RouterLink to="/piggame">
+            <div class="submenu-item">
+              <h4>Pig Game</h4>
+            </div>
+          </RouterLink>
+          <RouterLink to="/bankistproject">
+            <div class="submenu-item">
+              <h4>Bankist Project</h4>
+            </div>
+          </RouterLink>
+          <RouterLink to="/forkifyproject">
+            <div class="submenu-item">
+              <h4>Forkify Project</h4>
             </div>
           </RouterLink>
         </div>
       </div>
-      <div class="nav-item" @click="scrollIntoView('about-section')">
+      <div class="nav-item" @click="scrollIntoView('intro-section')">
         <div class="nav-item__container">
           <div class="item-container">
             <h4 class="item">About Me</h4>
@@ -62,7 +76,7 @@ const scrollIntoView = (id) => {
           </div>
         </div>
       </div>
-      <div class="nav-item" @click="scrollIntoView('footer-section')">
+      <div class="nav-item" @click="scrollIntoView('career-section')">
         <div class="nav-item__container">
           <div class="item-container">
             <h4 class="item">Contact</h4>

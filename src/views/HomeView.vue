@@ -3,7 +3,6 @@ import HomeSection from '../components/HomeSection.vue'
 import IntroSection from '@/components/IntroSection.vue'
 import ProjectsSection from '../components/ProjectsSection.vue'
 import AboutSection from '../components/AboutSection.vue'
-import DesignerSection from '../components/DesignerSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import CareerSection from '../components/CareerSection.vue'
 </script>
@@ -11,11 +10,10 @@ import CareerSection from '../components/CareerSection.vue'
 <template>
   <main class="view">
     <HomeSection />
-    <IntroSection />
     <ProjectsSection />
+    <IntroSection />
     <AboutSection />
     <SkillsSection />
-    <DesignerSection />
     <CareerSection />
   </main>
 </template>

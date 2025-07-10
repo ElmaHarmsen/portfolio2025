@@ -9,11 +9,10 @@ const scrollIntoView = (id) => {
 </script>
 
 <template>
-  <section class="section">
+  <section class="section" id="home-section">
     <div class="section__content">
-      <!-- align main button with 1/3 of card grid -->
-      <button class="main-button" @click="scrollIntoView('intro-section')">
-        <h3>Click to view portfolio</h3>
+      <button class="main-button" @click="scrollIntoView('projects-section')">
+        <h3>Click to view projects</h3>
       </button>
     </div>
   </section>
@@ -23,22 +22,29 @@ const scrollIntoView = (id) => {
 .section {
   grid-column-start: 4;
   grid-column-end: 14;
-  width: 100%;
+  width: calc(100% + (2 * 2rem));
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: start;
+  padding-top: 0 !important;
 
   &__content {
+    margin: 5rem 0 2rem -2rem;
+    background-image: url('../assets/cover-image.png');
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    margin-top: 4rem;
-    margin-bottom: 10rem;
+    padding: 0 2rem;
+    // width: calc(100% + (2 * 2rem));
     width: 100%;
+    height: 100%;
 
     .main-button {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      align-self: flex-end;
       display: inline-flex;
       justify-content: start;
       column-gap: 2rem;
@@ -50,6 +56,7 @@ const scrollIntoView = (id) => {
       height: 5rem;
       transition: 0.1s ease;
       width: 100%;
+      margin-bottom: 10rem;
 
       .icon {
         width: 1rem;

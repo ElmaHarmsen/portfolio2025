@@ -24,6 +24,26 @@ const router = createRouter({
       name: 'development',
       component: () => import('../views/DevelopmentView.vue'),
     },
+    {
+      path: '/maptyproject',
+      name: 'maptyproject',
+      component: () => import('../views/MaptyView.vue'),
+    },
+    {
+      path: '/piggame',
+      name: 'piggame',
+      component: () => import('../views/PigGameView.vue'),
+    },
+    {
+      path: '/bankistproject',
+      name: 'bankist',
+      component: () => import('../views/BankistView.vue'),
+    },
+    {
+      path: '/forkifyproject',
+      name: 'forkify',
+      component: () => import('../views/ForkifyView.vue'),
+    },
   ],
 })
 
