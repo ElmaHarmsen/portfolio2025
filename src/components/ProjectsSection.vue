@@ -6,105 +6,51 @@ import { RouterLink } from 'vue-router'
   <section class="section" id="projects-section">
     <div class="section__content">
       <RouterLink to="/uidesigns">
-        <div class="project-item">
-          <div class="project-picture ui-designs"></div>
-          <div class="project-description">
-            <div class="container">
-              <img src="../assets/dailyui-icon.jpg" class="logo-project" alt="Mapty logo" />
-              <h1>Daily UI Designs</h1>
-            </div>
-            <div class="elements">
-              <div class="container">
-                <span class="tag blue">UI Design</span>
-                <span class="tag purple">Figma</span>
-              </div>
-            </div>
-          </div>
+        <div class="project-item ui-designs">
+          <img src="../assets/dailyui-icon.jpg" class="logo-project" alt="Mapty logo" />
+        </div>
+        <div class="project-description">
+          <h1>Daily UI Designs</h1>
         </div>
       </RouterLink>
       <RouterLink to="/project">
-        <div class="project-item">
-          <div class="project-picture design-project"></div>
-          <div class="project-description">
-            <div class="container">
-              <img src="../assets/fastfashion-icon.png" class="logo-project" alt="Mapty logo" />
-              <h1>Fynder Design Project</h1>
-            </div>
-            <div class="elements">
-              <div class="container">
-                <span class="tag blue">UI Design</span>
-                <span class="tag black">User Research</span>
-                <span class="tag purple">Figma</span>
-              </div>
-            </div>
-          </div>
+        <div class="project-item design-project">
+          <img src="../assets/fynder-icon.png" class="logo-project" alt="Fynder logo" />
+        </div>
+        <div class="project-description">
+          <h1>Fynder Design Project</h1>
         </div>
       </RouterLink>
       <RouterLink to="/maptyproject">
-        <div class="project-item">
-          <div class="project-picture mapty-project"></div>
-          <div class="project-description">
-            <div class="container">
-              <img src="../assets/mapty-icon.png" class="logo-project" alt="Mapty logo" />
-              <h1>Mapty Project</h1>
-            </div>
-            <div class="elements">
-              <div class="container">
-                <span class="tag gray">JavaScript</span>
-                <span class="tag gray">OOP</span>
-                <span class="tag gray">Geolocation</span>
-              </div>
-            </div>
-          </div>
+        <div class="project-item mapty-project">
+          <img src="../assets/mapty-icon.png" class="logo-project" alt="Mapty logo" />
+        </div>
+        <div class="project-description">
+          <h1>Mapty Project</h1>
         </div>
       </RouterLink>
       <RouterLink to="/piggame">
-        <div class="project-item">
-          <div class="project-picture pig-game"></div>
-          <div class="project-description">
-            <div class="container">
-              <h1>Pig Game</h1>
-            </div>
-            <div class="elements">
-              <div class="container">
-                <span class="tag gray">JavaScript</span>
-              </div>
-            </div>
-          </div>
+        <div class="project-item pig-game">
+          <img src="../assets/piggame-icon.png" class="logo-project not-round" alt="Piggame logo" />
+        </div>
+        <div class="project-description">
+          <h1>Pig Game</h1>
         </div>
       </RouterLink>
       <RouterLink to="/forkifyprojecy">
-        <div class="project-item">
-          <div class="project-picture forkify-project"></div>
-          <div class="project-description">
-            <div class="container">
-              <img src="../assets/forkify-icon.png" class="logo-project" alt="Forkify logo" />
-              <h1>Forkify Project</h1>
-            </div>
-            <div class="elements">
-              <div class="container">
-                <span class="tag gray">JavaScript</span>
-                <span class="tag gray">MVC Architecture</span>
-                <span class="tag gray">Async JavaScript</span>
-              </div>
-            </div>
-          </div>
+        <div class="project-item forkify-project">
+          <img src="../assets/forkify-icon.png" class="logo-project" alt="Forkify logo" />
+        </div>
+        <div class="project-description">
+          <h1>Forkify Project</h1>
         </div>
       </RouterLink>
       <RouterLink to="/bankistproject">
-        <div class="project-item">
-          <div class="project-picture bankist-project"></div>
-          <div class="project-description">
-            <div class="container">
-              <img src="../assets/bankist-icon.png" class="logo-project" alt="Bankist logo" />
-              <h1>Bankist Project</h1>
-            </div>
-            <div class="elements">
-              <div class="container">
-                <span class="tag gray">JavaScript</span>
-              </div>
-            </div>
-          </div>
+        <div class="project-item bankist-project">
+          <img src="../assets/bankist-icon.png" class="logo-project" alt="Bankist logo" />
+        </div>
+        <div class="project-description">
+          <h1>Bankist Project</h1>
         </div>
       </RouterLink>
     </div>
@@ -127,11 +73,19 @@ import { RouterLink } from 'vue-router'
       display: flex;
       flex-flow: column nowrap;
       border: 1px solid var(--clr-gray-40);
-      aspect-ratio: 3 / 4;
-    }
-
-    .project-picture {
       aspect-ratio: 1 / 1;
+      transition: all 0.2s ease;
+
+      .logo-project {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin: 1rem;
+      }
+
+      .not-round {
+        border-radius: 0;
+      }
     }
 
     .project-description {
@@ -139,92 +93,17 @@ import { RouterLink } from 'vue-router'
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
-      padding: 1rem;
       row-gap: 1rem;
-      background-color: var(--clr-white);
-      border-top: 1px solid var(--clr-gray-40);
-
-      .logo-project {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        margin-right: 0.5rem;
-      }
 
       h1 {
+        width: 100%;
+        padding: 1rem;
         color: var(--clr-gray-100);
-      }
-
-      .elements,
-      .container {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: end;
-
-        .tag {
-          display: flex;
-          flex-flow: row nowrap;
-          align-items: center;
-          height: 1.5rem;
-          font-size: 0.75rem;
-          padding: 0.25rem 0.5rem;
-          margin-right: 0.25rem;
-          border-radius: 1rem;
-        }
-
-        .black {
-          background-color: var(--clr-gray-80);
-          color: var(--clr-white);
-        }
-
-        .purple {
-          background-color: var(--clr-purple-20);
-          color: var(--clr-purple-70);
-        }
-
-        .gray {
-          background-color: var(--clr-gray-20);
-          color: var(--clr-gray-100);
-        }
-
-        .blue {
-          background-color: var(--clr-blue-20);
-          color: var(--clr-blue-70);
-        }
-
-        .icon-default,
-        .icon-hover {
-          width: 2rem;
-          height: 2rem;
-        }
-
-        .icon-hover {
-          display: none;
-        }
+        background-color: var(--clr-white);
+        border: 1px solid var(--clr-gray-40);
+        border-top: none;
       }
     }
-
-    // .ui-designs:hover,
-    // .project:hover,
-    // .web-dev:hover,
-    // .mapty-project:hover {
-    //   background-image: none;
-    //   background-color: rgba(255, 255, 255, 0.1);
-    //   backdrop-filter: blur(2px);
-
-    //   h1 {
-    //     color: var(--clr-gray-100);
-    //   }
-
-    //   .elements {
-    //     .icon-default {
-    //       display: none;
-    //     }
-    //     .icon-hover {
-    //       display: block;
-    //     }
-    //   }
-    // }
 
     .ui-designs {
       background-image: url('../assets/daily-ui.png');
@@ -232,7 +111,6 @@ import { RouterLink } from 'vue-router'
     }
 
     .design-project {
-      // background-image: url('../assets/photos/project-1/navigation-map.png');
       background-image: url('../assets/photos/project-1/moscow.png');
       background-size: cover;
     }
