@@ -37,7 +37,7 @@ import { RouterLink } from 'vue-router'
           <h1>Pig Game</h1>
         </div>
       </RouterLink>
-      <RouterLink to="/forkifyprojecy">
+      <RouterLink to="/forkifyproject">
         <div class="project-item forkify-project">
           <img src="../assets/forkify-icon.png" class="logo-project" alt="Forkify logo" />
         </div>

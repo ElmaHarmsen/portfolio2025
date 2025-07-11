@@ -1,7 +1,13 @@
+<script setup>
+import ForkifyHeader from '@/components/ForkifyHeader.vue'
+import ForkifyNavigation from '@/components/ForkifyNavigation.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main class="view">
+    <ForkifyHeader />
+    <ForkifyNavigation />
+  </main>
 </template>
 
 <style>

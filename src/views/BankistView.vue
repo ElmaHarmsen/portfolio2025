@@ -1,7 +1,13 @@
+<script setup>
+import BankistHeader from '@/components/BankistHeader.vue'
+import BankistNavigation from '@/components/BankistNavigation.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main class="view">
+    <BankistHeader />
+    <BankistNavigation />
+  </main>
 </template>
 
 <style>

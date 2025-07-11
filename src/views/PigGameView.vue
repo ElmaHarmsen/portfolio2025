@@ -1,7 +1,13 @@
+<script setup>
+import PigGameHeader from '@/components/PigGameHeader.vue'
+import PigGameNavigation from '@/components/PigGameNavigation.vue'
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main class="view">
+    <PigGameHeader />
+    <PigGameNavigation />
+  </main>
 </template>
 
 <style>
