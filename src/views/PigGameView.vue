@@ -11,11 +11,14 @@ import PigGameNavigation from '@/components/PigGameNavigation.vue'
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+.view {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 0 2rem;
+  width: 100%;
+
+  .section {
+    padding-top: 10rem;
   }
 }
 </style>

@@ -32,7 +32,6 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
 
     .picture {
       background-color: var(--clr-white);

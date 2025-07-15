@@ -3,65 +3,35 @@
 <template>
   <section class="section" id="skills-section">
     <div class="section__content">
-      <div class="skill-item first-item">
-        <img src="../assets/interaction-design.png" class="skill-image" alt="" />
-        <div class="content">
-          <h3>UI Design</h3>
-          <p>
-            Something here <br />
-            and continues here
-          </p>
-        </div>
+      <div class="skill-item bg-blue-1">
+        <h1>UI Design</h1>
+        <img src="../assets/icons/ui-design.svg" class="skill-item__icon" alt="" />
+        <span></span>
       </div>
-      <div class="skill-item second-item">
-        <img src="../assets/interaction-design.png" class="skill-image" alt="" />
-        <div class="content">
-          <h3>Interaction Design</h3>
-          <p>
-            Something here <br />
-            and continues here
-          </p>
-        </div>
+      <div class="skill-item bg-blue-2">
+        <h1>Interaction Design</h1>
+        <img src="../assets/icons/interaction.svg" class="skill-item__icon" alt="" />
+        <span></span>
       </div>
-      <div class="skill-item third-item">
-        <img src="../assets/interaction-design.png" class="skill-image" alt="" />
-        <div class="content">
-          <h3>Frontend Development</h3>
-          <p>
-            Something here <br />
-            and continues here
-          </p>
-        </div>
+      <div class="skill-item bg-blue-3">
+        <h1>Frontend Development</h1>
+        <img src="../assets/icons/code.svg" class="skill-item__icon" alt="" />
+        <span></span>
       </div>
-      <div class="skill-item first-item">
-        <img src="../assets/design-enthusiast.png" class="skill-image" alt="" />
-        <div class="content">
-          <h3>User Research</h3>
-          <p>
-            Something here <br />
-            and continues here
-          </p>
-        </div>
+      <div class="skill-item bg-purple-1">
+        <h1>User Centred Design</h1>
+        <img src="../assets/icons/users.svg" class="skill-item__icon" alt="" />
+        <span></span>
       </div>
-      <div class="skill-item second-item">
-        <img src="../assets/design-enthusiast.png" class="skill-image" alt="" />
-        <div class="content">
-          <h3>Usability Testing</h3>
-          <p>
-            Something here <br />
-            and continues here
-          </p>
-        </div>
+      <div class="skill-item bg-purple-2">
+        <h1>User Testing</h1>
+        <img src="../assets/icons/user-testing.svg" class="skill-item__icon" alt="" />
+        <span></span>
       </div>
-      <div class="skill-item third-item">
-        <img src="../assets/design-enthusiast.png" class="skill-image" alt="" />
-        <div class="content">
-          <h3>User-Centred Design</h3>
-          <p>
-            Something here <br />
-            and continues here
-          </p>
-        </div>
+      <div class="skill-item bg-purple-3">
+        <h1>User Research</h1>
+        <img src="../assets/icons/user-research.svg" class="skill-item__icon" alt="" />
+        <span></span>
       </div>
     </div>
   </section>
@@ -76,24 +46,20 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
     margin-bottom: calc(10rem - (3rem - 1px));
 
     .skill-item {
       display: flex;
       flex-flow: column nowrap;
-      background-color: var(--clr-white);
+      justify-content: space-between;
       backdrop-filter: blur(2px);
-      border: 1px solid var(--clr-gray-40);
-      aspect-ratio: 3 / 4;
-      transition: 0.2s ease;
-      border-radius: 1rem;
+      aspect-ratio: 1 / 1;
+      padding: 1rem;
 
-      .skill-image {
-        aspect-ratio: 1 /1;
-        width: 100%;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
+      &__icon {
+        width: 45%;
+        color: var(--clr-white);
+        align-self: center;
       }
 
       .content {
@@ -102,10 +68,33 @@
       }
     }
 
-    .skill-item:hover {
-      transform: scale(1.01) rotate(0.25deg);
-      box-shadow: 0 0 10px var(--clr-gray-20);
+    .bg-blue-1 {
+      background-color: #b5b1b2;
     }
+
+    .bg-blue-2 {
+      background-color: #ada9b7;
+    }
+
+    .bg-blue-3 {
+      background-color: #a9afd1;
+    }
+
+    .bg-purple-1 {
+      background-color: #bbdb9b;
+    }
+
+    .bg-purple-2 {
+      background-color: #abc4a1;
+    }
+
+    .bg-purple-3 {
+      background-color: #9db4ab;
+    }
+    // .skill-item:hover {
+    //   transform: scale(1.01) rotate(0.25deg);
+    //   box-shadow: 0 0 10px var(--clr-gray-20);
+    // }
   }
 }
 </style>

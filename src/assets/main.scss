@@ -37,6 +37,25 @@ p {
   font-size: 0.875rem;
 }
 
+.main-button {
+  display: inline-flex;
+  justify-content: start;
+  column-gap: 2rem;
+  background-color: var(--clr-purple-60);
+  color: var(--clr-white);
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  height: 5rem;
+  transition: 0.1s ease;
+  width: 100%;
+}
+
+.main-button:hover {
+  cursor: pointer;
+  background-color: var(--clr-purple-70);
+}
+
 // @media (min-width: 1024px) {
 //   #app {
 //   }

@@ -9,7 +9,7 @@ const scrollIntoView = (id) => {
 </script>
 
 <template>
-  <section class="section-wide">
+  <section class="section-wide" id="mapty-project">
     <div class="container">
       <div class="container__content">
         <div class="page-intro">

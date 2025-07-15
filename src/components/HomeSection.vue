@@ -33,11 +33,11 @@ const scrollIntoView = (id) => {
   &__content {
     margin: 5rem 0 2rem -2rem;
     background-image: url('../assets/cover-image.png');
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     padding: 0 2rem;
-    // width: calc(100% + (2 * 2rem));
     width: 100%;
     height: 100%;
 
@@ -45,29 +45,7 @@ const scrollIntoView = (id) => {
       grid-column-start: 1;
       grid-column-end: 2;
       align-self: flex-end;
-      display: inline-flex;
-      justify-content: start;
-      column-gap: 2rem;
-      background-color: var(--clr-purple-60);
-      color: var(--clr-white);
-      font-size: 1rem;
-      padding: 1rem;
-      border: none;
-      height: 5rem;
-      transition: 0.1s ease;
-      width: 100%;
       margin-bottom: 10rem;
-
-      .icon {
-        width: 1rem;
-        height: 1rem;
-        color: (var(--clr-white));
-      }
-    }
-
-    .main-button:hover {
-      cursor: pointer;
-      background-color: var(--clr-purple-70);
     }
   }
 }
