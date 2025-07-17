@@ -26,12 +26,9 @@
 .section-wide {
   grid-column-start: 1;
   grid-column-end: 17;
-  padding-top: calc(3rem - 1px);
 
   .container {
-    background-color: var(--clr-purple-10);
-    border-top: 1px solid var(--clr-gray-20);
-    border-bottom: 1px solid var(--clr-gray-20);
+    background-color: var(--color-background);
     width: 100%;
 
     &__content {
@@ -45,7 +42,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
-        padding: 4rem 0;
+        padding: 10rem 0 10rem 0;
 
         .text-container {
           grid-column-start: 2;

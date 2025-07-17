@@ -1,17 +1,10 @@
-<script setup>
-import { RouterLink } from 'vue-router'
-</script>
+<script setup></script>
 
 <template>
   <section class="section">
     <div class="container buttons" id="footer-section">
       <!-- needs to be dynamic based on the current page -->
-      <RouterLink to="/uidesigns" class="button">
-        <div>
-          <h4>Up next</h4>
-          <h3>Daily UI Designs</h3>
-        </div>
-      </RouterLink>
+      <div></div>
       <a href="https://www.linkedin.com/in/elma-harmsen/" class="button" target="_blank">
         <div>
           <h4>Contact me</h4>
@@ -28,13 +21,14 @@ import { RouterLink } from 'vue-router'
           ><h4>github.com/ElmaHarmsen</h4></a
         >
         <a
-          href="https://drive.google.com/file/d/1Lvo313Ju4-CGauQBNB02DeypoxZ1TM1f/view?usp=sharing"
+          href="https://drive.google.com/file/d/1FmRRrdNe6owK4m1elNwwhpEkGN6vlfcW/view?usp=sharing"
           class="link-element"
           target="_blank"
           ><h4>Curriculum Vitae</h4></a
         >
+        <a href="" class="link-element"><h4>contact.elma@tuta.com</h4></a>
       </div>
-      <h4 class="text-element">Last updated 2 March 2025</h4>
+      <h4 class="text-element">Last updated 17 July 2025</h4>
     </div>
   </section>
 </template>

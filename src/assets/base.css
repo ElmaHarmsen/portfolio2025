@@ -13,6 +13,7 @@
   --clr-gray-40: #a8a8a8;
   --clr-gray-30: #c6c6c6;
   --clr-gray-20: #e0e0e0;
+  --clr-gray-10: #f7f3f2;
 
   --clr-purple-70: #6929c4;
   --clr-purple-60: #8a3ffc;
@@ -21,6 +22,7 @@
 
   --clr-blue-70: #0043ce;
   --clr-blue-20: #d0e2ff;
+  --clr-blue-10: #edf5ff;
 
   --clr-text-light: var(--clr-gray-100);
   --clr-text-dark: var(--clr-white);
@@ -71,7 +73,12 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: radial-gradient(var(--clr-gray-30) 1px, transparent 0);
+  background-size: 70px 70px;
+  background-image:
+    linear-gradient(to right, var(--clr-blue-20) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--clr-blue-20) 1px, transparent 1px);
   background-attachment: fixed;
-  background-size: 1.25rem 1.25rem;
+  /* background-image: radial-gradient(var(--clr-gray-20) 1px, transparent 0);
+  background-attachment: fixed;
+  background-size: 1.25rem 1.25rem; */
 }

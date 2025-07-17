@@ -5,52 +5,80 @@ import { RouterLink } from 'vue-router'
 <template>
   <section class="section" id="projects-section">
     <div class="section__content">
-      <RouterLink to="/uidesigns">
-        <div class="project-item ui-designs">
-          <img src="../assets/dailyui-icon.jpg" class="logo-project" alt="Mapty logo" />
-        </div>
-        <div class="project-description">
-          <h1>Daily UI Designs</h1>
-        </div>
-      </RouterLink>
       <RouterLink to="/project">
-        <div class="project-item design-project">
-          <img src="../assets/fynder-icon.png" class="logo-project" alt="Fynder logo" />
-        </div>
-        <div class="project-description">
-          <h1>Fynder Design Project</h1>
+        <div class="project-item">
+          <img src="../assets/photos/project-1/moscow.png" class="project-item__img" alt="" />
+          <div class="project-item__description">
+            <h1>Fynder Design Project</h1>
+            <div class="container">
+              <h4>November 2022</h4>
+              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+            </div>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink to="/maptyproject">
-        <div class="project-item mapty-project">
-          <img src="../assets/mapty-icon.png" class="logo-project" alt="Mapty logo" />
-        </div>
-        <div class="project-description">
-          <h1>Mapty Project</h1>
+      <RouterLink to="/uidesigns">
+        <div class="project-item">
+          <img
+            src="../assets/photos/dailyui-coverimage-copy.png"
+            class="project-item__img"
+            alt=""
+          />
+          <div class="project-item__description">
+            <h1>Daily UI Designs</h1>
+            <div class="container">
+              <h4>June 2024</h4>
+              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+            </div>
+          </div>
         </div>
       </RouterLink>
       <RouterLink to="/piggame">
-        <div class="project-item pig-game">
-          <img src="../assets/piggame-icon.png" class="logo-project not-round" alt="Piggame logo" />
-        </div>
-        <div class="project-description">
-          <h1>Pig Game</h1>
+        <div class="project-item">
+          <img src="../assets/photos/piggame-coverimage.png" class="project-item__img" alt="" />
+          <div class="project-item__description">
+            <h1>PigGame Project</h1>
+            <div class="container">
+              <h4>March 2025</h4>
+              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+            </div>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink to="/forkifyproject">
-        <div class="project-item forkify-project">
-          <img src="../assets/forkify-icon.png" class="logo-project" alt="Forkify logo" />
-        </div>
-        <div class="project-description">
-          <h1>Forkify Project</h1>
+      <RouterLink to="/maptyproject">
+        <div class="project-item">
+          <img src="../assets/photos/mapty-coverimage.png" class="project-item__img" alt="" />
+          <div class="project-item__description">
+            <h1>Mapty Project</h1>
+            <div class="container">
+              <h4>June 2025</h4>
+              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+            </div>
+          </div>
         </div>
       </RouterLink>
       <RouterLink to="/bankistproject">
-        <div class="project-item bankist-project">
-          <img src="../assets/bankist-icon.png" class="logo-project" alt="Bankist logo" />
+        <div class="project-item">
+          <img src="../assets/bankist-business.png" class="project-item__img" alt="" />
+          <div class="project-item__description">
+            <h1>Bankist Project</h1>
+            <div class="container">
+              <h4>June 2025</h4>
+              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+            </div>
+          </div>
         </div>
-        <div class="project-description">
-          <h1>Bankist Project</h1>
+      </RouterLink>
+      <RouterLink to="/forkifyproject">
+        <div class="project-item">
+          <img src="../assets/photos/forkify-coverimage.png" class="project-item__img" alt="" />
+          <div class="project-item__description">
+            <h1>Forkify Project</h1>
+            <div class="container">
+              <h4>July 2025</h4>
+              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+            </div>
+          </div>
         </div>
       </RouterLink>
     </div>
@@ -62,46 +90,52 @@ import { RouterLink } from 'vue-router'
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
+  padding-bottom: 10rem;
 
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    margin-bottom: calc(10rem - (3rem - 1px));
+    margin: 0 -1rem;
 
     .project-item {
-      display: flex;
-      flex-flow: column nowrap;
-      border: 1px solid var(--clr-gray-40);
+      display: grid;
+      grid-template-rows: repeat(2, 50%);
       aspect-ratio: 1 / 1;
       transition: all 0.2s ease;
 
-      .logo-project {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        margin: 1rem;
-      }
-
-      .not-round {
-        border-radius: 0;
-      }
-    }
-
-    .project-description {
-      flex-grow: 1;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      row-gap: 1rem;
-
-      h1 {
+      &__img {
         width: 100%;
-        padding: 1rem;
-        color: var(--clr-gray-100);
+      }
+
+      &__description {
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        row-gap: 1rem;
         background-color: var(--clr-white);
-        border: 1px solid var(--clr-gray-40);
-        border-top: none;
+        padding: 1rem;
+
+        h1 {
+          color: var(--clr-gray-100);
+        }
+
+        .container {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: center;
+
+          h4 {
+            color: var(--clr-gray-70);
+          }
+
+          .icon {
+            width: 28px;
+            height: 28px;
+          }
+        }
       }
     }
 

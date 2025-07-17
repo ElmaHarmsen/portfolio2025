@@ -13,14 +13,17 @@ const scrollIntoView = (id) => {
 <template>
   <section class="navigation" id="main-nav">
     <div class="navigation__content">
-      <RouterLink to="/" @click="scrollIntoView('home-section')">
-        <h2 class="name">Elma Harmsen</h2>
-      </RouterLink>
-      <span class="divider"></span>
+      <div class="nav-item__container">
+        <RouterLink to="/" @click="scrollIntoView('home-section')">
+          <div class="item-container">
+            <h4 class="item">Home</h4>
+          </div>
+        </RouterLink>
+      </div>
       <div class="nav-item">
         <div class="nav-item__container">
           <div class="item-container" @click="scrollIntoView('projects-section')">
-            <h4 class="item">Selected Works</h4>
+            <h4 class="item">Selected Projects</h4>
           </div>
           <div class="icon-container" @click="mainNavOpen = !mainNavOpen" v-if="!mainNavOpen">
             <img src="../assets/icons/chevron--down.svg" class="icon" alt="chevron down" />
@@ -98,14 +101,15 @@ const scrollIntoView = (id) => {
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: var(--clr-white);
-  border-bottom: 1px solid var(--clr-divider-light);
+  // background-color: var(--clr-white);
+  // border-bottom: 1px solid var(--clr-divider-light);
 
   &__content {
     grid-column-start: 4;
     grid-column-end: 14;
     display: flex;
     flex-flow: row nowrap;
+    column-gap: 2rem;
     align-items: center;
 
     .name {
@@ -134,7 +138,7 @@ const scrollIntoView = (id) => {
         column-gap: 0.25rem;
         align-items: center;
         height: 100%;
-        padding: 0 1rem;
+        // padding: 0 1rem;
         transition: 0.1s ease;
 
         .item-container {
@@ -164,7 +168,7 @@ const scrollIntoView = (id) => {
 
       &__container:hover {
         cursor: pointer;
-        background-color: var(--clr-gray-50);
+        text-decoration: underline solid var(--clr-gray-100) 1.5px;
 
         .item {
           color: var(--clr-gray-100);
