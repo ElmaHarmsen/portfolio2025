@@ -7,10 +7,21 @@ import { RouterLink } from 'vue-router'
     <div class="section__content">
       <RouterLink to="/project">
         <div class="project-item">
-          <img src="../assets/photos/project-1/moscow.png" class="project-item__img" alt="" />
+          <img
+            src="../assets/photos/project-1/fynder-coverimage.png"
+            class="project-item__img"
+            alt=""
+          />
           <div class="project-item__description">
-            <h1>Fynder Design Project</h1>
-            <div class="container">
+            <div class="container column">
+              <h1>Fynder Design Project</h1>
+              <h4>
+                A university project with the objective to reduce the negative environmental impact
+                of modern day’s consumer culture in the fashion industry by targeting the circular
+                economy of fashion use in the Uppsala student community.
+              </h4>
+            </div>
+            <div class="container row">
               <h4>November 2022</h4>
               <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
             </div>
@@ -25,8 +36,14 @@ import { RouterLink } from 'vue-router'
             alt=""
           />
           <div class="project-item__description">
-            <h1>Daily UI Designs</h1>
-            <div class="container">
+            <div class="container column">
+              <h1>Daily UI Designs</h1>
+              <h4>
+                A selection of UI designs I created during the 100 day Daily UI Challenge. It's
+                still a work-in-progress so this page will be updated continuously.
+              </h4>
+            </div>
+            <div class="container row">
               <h4>June 2024</h4>
               <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
             </div>
@@ -37,8 +54,11 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/photos/piggame-coverimage.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <h1>PigGame Project</h1>
-            <div class="container">
+            <div class="container column">
+              <h1>Pig Game Project</h1>
+              <h4>Project description.</h4>
+            </div>
+            <div class="container row">
               <h4>March 2025</h4>
               <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
             </div>
@@ -49,8 +69,11 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/photos/mapty-coverimage.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <h1>Mapty Project</h1>
-            <div class="container">
+            <div class="container column">
+              <h1>Mapty Project</h1>
+              <h4>Project description.</h4>
+            </div>
+            <div class="container row">
               <h4>June 2025</h4>
               <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
             </div>
@@ -61,8 +84,11 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/bankist-business.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <h1>Bankist Project</h1>
-            <div class="container">
+            <div class="container column">
+              <h1>Bankist Project</h1>
+              <h4>Project description.</h4>
+            </div>
+            <div class="container row">
               <h4>June 2025</h4>
               <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
             </div>
@@ -73,8 +99,11 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/photos/forkify-coverimage.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <h1>Forkify Project</h1>
-            <div class="container">
+            <div class="container column">
+              <h1>Forkify Project</h1>
+              <h4>Project description.</h4>
+            </div>
+            <div class="container row">
               <h4>July 2025</h4>
               <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
             </div>
@@ -91,6 +120,9 @@ import { RouterLink } from 'vue-router'
   grid-column-end: 14;
   width: 100%;
   padding-bottom: 10rem;
+  // background-image: radial-gradient(var(--clr-gray-40) 1px, transparent 0);
+  // background-attachment: fixed;
+  // background-size: 1.25rem 1.25rem;
 
   &__content {
     display: grid;
@@ -101,11 +133,14 @@ import { RouterLink } from 'vue-router'
     .project-item {
       display: grid;
       grid-template-rows: repeat(2, 50%);
-      aspect-ratio: 1 / 1;
       transition: all 0.2s ease;
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
       &__img {
         width: 100%;
+        aspect-ratio: 16 / 9;
       }
 
       &__description {
@@ -116,6 +151,7 @@ import { RouterLink } from 'vue-router'
         row-gap: 1rem;
         background-color: var(--clr-white);
         padding: 1rem;
+        aspect-ratio: 16 /9;
 
         h1 {
           color: var(--clr-gray-100);
@@ -123,9 +159,7 @@ import { RouterLink } from 'vue-router'
 
         .container {
           display: flex;
-          flex-flow: row nowrap;
           justify-content: space-between;
-          align-items: center;
 
           h4 {
             color: var(--clr-gray-70);
@@ -134,7 +168,17 @@ import { RouterLink } from 'vue-router'
           .icon {
             width: 28px;
             height: 28px;
+            transform: rotate(-45deg);
           }
+        }
+
+        .column {
+          flex-flow: column nowrap;
+          row-gap: 1rem;
+        }
+        .row {
+          flex-flow: row nowrap;
+          align-items: center;
         }
       }
     }

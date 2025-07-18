@@ -2,16 +2,6 @@
 
 <template>
   <section class="section">
-    <div class="container buttons" id="footer-section">
-      <!-- needs to be dynamic based on the current page -->
-      <div></div>
-      <a href="https://www.linkedin.com/in/elma-harmsen/" class="button" target="_blank">
-        <div>
-          <h4>Contact me</h4>
-          <h3>Reach out on LinkedIn</h3>
-        </div>
-      </a>
-    </div>
     <div class="container footer">
       <div class="container__links">
         <a href="https://www.linkedin.com/in/elma-harmsen/" class="link-element" target="_blank"
@@ -28,7 +18,7 @@
         >
         <a href="" class="link-element"><h4>contact.elma@tuta.com</h4></a>
       </div>
-      <h4 class="text-element">Last updated 17 July 2025</h4>
+      <h4 class="text-element">Last updated 18 July 2025</h4>
     </div>
   </section>
 </template>
@@ -72,32 +62,8 @@
     }
   }
 
-  .buttons {
-    background-color: var(--clr-gray-100);
-    height: 128px;
-    padding: 0 2rem;
-
-    .button {
-      display: flex;
-      flex-flow: column nowrap;
-      row-gap: 0.25rem;
-      padding: 1rem;
-      height: 100%;
-      transition: 0.1s ease;
-    }
-
-    .button:hover {
-      cursor: pointer;
-      background-color: var(--clr-gray-90);
-    }
-
-    h3 {
-      color: var(--clr-white);
-    }
-  }
-
   .footer {
-    background-color: var(--clr-black);
+    background-color: var(--clr-bright);
     height: 370px;
     padding: 6rem 0 4rem 0;
     gap: 32px;

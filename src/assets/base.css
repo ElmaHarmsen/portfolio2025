@@ -24,6 +24,9 @@
   --clr-blue-20: #d0e2ff;
   --clr-blue-10: #edf5ff;
 
+  --clr-light: #e8edec; /*#f7f2f2*/
+  --clr-bright: #3c534a; /*#f72f2f*/
+
   --clr-text-light: var(--clr-gray-100);
   --clr-text-dark: var(--clr-white);
 
@@ -63,7 +66,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background: var(--clr-light);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -73,11 +76,13 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size: 70px 70px;
+  overflow-x: hidden;
+
+  /* background-size: 70px 70px;
   background-image:
     linear-gradient(to right, var(--clr-blue-20) 1px, transparent 1px),
     linear-gradient(to bottom, var(--clr-blue-20) 1px, transparent 1px);
-  background-attachment: fixed;
+  background-attachment: fixed; */
   /* background-image: radial-gradient(var(--clr-gray-20) 1px, transparent 0);
   background-attachment: fixed;
   background-size: 1.25rem 1.25rem; */
