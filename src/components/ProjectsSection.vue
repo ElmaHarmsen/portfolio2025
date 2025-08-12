@@ -56,7 +56,11 @@ import { RouterLink } from 'vue-router'
           <div class="project-item__description">
             <div class="container column">
               <h1>Pig Game Project</h1>
-              <h4>Project description.</h4>
+              <h4>
+                A small coding project as part of The Complete JavaScript Course 2025. It's a game
+                of strategy and rolling dice where two players compete to reach 100 points. Holding
+                will keep your current score safe, but rolling a one will erase it.
+              </h4>
             </div>
             <div class="container row">
               <h4>March 2025</h4>
@@ -71,7 +75,11 @@ import { RouterLink } from 'vue-router'
           <div class="project-item__description">
             <div class="container column">
               <h1>Mapty Project</h1>
-              <h4>Project description.</h4>
+              <h4>
+                The first big project in The Complete JavaScript Course 2025. It is based on Object
+                Oriented Programming and includes geolocation as well as external libraries such as
+                Leaflet.
+              </h4>
             </div>
             <div class="container row">
               <h4>June 2025</h4>
@@ -86,7 +94,12 @@ import { RouterLink } from 'vue-router'
           <div class="project-item__description">
             <div class="container column">
               <h1>Bankist Project</h1>
-              <h4>Project description.</h4>
+              <h4>
+                Also part of The Complete JavaScript Course 2025, this project consists of both a
+                website and a minimalist banking application. This project is all about arrays and
+                it uses common array methods such as maps and sets, filter and reduce, and
+                findIndex.
+              </h4>
             </div>
             <div class="container row">
               <h4>June 2025</h4>
@@ -101,7 +114,11 @@ import { RouterLink } from 'vue-router'
           <div class="project-item__description">
             <div class="container column">
               <h1>Forkify Project</h1>
-              <h4>Project description.</h4>
+              <h4>
+                A modern JavaScript application from the final project of The Complete JavaScript
+                Course 2025 using the Model View Controller architecture. It includes features such
+                as search, pagination and bookmarks, and works with localstorage.
+              </h4>
             </div>
             <div class="container row">
               <h4>July 2025</h4>

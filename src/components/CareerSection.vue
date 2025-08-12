@@ -4,15 +4,22 @@
   <section class="section-wide" id="career-section">
     <div class="container">
       <div class="inside-container">
+        <!-- <div class="blobs">
+          <img src="../assets/blob-blue.svg" class="blobs__blue" alt="Blob" />
+          <img src="../assets/blob-yellow.svg" class="blobs__yellow" alt="Blob" />
+        </div> -->
         <h3 class="text-container">
-          I am currently pursuing an inspiring design and development career in the nordics. I have
-          previously worked with User Interface Design as well as Web Development, and I have just
-          recently completed a master’s degree in Human-Computer Interaction at the Uppsala
-          University. I would like to continue working with User Interface Design and Interaction
-          Design, possibly expanding the scope to User Research and Usability Testing, and I am open
-          to Frontend Development as well. In my next employment I am looking for companies offering
-          full-time and on-site or hybrid positions in a collaborative and professional work
-          environment. If I have captured your interest I would be delighted to hear from you.
+          Starting from September this year, I will be taking a full-time language course in
+          Swedish. I believe that speaking the local language where you live and work will benefit
+          not only the social aspect of life, but also strengthens my position as an internaltional
+          professional in the job market. Meanwhile I am still actively looking and applying for a
+          position as interaction designer or frontend developer within the Swedish creative and IT
+          sector, and I will be full-time available from January next year. I am truly excited to
+          continue my work within design and development here in Sweden, and I look forward to
+          further expand my knowledge and skillset in my next position. <br />
+          <br />
+          If you are interested to hear more or have something to share, please reach out either
+          through LinkedIn or via my email.
         </h3>
       </div>
     </div>
@@ -39,6 +46,14 @@
       gap: 32px;
       padding: 10rem 0;
       margin: 0 -1rem;
+
+      .blobs {
+        &__yellow {
+          position: relative;
+          z-index: 2;
+          transform: translateY(-100%);
+        }
+      }
 
       .text-container {
         grid-column-start: 2;

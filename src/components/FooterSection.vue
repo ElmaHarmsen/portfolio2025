@@ -18,7 +18,7 @@
         >
         <a href="" class="link-element"><h4>contact.elma@tuta.com</h4></a>
       </div>
-      <h4 class="text-element">Last updated 18 July 2025</h4>
+      <h4 class="text-element">Last updated 11 August 2025</h4>
     </div>
   </section>
 </template>
@@ -63,7 +63,7 @@
   }
 
   .footer {
-    background-color: var(--clr-bright);
+    background-color: var(--clr-green);
     height: 370px;
     padding: 6rem 0 4rem 0;
     gap: 32px;

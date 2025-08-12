@@ -4,6 +4,7 @@
   <section class="section-wide" id="intro-section">
     <div class="container">
       <div class="inside-container">
+        <img src="../assets/me.jpg" class="picture-me" alt="" />
         <h3 class="text-container">
           Hi. My name is Elma Harmsen and I am an interaction designer and frontend developer based
           in Sweden. My interest in design and technology has inspired me to become a UI and
@@ -24,28 +25,32 @@
             </h3>
           </div>
           <div class="item">
-            <h4 class="item__title">Job roles</h4>
+            <h4 class="item__title">Previous job roles</h4>
             <h3 class="item__description">
               Web Developer <br />
               User Interface Designer <br />
             </h3>
           </div>
-        </div>
-        <div class="items">
+          <div class="item">
+            <h4 class="item__title">Languages</h4>
+            <h3 class="item__description">Dutch, English, Swedish</h3>
+          </div>
           <div class="item">
             <h4 class="item__title">Location</h4>
             <h3 class="item__description">
-              Stockholm, <br />
+              Stockholm, Uppsala <br />
               Sweden
             </h3>
           </div>
           <div class="item">
             <h4 class="item__title">Experience</h4>
-            <h3 class="item__description">2+ years</h3>
+            <h3 class="item__description">1,5+ years</h3>
           </div>
         </div>
         <div class="contact">
-          <h4 class="link-element">contact.elma@tuta.com</h4>
+          <a href="mailto:contact.elma@tuta.com"
+            ><h4 class="link-element">contact.elma@tuta.com</h4></a
+          >
         </div>
       </div>
     </div>
@@ -73,10 +78,15 @@
       padding: 10rem 0 10rem 0;
       margin: 0 -1rem;
 
+      .picture-me {
+        width: 100%;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+
       .text-container {
         grid-column-start: 2;
         grid-column-end: 3;
-
         .bold {
           font-family: 'IBMPlexSans-SemiBold';
         }
@@ -86,8 +96,8 @@
         grid-column-start: 2;
         grid-column-end: 3;
         display: flex;
-        flex-flow: row nowrap;
-        column-gap: 2rem;
+        flex-flow: column nowrap;
+        row-gap: 1rem;
 
         .item {
           display: flex;
