@@ -31,15 +31,15 @@ const scrollIntoView = (id) => {
           <div class="nav-items">
             <div class="nav-item" @click="scrollIntoView('musicplayer-ui')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h3>Music Player UI</h3>
+              <h1>Music Player UI</h1>
             </div>
             <div class="nav-item" @click="scrollIntoView('purchase-ui')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h3>Purchase Receipt UI</h3>
+              <h1>Purchase Receipt UI</h1>
             </div>
             <div class="nav-item" @click="scrollIntoView('chart-ui')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h3>Analysis Chart UI</h3>
+              <h1>Analysis Chart UI</h1>
             </div>
           </div>
         </div>
