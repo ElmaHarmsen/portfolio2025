@@ -41,24 +41,24 @@ const scrollIntoView = (id) => {
             </div>
           </div>
           <div class="submenu" v-if="mainNavOpen">
-            <RouterLink to="/uidesigns">
-              <div class="submenu-item">
-                <h4>Daily UI Desings</h4>
-              </div>
-            </RouterLink>
             <RouterLink to="/project">
               <div class="submenu-item">
                 <h4>Fynder Project</h4>
               </div>
             </RouterLink>
-            <RouterLink to="/maptyproject">
+            <RouterLink to="/uidesigns">
               <div class="submenu-item">
-                <h4>Mapty</h4>
+                <h4>Daily UI Desings</h4>
               </div>
             </RouterLink>
             <RouterLink to="/piggame">
               <div class="submenu-item">
                 <h4>Pig Game</h4>
+              </div>
+            </RouterLink>
+            <RouterLink to="/maptyproject">
+              <div class="submenu-item">
+                <h4>Mapty</h4>
               </div>
             </RouterLink>
             <RouterLink to="/bankistproject">
@@ -80,7 +80,7 @@ const scrollIntoView = (id) => {
             </div>
           </div>
         </div>
-        <div class="nav-item" @click="scrollIntoView('career-section')">
+        <div class="nav-item" @click="scrollIntoView('footer-section')">
           <div class="nav-item__container">
             <div class="item-container">
               <h4 class="item">Contact</h4>

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="section-wide" id="career-section">
+  <section class="section-wide">
     <div class="container">
       <div class="inside-container">
         <!-- <div class="blobs">
@@ -46,14 +46,6 @@
       gap: 32px;
       padding: 10rem 0;
       margin: 0 -1rem;
-
-      .blobs {
-        &__yellow {
-          position: relative;
-          z-index: 2;
-          transform: translateY(-100%);
-        }
-      }
 
       .text-container {
         grid-column-start: 2;

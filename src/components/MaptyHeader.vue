@@ -1,18 +1,7 @@
-<script setup>
-const scrollIntoView = (id) => {
-  if (!id) return
-  const sectionElement = document.getElementById(id)
-  console.log(id)
-  if (!sectionElement) return
-  sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
-}
-</script>
+<script setup></script>
 
 <template>
   <section class="section">
-    <button class="main-button" @click="scrollIntoView('mapty-project')">
-      <h3>About the project</h3>
-    </button>
     <img class="img" src="../assets/photos/mapty-coverimage.png" alt="" />
   </section>
 </template>
@@ -22,29 +11,23 @@ const scrollIntoView = (id) => {
   grid-column-start: 1;
   grid-column-end: 17;
   width: 100%;
+  height: calc(100vh - 7rem);
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   gap: 32px;
-  height: 100vh;
   padding-top: 0 !important;
 
-  .main-button {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    align-self: flex-end;
-    margin-bottom: 10rem;
-  }
-
   .img {
-    grid-column-start: 9;
-    grid-column-end: 17;
-    width: calc(100% - 1rem);
+    grid-column-start: 4;
+    grid-column-end: 14;
+    width: calc(100% + 2rem);
     margin-left: -1rem;
-    margin-right: 2rem;
+    margin-top: 2.5rem;
     align-self: center;
-    background-color: var(--clr-white);
-    padding: 0.75rem;
-    border-radius: 0.75rem;
+    aspect-ratio: auto;
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   }
 }
 </style>

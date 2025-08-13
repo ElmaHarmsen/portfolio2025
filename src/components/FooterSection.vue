@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="section">
+  <section class="section" id="footer-section">
     <div class="container footer">
       <div class="container__links">
         <a href="https://www.linkedin.com/in/elma-harmsen/" class="link-element" target="_blank"
@@ -11,14 +11,14 @@
           ><h4>github.com/ElmaHarmsen</h4></a
         >
         <a
-          href="https://drive.google.com/file/d/1FmRRrdNe6owK4m1elNwwhpEkGN6vlfcW/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Pj7Q5WT-dUnqJ_0f3keKfio07Coyuew5/view?usp=sharing"
           class="link-element"
           target="_blank"
           ><h4>Curriculum Vitae</h4></a
         >
         <a href="" class="link-element"><h4>contact.elma@tuta.com</h4></a>
       </div>
-      <h4 class="text-element">Last updated 11 August 2025</h4>
+      <h4 class="text-element">Last updated 12 August 2025</h4>
     </div>
   </section>
 </template>

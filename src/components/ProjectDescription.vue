@@ -6,12 +6,12 @@
       <div class="container__content">
         <div class="inside-container">
           <div class="text-container">
-            <h1>
+            <h3>
               The goal of our project was to ensure that fashion items maintain a longer life cycle
               by means of consumer-to-consumer interactions through organised clothing swap events
               in local communities.
-            </h1>
-            <h1>
+            </h3>
+            <h3>
               We started the project with a definition of the problem by answering the five
               W-questions, assessing the why, what, who, where and when of the problem. Through a
               series of interviews with the stakeholders we identified their shopping habits,
@@ -25,7 +25,7 @@
               method. After this, we started with a series of design iterations, from paper
               prototypes to lo-fi and hi-fi wireframes, followed by multiple iterations of user
               testing sessions.
-            </h1>
+            </h3>
           </div>
         </div>
       </div>
@@ -43,8 +43,6 @@
 
   .container {
     background-color: var(--clr-white);
-    border-top: 1px solid var(--clr-gray-20);
-    border-bottom: 1px solid var(--clr-gray-20);
     padding: 10rem 0;
 
     &__content {

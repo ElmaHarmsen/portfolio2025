@@ -14,7 +14,7 @@ import { RouterLink } from 'vue-router'
           />
           <div class="project-item__description">
             <div class="container column">
-              <h1>Fynder Design Project</h1>
+              <h1>Fynder Project</h1>
               <h4>
                 A university project with the objective to reduce the negative environmental impact
                 of modern day’s consumer culture in the fashion industry by targeting the circular

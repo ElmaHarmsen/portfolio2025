@@ -1,7 +1,7 @@
 <script setup>
 import DesignHeader from '@/components/DesignHeader.vue'
 import DesignNavigation from '@/components/DesignNavigation.vue'
-import DesignGallery from '@/components/DesignGallery.vue'
+import MusicplayerUI from '@/components/MusicplayerUI.vue'
 import PortraitGallery from '@/components/PortraitGallery.vue'
 import LandscapeGallery from '@/components/LandscapeGallery.vue'
 import DesignOutcomes from '@/components/DesignOutcomes.vue'
@@ -11,7 +11,7 @@ import DesignOutcomes from '@/components/DesignOutcomes.vue'
   <main class="view">
     <DesignHeader />
     <DesignNavigation />
-    <DesignGallery />
+    <MusicplayerUI />
     <PortraitGallery />
     <LandscapeGallery />
     <DesignOutcomes />

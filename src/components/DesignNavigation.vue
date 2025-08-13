@@ -13,22 +13,34 @@ const scrollIntoView = (id) => {
     <div class="container">
       <div class="container__content">
         <div class="page-intro">
-          <h1>Daily UI Designs</h1>
-          <h3>Spare time project</h3>
-          <h3>2024.06.22 to Present</h3>
+          <h1 class="title">Daily UI Designs</h1>
+          <div class="items">
+            <div class="item">
+              <h4 class="item__title">Ongoing project</h4>
+              <h3 class="item__description">Since June 2024</h3>
+            </div>
+            <div class="item">
+              <h4 class="item__title">Context</h4>
+              <a href="https://www.dailyui.co/" class="item__link" target="_blank"
+                ><h3 class="item__description">Daily UI Challenges</h3></a
+              >
+            </div>
+          </div>
         </div>
         <div class="page-navigation">
-          <div class="item" @click="scrollIntoView('ui-gallery')">
-            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-            <h3>UI Gallery</h3>
-          </div>
-          <div class="item" @click="scrollIntoView('first-ui')">
-            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-            <h3>Purchase Receipt UI</h3>
-          </div>
-          <div class="item" @click="scrollIntoView('second-ui')">
-            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-            <h3>Analysis Chart UI</h3>
+          <div class="nav-items">
+            <div class="nav-item" @click="scrollIntoView('musicplayer-ui')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h3>Music Player UI</h3>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('purchase-ui')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h3>Purchase Receipt UI</h3>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('chart-ui')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h3>Analysis Chart UI</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -41,15 +53,13 @@ const scrollIntoView = (id) => {
   grid-column-start: 1;
   grid-column-end: 17;
   background-color: var(--clr-white);
-  border-top: 1px solid var(--clr-gray-20);
-  border-bottom: 1px solid var(--clr-gray-20);
   width: 100%;
 
   .container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     gap: 32px;
-    padding: 4rem 0 10rem 0;
+    padding: 10rem 0;
 
     &__content {
       grid-column-start: 4;
@@ -59,28 +69,69 @@ const scrollIntoView = (id) => {
       .page-navigation {
         display: flex;
         flex-flow: column nowrap;
-        row-gap: 0.5rem;
+        row-gap: 2rem;
         margin-top: 2rem;
+
+        .title {
+          font-family: 'IBMPlexSans-Bold';
+          font-size: 3rem;
+          line-height: 1.2;
+          color: var(--clr-gray-100);
+        }
+
+        .items {
+          display: flex;
+          flex-flow: column nowrap;
+          row-gap: 1rem;
+
+          .item {
+            display: flex;
+            flex-flow: column nowrap;
+            row-gap: 0.25rem;
+
+            &__title {
+              color: var(--clr-gray-70);
+            }
+
+            &__link {
+              color: var(--clr-gray-100);
+            }
+
+            &__link:hover {
+              cursor: pointer;
+              text-decoration: underline solid var(--clr-gray-100) 1.5px;
+            }
+
+            &__description {
+              font-family: 'IBMPlexSans-SemiBold';
+            }
+          }
+        }
       }
 
       .page-navigation {
-        .item {
+        .nav-items {
           display: flex;
-          flex-flow: row nowrap;
-          column-gap: 0.5rem;
-          align-items: center;
-          width: fit-content;
-          transition: 0.2s ease;
+          flex-flow: column nowrap;
+          row-gap: 0.5rem;
+          .nav-item {
+            display: flex;
+            flex-flow: row nowrap;
+            column-gap: 0.5rem;
+            align-items: center;
+            width: fit-content;
+            transition: 0.2s ease;
 
-          .icon {
-            width: 1.25rem;
-            height: 1.25rem;
+            .icon {
+              width: 1.25rem;
+              height: 1.25rem;
+            }
           }
-        }
 
-        .item:hover {
-          cursor: pointer;
-          color: var(--clr-purple-70);
+          .nav-item:hover {
+            cursor: pointer;
+            color: var(--clr-green);
+          }
         }
       }
     }

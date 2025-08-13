@@ -51,11 +51,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
 
     .picture {
       width: 100%;
       height: 100%;
       aspect-ratio: 2 / 3;
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     }
 
     .pic-g,

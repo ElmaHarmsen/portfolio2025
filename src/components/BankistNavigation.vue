@@ -13,25 +13,37 @@ const scrollIntoView = (id) => {
     <div class="container">
       <div class="container__content">
         <div class="page-intro">
-          <h1>Bankist Development Project</h1>
-          <h3>Part of The Complete JavaScript Course 2025: From Zero to Expert</h3>
-          <h3>Design courtesy of Jonas Schmedtmann</h3>
-          <a href="https://jscourse-bankist.netlify.app/" target="_blank"
-            ><h3>jscourse-bankist.netlify.app</h3></a
-          >
+          <h1 class="title">Bankist Project</h1>
+          <div class="items">
+            <div class="item">
+              <h4 class="item__title">Completed in</h4>
+              <h3 class="item__description">
+                The Complete JavaScript Course 2025: From Zero to Expert
+              </h3>
+            </div>
+            <div class="item">
+              <h4 class="item__title">Design</h4>
+              <h3 class="item__description">Courtesy of Jonas Schmedtmann</h3>
+            </div>
+            <a href="https://jscourse-bankist.netlify.app/" class="link" target="_blank"
+              ><h4>jscourse-bankist.netlify.app</h4></a
+            >
+          </div>
         </div>
         <div class="page-navigation">
-          <div class="item" @click="scrollIntoView('ui-gallery')">
-            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-            <h3>Development Process</h3>
-          </div>
-          <div class="item" @click="scrollIntoView('first-ui')">
-            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-            <h3>Bankist Business Website</h3>
-          </div>
-          <div class="item" @click="scrollIntoView('first-ui')">
-            <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-            <h3>Bankist Features</h3>
+          <div class="nav-items">
+            <div class="nav-item" @click="scrollIntoView('second-ui')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h1>Development Process</h1>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('ui-gallery')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h1>Banksit Website</h1>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('ui-gallery')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h1>Banksit Application</h1>
+            </div>
           </div>
         </div>
       </div>
@@ -44,15 +56,13 @@ const scrollIntoView = (id) => {
   grid-column-start: 1;
   grid-column-end: 17;
   background-color: var(--clr-white);
-  border-top: 1px solid var(--clr-gray-20);
-  border-bottom: 1px solid var(--clr-gray-20);
   width: 100%;
 
   .container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     gap: 32px;
-    padding: 4rem 0 10rem 0;
+    padding: 10rem 0;
 
     &__content {
       grid-column-start: 4;
@@ -62,28 +72,70 @@ const scrollIntoView = (id) => {
       .page-navigation {
         display: flex;
         flex-flow: column nowrap;
-        row-gap: 0.5rem;
+        row-gap: 2rem;
         margin-top: 2rem;
+
+        .title {
+          font-family: 'IBMPlexSans-Bold';
+          font-size: 3rem;
+          line-height: 1.2;
+          color: var(--clr-gray-100);
+        }
+
+        .items {
+          display: flex;
+          flex-flow: column nowrap;
+          row-gap: 1rem;
+
+          .item {
+            display: flex;
+            flex-flow: column nowrap;
+            row-gap: 0.25rem;
+
+            &__title {
+              color: var(--clr-gray-70);
+            }
+
+            &__description {
+              font-family: 'IBMPlexSans-SemiBold';
+            }
+          }
+
+          .link {
+            color: var(--clr-gray-70);
+          }
+
+          .link:hover {
+            cursor: pointer;
+            text-decoration: underline solid var(--clr-gray-100) 1.5px;
+          }
+        }
       }
 
       .page-navigation {
-        .item {
+        .nav-items {
           display: flex;
-          flex-flow: row nowrap;
-          column-gap: 0.5rem;
-          align-items: center;
-          width: fit-content;
-          transition: 0.2s ease;
+          flex-flow: column nowrap;
+          row-gap: 0.5rem;
 
-          .icon {
-            width: 1.25rem;
-            height: 1.25rem;
+          .nav-item {
+            display: flex;
+            flex-flow: row nowrap;
+            column-gap: 0.5rem;
+            align-items: center;
+            width: fit-content;
+            transition: 0.2s ease;
+
+            .icon {
+              width: 1.25rem;
+              height: 1.25rem;
+            }
           }
-        }
 
-        .item:hover {
-          cursor: pointer;
-          color: var(--clr-purple-70);
+          .item:hover {
+            cursor: pointer;
+            color: var(--clr-purple-70);
+          }
         }
       }
     }

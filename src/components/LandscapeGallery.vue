@@ -1,8 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="section" id="second-ui">
-    <h1>Analysis Chart Design</h1>
+  <section class="section" id="chart-ui">
     <div class="section__content">
       <img
         src="../assets/photos/analysis-chart--1.png"
@@ -33,18 +32,22 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
-  padding-top: 10rem;
+  padding: 10rem 0;
 
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    margin-top: 4rem;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
 
     .picture {
       aspect-ratio: 3 / 2;
       width: 100%;
       height: 100%;
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     }
 
     .pic-b,

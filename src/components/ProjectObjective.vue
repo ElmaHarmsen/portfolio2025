@@ -6,16 +6,16 @@
       <div class="container__content">
         <div class="inside-container">
           <div class="text-container">
-            <h1>
+            <h3>
               The objective of the project was to reduce the negative environmental impact of modern
               day’s consumer culture in the fashion industry by targeting the circular economy of
               fashion use in the Uppsala student community, thereby emphasising on reducing
               consumption and, consequently, reducing fashion waste.
-            </h1>
-            <h1>
+            </h3>
+            <h3>
               We designed an application which promotes the reuse of fashion garments through
               organised clothing swap events in local Uppsala student communities.
-            </h1>
+            </h3>
           </div>
         </div>
       </div>
@@ -33,8 +33,6 @@
 
   .container {
     background-color: var(--clr-white);
-    border-top: 1px solid var(--clr-gray-20);
-    border-bottom: 1px solid var(--clr-gray-20);
     padding: 10rem 0;
 
     &__content {

@@ -1,84 +1,70 @@
-<script setup>
-const scrollIntoView = (id) => {
-  if (!id) return
-  const sectionElement = document.getElementById(id)
-  console.log(id)
-  if (!sectionElement) return
-  sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
-}
-</script>
+<script setup></script>
 
 <template>
   <section class="section">
     <div class="section__content">
-      <div class="container left"></div>
-      <div class="container middle" @click="scrollIntoView('first-ui')">
-        <h1>Purchase Receipt UI</h1>
-        <img src="../assets/icons/arrow--forward-1.svg" class="icon-default" alt="arrow right" />
-      </div>
-      <div class="container right" @click="scrollIntoView('second-ui')">
-        <h1>Analysis Chart UI</h1>
-        <img src="../assets/icons/arrow--forward-1.svg" class="icon-default" alt="arrow right" />
-      </div>
+      <img src="../assets/photos/boarding-pass--ui.png" class="picture pic-a" alt="fynder screen" />
+      <img
+        src="../assets/photos/festival-countdown--ui.png"
+        class="picture pic-b"
+        alt="fynder logo"
+      />
+      <img
+        src="../assets/photos/gradient-picker--ui.png"
+        class="picture pic-c"
+        alt="fynder screen"
+      />
     </div>
   </section>
 </template>
 
 <style scoped lang="scss">
 .section {
-  grid-column-start: 1;
-  grid-column-end: 17;
+  grid-column-start: 4;
+  grid-column-end: 14;
   width: 100%;
-  margin-top: 3rem;
+  height: calc(100vh - 7rem);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding-top: 0 !important;
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    gap: 0;
-    background-image: url('../assets/ui-designs-header.png');
-    background-size: cover;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
 
     .container {
+      grid-column-start: 1;
+      grid-column-end: 2;
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
-      border-right: 1px solid var(--clr-gray-80);
-      height: calc(100vh - 3rem - 4rem);
-      width: auto;
-      padding: 1rem;
-      transition: 0.2s ease;
-
-      h1 {
-        color: var(--clr-white-10);
-      }
-
-      .icon-default {
-        width: 2rem;
-        height: 2rem;
-        align-self: end;
-      }
-    }
-    .left {
-      grid-column-start: 1;
-      grid-column-end: 9;
+      row-gap: 1rem;
     }
 
-    .middle {
-      grid-column-start: 9;
-      grid-column-end: 13;
+    .picture {
+      width: 100%;
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     }
 
-    .right {
-      grid-column-start: 13;
-      grid-column-end: 17;
-      border: none;
+    .pic-a {
+      grid-row-start: 1;
+      grid-row-end: 3;
     }
 
-    .middle:hover,
-    .right:hover {
-      cursor: pointer;
-      background-color: var(--clr-gray-100);
-      color: var(--clr-white-10);
+    .pic-b {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    .pic-c {
+      grid-column-start: 3;
+      grid-column-end: 4;
     }
   }
 }

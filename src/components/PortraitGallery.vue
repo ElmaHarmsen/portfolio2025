@@ -1,8 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="section" id="first-ui">
-    <h1>Steam Purchase Receipt Redesign</h1>
+  <section class="section" id="purchase-ui">
     <div class="section__content">
       <img
         src="../assets/photos/purchase-receipt--steam.jpg"
@@ -38,18 +37,25 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   padding-top: 10rem;
 
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    margin-top: 4rem;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
 
     .picture {
       aspect-ratio: 2 / 3;
       height: 100%;
       width: 100%;
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     }
 
     .pic-d,
