@@ -25,24 +25,33 @@ const scrollIntoView = (id) => {
               <h4 class="item__title">Design</h4>
               <h3 class="item__description">Courtesy of Jonas Schmedtmann</h3>
             </div>
-            <a href="https://jscourse-mapty.netlify.app/" class="link" target="_blank"
-              ><h4>jscourse-mapty.netlify.app</h4></a
-            >
+            <div class="item">
+              <a href="https://jscourse-mapty.netlify.app/" class="link" target="_blank"
+                ><h4>jscourse-mapty.netlify.app</h4></a
+              >
+              <a href="https://github.com/ElmaHarmsen/mapty-project" class="link" target="_blank"
+                ><h4>github.com/ElmaHarmsen/mapty-project</h4></a
+              >
+            </div>
           </div>
         </div>
         <div class="page-navigation">
           <div class="nav-items">
-            <div class="nav-item" @click="scrollIntoView('second-ui')">
-              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Development Process</h1>
-            </div>
-            <div class="nav-item" @click="scrollIntoView('ui-gallery')">
+            <div class="nav-item" @click="scrollIntoView('project-architecture')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
               <h1>Project Architecture</h1>
             </div>
-            <div class="nav-item" @click="scrollIntoView('ui-gallery')">
+            <div class="nav-item" @click="scrollIntoView('leaflet-function')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Leaflet: External Library Integration</h1>
+              <h1>Leaflet Library Integration</h1>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('renderworkout-function')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h1>Rendering Workouts</h1>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('localstorage-function')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h1>Localstorage Integration</h1>
             </div>
           </div>
         </div>
@@ -132,9 +141,9 @@ const scrollIntoView = (id) => {
             }
           }
 
-          .item:hover {
+          .nav-item:hover {
             cursor: pointer;
-            color: var(--clr-purple-70);
+            color: var(--clr-green);
           }
         }
       }

@@ -1,12 +1,14 @@
 <script setup>
 import PigGameHeader from '@/components/PigGameHeader.vue'
 import PigGameNavigation from '@/components/PigGameNavigation.vue'
+import PigGameCode from '@/components/PigGameCode.vue'
 </script>
 
 <template>
   <main class="view">
     <PigGameHeader />
     <PigGameNavigation />
+    <PigGameCode />
   </main>
 </template>
 

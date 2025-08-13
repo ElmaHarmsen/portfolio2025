@@ -25,20 +25,33 @@ const scrollIntoView = (id) => {
               <h4 class="item__title">Design</h4>
               <h3 class="item__description">Courtesy of Jonas Schmedtmann</h3>
             </div>
-            <a href="https://jscourse-piggame.netlify.app/" class="link" target="_blank"
-              ><h4>jscourse-piggame.netlify.app</h4></a
-            >
+            <div class="item">
+              <a href="https://jscourse-piggame.netlify.app/" class="link" target="_blank"
+                ><h4>jscourse-piggame.netlify.app</h4></a
+              >
+              <a href="https://github.com/ElmaHarmsen/pig-game" class="link" target="_blank"
+                ><h4>github.com/ElmaHarmsen/pig-game</h4></a
+              >
+            </div>
           </div>
         </div>
         <div class="page-navigation">
           <div class="nav-items">
-            <div class="nav-item" @click="scrollIntoView('second-ui')">
+            <div class="nav-item" @click="scrollIntoView('reset-function')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Development Process</h1>
+              <h1>Game Initalization</h1>
             </div>
-            <div class="nav-item" @click="scrollIntoView('ui-gallery')">
+            <div class="nav-item" @click="scrollIntoView('diceroll-function')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Project Architecture</h1>
+              <h1>Diceroll Functionality</h1>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('scoring-function')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h1>Scoring Functionality</h1>
+            </div>
+            <div class="nav-item" @click="scrollIntoView('switchplayer-function')">
+              <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
+              <h1>Switch Player Functionality</h1>
             </div>
           </div>
         </div>
@@ -128,9 +141,9 @@ const scrollIntoView = (id) => {
             }
           }
 
-          .item:hover {
+          .nav-item:hover {
             cursor: pointer;
-            color: var(--clr-purple-70);
+            color: var(--clr-green);
           }
         }
       }
