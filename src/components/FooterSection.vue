@@ -16,7 +16,9 @@
           target="_blank"
           ><h4>Curriculum Vitae</h4></a
         >
-        <a href="" class="link-element"><h4>contact.elma@tuta.com</h4></a>
+        <a href="mailto:contact.elma@tuta.com" class="link-element"
+          ><h4>contact.elma@tuta.com</h4></a
+        >
       </div>
       <h4 class="text-element">Last updated 22 August 2025</h4>
     </div>

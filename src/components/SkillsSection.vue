@@ -12,7 +12,8 @@
               User Interface Design <br />
               User Experience Design <br />
               User Research <br />
-              Usability
+              Usability <br />
+              Testing
             </h4>
           </div>
           <div class="container row"></div>
@@ -39,7 +40,12 @@
         <div class="service-item__description">
           <div class="container column">
             <h1>Human-Computer Interaction</h1>
-            <h4>User Centred Design <br /></h4>
+            <h4>
+              User Centred Design <br />
+              Embodied Interaction <br />
+              Measuring & Analysing UX <br />
+              Non-exclusive Design
+            </h4>
           </div>
           <div class="container row"></div>
         </div>
