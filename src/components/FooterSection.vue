@@ -18,7 +18,7 @@
         >
         <a href="" class="link-element"><h4>contact.elma@tuta.com</h4></a>
       </div>
-      <h4 class="text-element">Last updated 13 August 2025</h4>
+      <h4 class="text-element">Last updated 22 August 2025</h4>
     </div>
   </section>
 </template>

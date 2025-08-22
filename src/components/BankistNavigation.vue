@@ -25,24 +25,41 @@ const scrollIntoView = (id) => {
               <h4 class="item__title">Design</h4>
               <h3 class="item__description">Courtesy of Jonas Schmedtmann</h3>
             </div>
-            <a href="https://jscourse-bankist.netlify.app/" class="link" target="_blank"
-              ><h4>jscourse-bankist.netlify.app</h4></a
-            >
+            <div class="item">
+              <h4 class="item__title">Login Credentials</h4>
+
+              <h3 class="item__description">
+                Username: js <br />
+                Pin: 1111
+              </h3>
+              <h3 class="item__description">
+                Username: jd <br />
+                Pin: 2222
+              </h3>
+            </div>
+            <div class="item">
+              <a href="https://jscourse-bankist.netlify.app/" class="link" target="_blank"
+                ><h4>jscourse-bankist.netlify.app</h4></a
+              >
+              <a href="https://github.com/ElmaHarmsen/bankist-project" class="link" target="_blank"
+                ><h4>github.com/ElmaHarmsen/bankist-project</h4></a
+              >
+            </div>
           </div>
         </div>
         <div class="page-navigation">
           <div class="nav-items">
-            <div class="nav-item" @click="scrollIntoView('second-ui')">
+            <div class="nav-item" @click="scrollIntoView('data-transformations')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Development Process</h1>
+              <h1>Data & Data Transformations</h1>
             </div>
-            <div class="nav-item" @click="scrollIntoView('ui-gallery')">
+            <div class="nav-item" @click="scrollIntoView('login-logout')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Banksit Website</h1>
+              <h1>Login & Logout Functionality</h1>
             </div>
-            <div class="nav-item" @click="scrollIntoView('ui-gallery')">
+            <div class="nav-item" @click="scrollIntoView('transfers-loans')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Banksit Application</h1>
+              <h1>Transfer & Loan Functionality</h1>
             </div>
           </div>
         </div>
@@ -132,9 +149,9 @@ const scrollIntoView = (id) => {
             }
           }
 
-          .item:hover {
+          .nav-item:hover {
             cursor: pointer;
-            color: var(--clr-purple-70);
+            color: var(--clr-green);
           }
         }
       }
