@@ -5,11 +5,9 @@ import FooterSection from './components/FooterSection.vue'
 </script>
 
 <template>
-  <section id="view">
+  <section>
     <MainNav />
     <RouterView />
     <FooterSection />
   </section>
 </template>
-
-<style scoped lang="scss"></style>

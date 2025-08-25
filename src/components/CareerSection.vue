@@ -4,10 +4,6 @@
   <section class="section-wide">
     <div class="container">
       <div class="inside-container">
-        <!-- <div class="blobs">
-          <img src="../assets/blob-blue.svg" class="blobs__blue" alt="Blob" />
-          <img src="../assets/blob-yellow.svg" class="blobs__yellow" alt="Blob" />
-        </div> -->
         <h3 class="text-container">
           Starting from September this year, I will be taking a full-time language course in
           Swedish. I believe that speaking the local language where you live and work will benefit
@@ -50,6 +46,25 @@
       .text-container {
         grid-column-start: 2;
         grid-column-end: 3;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section-wide {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      display: block;
+
+      .inside-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem 0;
+        margin: 0 2rem;
       }
     }
   }

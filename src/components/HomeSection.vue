@@ -11,17 +11,20 @@ const scrollIntoView = (id) => {
 <template>
   <section class="section" id="home-section">
     <div class="section__content">
-      <h1 class="title">
-        Interaction <br />
-        Designer <br />
-        <span class="title__colored"
-          >& Frontend <br />
-          Developer</span
-        >
-      </h1>
-      <img src="../assets/blob.svg" class="blob" alt="Blob" />
-      <img src="../assets/home-img.png" class="home-img" alt="Cat" />
-      <div class="container">
+      <div class="title">
+        <span class="title__small">Elma Harmsen</span>
+        <h1>
+          Interaction <br />
+          Designer <br />
+          <span class="title__colored"
+            >& Frontend <br />
+            Developer</span
+          >
+        </h1>
+      </div>
+      <!-- <img src="../assets/blob.svg" class="blob" alt="Blob" />
+      <img src="../assets/home-img.png" class="home-img" alt="Cat" /> -->
+      <div class="btn-container">
         <button class="home-btn" @click="scrollIntoView('intro-section')">
           <img src="../assets/icons/arrow--down.svg" class="home-btn__icon" alt="" />
         </button>
@@ -54,11 +57,22 @@ const scrollIntoView = (id) => {
     .title {
       grid-row-start: 1;
       grid-row-end: 3;
-      font-family: 'IBMPlexSans-Bold';
-      font-size: 3rem;
-      line-height: 1.2;
-      color: var(--clr-gray-100);
       align-self: center;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 1rem;
+
+      h1 {
+        font-family: 'IBMPlexSans-Bold';
+        font-size: 3rem;
+        line-height: 1.2;
+        color: var(--clr-gray-100);
+      }
+
+      &__small {
+        font-family: 'IBMPlexSans-Bold';
+        font-size: 1.5rem;
+      }
 
       &__colored {
         color: var(--clr-green);
@@ -91,11 +105,9 @@ const scrollIntoView = (id) => {
     }
   }
 
-  .container {
+  .btn-container {
     align-self: flex-end;
     justify-self: flex-start;
-    clip-path: circle(50% at 50% 50%);
-    // background-color: var(--clr-light);
     position: absolute;
     z-index: 3;
     bottom: 10rem;
@@ -124,6 +136,56 @@ const scrollIntoView = (id) => {
 
     .home-btn:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: calc(100% - (2 * 2rem));
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin: 0rem 2rem 2rem 2rem;
+      padding: 0;
+      width: 100%;
+
+      .title {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .blob,
+      .home-img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      .blob {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+
+      .home-img {
+        position: absolute;
+        z-index: 2;
+        transform: translateX(-25%) translateY(25%);
+        width: auto;
+        height: 30%;
+      }
+    }
+
+    .btn-container {
+      justify-self: center;
     }
   }
 }

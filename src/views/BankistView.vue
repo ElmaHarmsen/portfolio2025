@@ -12,7 +12,7 @@ import BankistCode from '@/components/BankistCode.vue'
   </main>
 </template>
 
-<style>
+<style scoped lang="scss">
 .view {
   display: grid;
   grid-template-columns: repeat(16, 1fr);

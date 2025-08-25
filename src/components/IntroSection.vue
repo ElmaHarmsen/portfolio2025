@@ -131,4 +131,45 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .section-wide {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      display: block;
+
+      .inside-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 2rem 0;
+        margin: 0 2rem;
+
+        .picture-me {
+          grid-row-start: 1;
+          grid-row-end: 2;
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+
+        .text-container {
+          grid-row-start: 2;
+          grid-row-end: 3;
+        }
+
+        .items {
+          grid-row-start: 3;
+          grid-row-end: 4;
+        }
+
+        .contact {
+          grid-row-start: 4;
+          grid-row-end: 5;
+        }
+      }
+    }
+  }
+}
 </style>

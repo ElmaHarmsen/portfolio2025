@@ -20,7 +20,7 @@
           ><h4>contact.elma@tuta.com</h4></a
         >
       </div>
-      <h4 class="text-element">Last updated 22 August 2025</h4>
+      <h4 class="text-element">Last updated 25 August 2025</h4>
     </div>
   </section>
 </template>
@@ -75,6 +75,27 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      grid-template-columns: 1fr;
+
+      &__links,
+      .text-element {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+    }
+
+    .footer {
+      padding: 6rem 2rem 4rem 2rem;
+    }
   }
 }
 </style>

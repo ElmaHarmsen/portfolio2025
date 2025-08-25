@@ -97,8 +97,28 @@ const onProgress = (e) => {
   }
 }
 
-::v-deep .swiper-button-prev,
-::v-deep .swiper-button-next {
-  color: #000;
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0rem 2rem 2rem 2rem;
+      padding: 0;
+      width: calc(100% - (2 * 2rem));
+
+      .inside-container {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 0;
+
+        .my-swiper {
+          width: calc(100vw - (2 * 2rem));
+        }
+      }
+    }
+  }
 }
 </style>

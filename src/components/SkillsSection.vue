@@ -4,7 +4,7 @@
   <section class="section" id="skills-section">
     <div class="section__content">
       <div class="service-item">
-        <div class="interaction-design"></div>
+        <div class="img interaction-design"></div>
         <div class="service-item__description">
           <div class="container column">
             <h1>Interaction Design</h1>
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="service-item">
-        <div class="frontend-development"></div>
+        <div class="img frontend-development"></div>
         <div class="service-item__description">
           <div class="container column">
             <h1>Frontend Development</h1>
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="service-item">
-        <div class="hci"></div>
+        <div class="img hci"></div>
         <div class="service-item__description">
           <div class="container column">
             <h1>Human-Computer Interaction</h1>
@@ -75,14 +75,13 @@
         rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
-      &__img {
-        width: 100%;
+      .img {
+        background-color: #ffffff;
+        opacity: 0.8;
         aspect-ratio: 16 / 9;
       }
 
       .interaction-design {
-        background-color: #ffffff;
-        opacity: 0.8;
         background-image:
           linear-gradient(#3c534a 2.6px, transparent 2.6px),
           linear-gradient(90deg, #3c534a 2.6px, transparent 2.6px),
@@ -98,24 +97,17 @@
           -2.6px -2.6px,
           -1.3px -1.3px,
           -1.3px -1.3px;
-        aspect-ratio: 16 /9;
       }
 
       .frontend-development {
-        background-color: #ffffff;
-        opacity: 0.8;
         background-image: linear-gradient(45deg, #3c534a 50%, #ffffff 50%);
         background-size: 15px 15px;
-        aspect-ratio: 16 /9;
       }
 
       .hci {
-        background-color: #ffffff;
-        opacity: 0.8;
         background-image:
           repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 15px),
           repeating-linear-gradient(#e8edec, #3c534a);
-        aspect-ratio: 16 /9;
       }
 
       &__description {
@@ -126,7 +118,7 @@
         row-gap: 1rem;
         background-color: var(--clr-white);
         padding: 1rem;
-        aspect-ratio: 16 /9;
+        aspect-ratio: 16 / 9;
 
         h1 {
           color: var(--clr-gray-100);
@@ -157,55 +149,31 @@
         }
       }
     }
+  }
+}
 
-    // .skill-item {
-    //   display: flex;
-    //   flex-flow: column nowrap;
-    //   justify-content: flex-start;
-    //   aspect-ratio: 16 / 9;
-    //   padding: 1rem;
-    //   box-shadow:
-    //     rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    //     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
 
-    //   &__icon {
-    //     width: 30%;
-    //     align-self: center;
-    //   }
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      margin: 0 2rem;
 
-    //   .content {
-    //     flex-grow: 1;
-    //     padding: 1rem;
-    //   }
-    // }
+      .service-item {
+        display: flex;
+        flex-flow: column nowrap;
 
-    .bg-blue-1 {
-      background-color: var(--clr-white);
+        .img {
+          background-color: #ffffff;
+          opacity: 0.8;
+          aspect-ratio: 16 / 9;
+        }
+      }
     }
-
-    .bg-blue-2 {
-      background-color: var(--clr-white);
-    }
-
-    .bg-blue-3 {
-      background-color: var(--clr-white);
-    }
-
-    .bg-purple-1 {
-      background-color: var(--clr-white);
-    }
-
-    .bg-purple-2 {
-      background-color: var(--clr-white);
-    }
-
-    .bg-purple-3 {
-      background-color: var(--clr-white);
-    }
-    // .skill-item:hover {
-    //   transform: scale(1.01) rotate(0.25deg);
-    //   box-shadow: 0 0 10px var(--clr-gray-20);
-    // }
   }
 }
 </style>

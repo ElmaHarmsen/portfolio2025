@@ -137,9 +137,6 @@ import { RouterLink } from 'vue-router'
   grid-column-end: 14;
   width: 100%;
   padding-bottom: 10rem;
-  // background-image: radial-gradient(var(--clr-gray-40) 1px, transparent 0);
-  // background-attachment: fixed;
-  // background-size: 1.25rem 1.25rem;
 
   &__content {
     display: grid;
@@ -199,35 +196,19 @@ import { RouterLink } from 'vue-router'
         }
       }
     }
+  }
+}
 
-    .ui-designs {
-      background-image: url('../assets/daily-ui.png');
-      background-size: cover;
-    }
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
 
-    .design-project {
-      background-image: url('../assets/photos/project-1/moscow.png');
-      background-size: cover;
-    }
-
-    .mapty-project {
-      background-image: url('../assets/mapty.png');
-      background-size: cover;
-    }
-
-    .pig-game {
-      background-image: url('../assets/pig-game.png');
-      background-size: cover;
-    }
-
-    .bankist-project {
-      background-image: url('../assets/bankist.png');
-      background-size: cover;
-    }
-
-    .forkify-project {
-      background-image: url('../assets/forkify.png');
-      background-size: cover;
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      margin: 0 2rem;
     }
   }
 }

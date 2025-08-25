@@ -12,7 +12,7 @@ import MaptyCode from '@/components/MaptyCode.vue'
   </main>
 </template>
 
-<style>
+<style scoped lang="scss">
 .view {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
