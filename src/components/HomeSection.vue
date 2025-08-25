@@ -70,7 +70,7 @@ const scrollIntoView = (id) => {
       }
 
       &__small {
-        font-family: 'IBMPlexSans-Bold';
+        font-family: 'IBMPlexSans-SemiBold';
         font-size: 1.5rem;
       }
 

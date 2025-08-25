@@ -23,7 +23,7 @@ import { RouterLink } from 'vue-router'
             </div>
             <div class="container row">
               <h4>November 2022</h4>
-              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+              <img src="../assets/icons/forward.svg" class="icon" alt="Arrow right" />
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ import { RouterLink } from 'vue-router'
             </div>
             <div class="container row">
               <h4>June 2024</h4>
-              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+              <img src="../assets/icons/forward.svg" class="icon" alt="Arrow right" />
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ import { RouterLink } from 'vue-router'
             </div>
             <div class="container row">
               <h4>March 2025</h4>
-              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+              <img src="../assets/icons/forward.svg" class="icon" alt="Arrow right" />
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ import { RouterLink } from 'vue-router'
             </div>
             <div class="container row">
               <h4>June 2025</h4>
-              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+              <img src="../assets/icons/forward.svg" class="icon" alt="Arrow right" />
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@ import { RouterLink } from 'vue-router'
             </div>
             <div class="container row">
               <h4>June 2025</h4>
-              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+              <img src="../assets/icons/forward.svg" class="icon" alt="Arrow right" />
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ import { RouterLink } from 'vue-router'
             </div>
             <div class="container row">
               <h4>July 2025</h4>
-              <img src="../assets/icons/arrow--right.svg" class="icon" alt="Arrow right" />
+              <img src="../assets/icons/forward.svg" class="icon" alt="Arrow right" />
             </div>
           </div>
         </div>
@@ -165,10 +165,12 @@ import { RouterLink } from 'vue-router'
         row-gap: 1rem;
         background-color: var(--clr-white);
         padding: 1rem;
-        aspect-ratio: 16 /9;
+        aspect-ratio: 16 / 9;
 
         h1 {
           color: var(--clr-gray-100);
+          font-family: 'IBMPlexSans-SemiBold';
+          font-size: 1.5rem;
         }
 
         .container {
@@ -176,12 +178,11 @@ import { RouterLink } from 'vue-router'
           justify-content: space-between;
 
           h4 {
-            color: var(--clr-gray-70);
+            color: var(--clr-gray-100);
           }
 
           .icon {
-            width: 28px;
-            height: 28px;
+            width: 24px;
             transform: rotate(-45deg);
           }
         }
@@ -209,6 +210,11 @@ import { RouterLink } from 'vue-router'
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
       margin: 0 2rem;
+
+      .project-item {
+        display: flex;
+        flex-flow: column nowrap;
+      }
     }
   }
 }

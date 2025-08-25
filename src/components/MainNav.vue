@@ -22,14 +22,14 @@ const scrollIntoView = (id) => {
         <div class="nav-item" @click="scrollIntoView('intro-section')">
           <div class="nav-item__container">
             <div class="item-container">
-              <h4 class="item">About Me</h4>
+              <h3 class="item">About Me</h3>
             </div>
           </div>
         </div>
         <div class="nav-item">
           <div class="nav-item__container">
             <div class="item-container" @click="scrollIntoView('projects-section')">
-              <h4 class="item">Selected Projects</h4>
+              <h3 class="item">Selected Projects</h3>
             </div>
             <div class="icon-container" @click="subNavOpen = !subNavOpen" v-if="!subNavOpen">
               <img src="../assets/icons/chevron--down.svg" class="icon" alt="chevron down" />
@@ -74,14 +74,14 @@ const scrollIntoView = (id) => {
         <div class="nav-item" @click="scrollIntoView('skills-section')">
           <div class="nav-item__container">
             <div class="item-container">
-              <h4 class="item">Skills & Services</h4>
+              <h3 class="item">Skills & Services</h3>
             </div>
           </div>
         </div>
         <div class="nav-item" @click="scrollIntoView('footer-section')">
           <div class="nav-item__container">
             <div class="item-container">
-              <h4 class="item">Contact</h4>
+              <h3 class="item">Contact</h3>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ const scrollIntoView = (id) => {
       box-shadow:
         rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-      width: 200px;
+      min-width: 200px;
       height: auto;
       padding: 2rem 1rem;
 
@@ -175,8 +175,10 @@ const scrollIntoView = (id) => {
             justify-content: center;
             height: 100%;
 
-            h4 {
-              color: var(--clr-gray-70);
+            h3 {
+              color: var(--clr-gray-100);
+              font-family: 'IBMPlexSans-SemiBold';
+
               transition: 0.1s ease;
             }
           }
@@ -216,7 +218,7 @@ const scrollIntoView = (id) => {
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
-            height: 45px;
+            height: 40px;
             padding: 0 1rem;
 
             h4 {

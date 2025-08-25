@@ -122,6 +122,8 @@
 
         h1 {
           color: var(--clr-gray-100);
+          font-family: 'IBMPlexSans-SemiBold';
+          font-size: 1.5rem;
         }
 
         .container {
@@ -129,13 +131,7 @@
           justify-content: space-between;
 
           h4 {
-            color: var(--clr-gray-70);
-          }
-
-          .icon {
-            width: 28px;
-            height: 28px;
-            transform: rotate(-45deg);
+            color: var(--clr-gray-100);
           }
         }
 
@@ -166,12 +162,6 @@
       .service-item {
         display: flex;
         flex-flow: column nowrap;
-
-        .img {
-          background-color: #ffffff;
-          opacity: 0.8;
-          aspect-ratio: 16 / 9;
-        }
       }
     }
   }
