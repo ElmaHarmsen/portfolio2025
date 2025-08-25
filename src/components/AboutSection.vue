@@ -69,7 +69,7 @@ const onProgress = (e) => {
       margin: 0 -1rem;
 
       .title {
-        font-family: 'IBMPlexSans-Bold';
+        font-family: 'DM Sans Bold';
         font-size: 3rem;
         line-height: 1.2;
         color: var(--clr-gray-100);
@@ -89,7 +89,7 @@ const onProgress = (e) => {
           row-gap: 1rem;
 
           .bold {
-            font-family: 'IBMPlexSans-SemiBold';
+            font-family: 'DM Sans SemiBold';
           }
         }
       }

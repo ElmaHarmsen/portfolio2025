@@ -6,14 +6,16 @@
       <div class="inside-container">
         <img src="../assets/me.jpg" class="picture-me" alt="" />
         <h4 class="text-container">
-          Hi. My name is Elma Harmsen and I am an interaction designer and frontend developer based
-          in Sweden. My interest in design and technology has inspired me to become a UI and
-          Interaction Designer. I have a pragmatic and practical mentality for design, and I believe
-          in straightforward solutions. I value open-mindedness as well as sharing knowledge, and I
-          like to be diligent in my work and to take opportunities to learn. I enjoy collaborating
-          with people, and I take care to contribute to a positive and inclusive environment. While
-          seeking out my next career opportunity, I am working to improve my design and development
-          skills, so be sure to check out my latest development projects and designs.
+          Hi. My name is Elma Harmsen and I am an interaction designer and frontend developer
+          established in Sweden since 2022. My deep interest in design has inspired me to become an
+          User Interface and Interaction Designer, whereas my love for building made me become a
+          developer as well. I have a pragmatic and practical mentality in my work, and I believe in
+          straightforward solutions. I value open-mindedness and the sharing of knowledge. I tend to
+          be diligent in my work and like to take opportunities to learn. I enjoy collaborating with
+          people, and I take care to contribute to a positive and inclusive environment. While
+          seeking out my next career opportunity here in Sweden, I am working to improve my design
+          and development skills, so be sure to check out my latest development projects and designs
+          below.
         </h4>
         <div class="items">
           <div class="item">
@@ -98,7 +100,7 @@
           row-gap: 0.25rem;
 
           &__description {
-            font-family: 'IBMPlexSans-SemiBold';
+            font-family: 'DM Sans SemiBold';
           }
         }
       }

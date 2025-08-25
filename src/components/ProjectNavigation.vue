@@ -75,7 +75,7 @@ const scrollIntoView = (id) => {
         margin-top: 2rem;
 
         .title {
-          font-family: 'IBMPlexSans-Bold';
+          font-family: 'DM Sans Bold';
           font-size: 3rem;
           line-height: 1.2;
           color: var(--clr-gray-100);
@@ -96,7 +96,7 @@ const scrollIntoView = (id) => {
             }
 
             &__description {
-              font-family: 'IBMPlexSans-SemiBold';
+              font-family: 'DM Sans SemiBold';
             }
           }
         }

@@ -32,3 +32,31 @@
   font-display: swap;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'DM Sans Regular';
+  src: url('../assets/fonts/DMSans-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans Medium';
+  src: url('../assets/fonts/DMSans-Medium.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans SemiBold';
+  src: url('../assets/fonts/DMSans-SemiBold.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans Bold';
+  src: url('../assets/fonts/DMSans-Bold.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+}

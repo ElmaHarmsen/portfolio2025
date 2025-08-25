@@ -63,14 +63,14 @@ const scrollIntoView = (id) => {
       row-gap: 1rem;
 
       h1 {
-        font-family: 'IBMPlexSans-Bold';
+        font-family: 'DM Sans Bold';
         font-size: 3rem;
         line-height: 1.2;
         color: var(--clr-gray-100);
       }
 
       &__small {
-        font-family: 'IBMPlexSans-SemiBold';
+        font-family: 'DM Sans SemiBold';
         font-size: 1.5rem;
       }
 

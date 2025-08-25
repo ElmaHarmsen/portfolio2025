@@ -177,7 +177,7 @@ const scrollIntoView = (id) => {
 
             h3 {
               color: var(--clr-gray-100);
-              font-family: 'IBMPlexSans-SemiBold';
+              font-family: 'DM Sans SemiBold';
 
               transition: 0.1s ease;
             }

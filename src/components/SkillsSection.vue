@@ -122,7 +122,7 @@
 
         h1 {
           color: var(--clr-gray-100);
-          font-family: 'IBMPlexSans-SemiBold';
+          font-family: 'DM Sans SemiBold';
           font-size: 1.5rem;
         }
 

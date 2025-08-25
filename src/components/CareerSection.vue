@@ -4,7 +4,7 @@
   <section class="section-wide">
     <div class="container">
       <div class="inside-container">
-        <h3 class="text-container">
+        <h4 class="text-container">
           Starting from September this year, I will be taking a full-time language course in
           Swedish. I believe that speaking the local language where you live and work will benefit
           not only the social aspect of life, but also strengthens my position as an internaltional
@@ -16,7 +16,7 @@
           <br />
           If you are interested to hear more or have something to share, please reach out either
           through LinkedIn or via my email.
-        </h3>
+        </h4>
       </div>
     </div>
   </section>
