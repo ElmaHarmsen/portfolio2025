@@ -23,9 +23,11 @@ h2 {
   font-size: 1.625rem;
 }
 
-h3 {
-  font-family: 'DM Sans Regular';
-  font-size: 1rem;
+h3,
+p {
+  font-family: 'DM Sans Medium';
+  font-size: 0.9375rem;
+  line-height: 1.7;
 }
 
 h4 {
@@ -33,29 +35,23 @@ h4 {
   font-size: 0.75rem;
 }
 
-p {
-  font-family: 'DM Sans Medium';
-  font-size: 0.9375rem;
-  line-height: 1.7;
-}
-
 @media (max-width: 450px) {
   h1 {
     font-size: 2.5rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   h4 {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
   }
 
   p {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
 }

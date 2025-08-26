@@ -13,7 +13,7 @@ const scrollIntoView = (id) => {
     <div class="container">
       <div class="inside-container">
         <div class="title">
-          <h2 class="title__small">Elma Harmsen</h2>
+          <h2>Elma Harmsen</h2>
           <h1>
             Interaction <br />
             Designer

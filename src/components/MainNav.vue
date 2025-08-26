@@ -22,14 +22,14 @@ const scrollIntoView = (id) => {
         <div class="nav-item" @click="scrollIntoView('intro-section')">
           <div class="nav-item__container">
             <div class="item-container">
-              <h3 class="item">About Me</h3>
+              <h2 class="item">About Me</h2>
             </div>
           </div>
         </div>
         <div class="nav-item">
           <div class="nav-item__container">
             <div class="item-container" @click="scrollIntoView('projects-section')">
-              <h3 class="item">Selected Projects</h3>
+              <h2 class="item">Selected Projects</h2>
             </div>
             <div class="icon-container" @click="subNavOpen = !subNavOpen" v-if="!subNavOpen">
               <img src="../assets/icons/chevron--down.svg" class="icon" alt="chevron down" />
@@ -41,32 +41,32 @@ const scrollIntoView = (id) => {
           <div class="submenu" v-if="subNavOpen">
             <RouterLink to="/project">
               <div class="submenu-item">
-                <h4>Fynder Project</h4>
+                <h3>Fynder Project</h3>
               </div>
             </RouterLink>
             <RouterLink to="/uidesigns">
               <div class="submenu-item">
-                <h4>Daily UI Desings</h4>
+                <h3>Daily UI Designs</h3>
               </div>
             </RouterLink>
             <RouterLink to="/piggame">
               <div class="submenu-item">
-                <h4>Pig Game</h4>
+                <h3>Pig Game</h3>
               </div>
             </RouterLink>
             <RouterLink to="/maptyproject">
               <div class="submenu-item">
-                <h4>Mapty Project</h4>
+                <h3>Mapty Project</h3>
               </div>
             </RouterLink>
             <RouterLink to="/bankistproject">
               <div class="submenu-item">
-                <h4>Bankist Project</h4>
+                <h3>Bankist Project</h3>
               </div>
             </RouterLink>
             <RouterLink to="/forkifyproject">
               <div class="submenu-item">
-                <h4>Forkify Project</h4>
+                <h3>Forkify Project</h3>
               </div>
             </RouterLink>
           </div>
@@ -74,14 +74,14 @@ const scrollIntoView = (id) => {
         <div class="nav-item" @click="scrollIntoView('skills-section')">
           <div class="nav-item__container">
             <div class="item-container">
-              <h3 class="item">Skills & Services</h3>
+              <h2 class="item">Skills & Services</h2>
             </div>
           </div>
         </div>
         <div class="nav-item" @click="scrollIntoView('footer-section')">
           <div class="nav-item__container">
             <div class="item-container">
-              <h3 class="item">Contact</h3>
+              <h2 class="item">Contact</h2>
             </div>
           </div>
         </div>
@@ -141,6 +141,7 @@ const scrollIntoView = (id) => {
       grid-column-end: 16;
       display: flex;
       flex-flow: column nowrap;
+      row-gap: 0.25rem;
       position: absolute;
       left: -2rem;
       top: 3rem;
@@ -168,6 +169,7 @@ const scrollIntoView = (id) => {
           height: 45px;
           padding: 0 1rem;
           transition: 0.1s ease;
+          cursor: pointer;
 
           .item-container {
             display: flex;
@@ -176,9 +178,7 @@ const scrollIntoView = (id) => {
             height: 100%;
 
             h3 {
-              color: var(--clr-gray-100);
               font-family: 'DM Sans SemiBold';
-
               transition: 0.1s ease;
             }
           }
@@ -193,15 +193,6 @@ const scrollIntoView = (id) => {
               width: 1rem;
               height: 1rem;
             }
-          }
-        }
-
-        &__container:hover {
-          cursor: pointer;
-          background-color: var(--clr-gray-50);
-
-          .item {
-            color: var(--clr-gray-100);
           }
         }
 
@@ -220,10 +211,6 @@ const scrollIntoView = (id) => {
             align-items: center;
             height: 40px;
             padding: 0 1rem;
-
-            h4 {
-              color: var(--clr-gray-70);
-            }
           }
 
           .submenu-item:hover {

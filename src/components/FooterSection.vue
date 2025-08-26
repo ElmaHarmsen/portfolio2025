@@ -5,19 +5,19 @@
     <div class="container">
       <div class="container__links">
         <a href="https://www.linkedin.com/in/elma-harmsen/" class="link-element" target="_blank"
-          ><h3>linkedin.com/elma-harmsen</h3></a
+          ><h2>linkedin.com/elma-harmsen</h2></a
         >
         <a href="https://github.com/ElmaHarmsen" class="link-element" target="_blank"
-          ><h3>github.com/ElmaHarmsen</h3></a
+          ><h2>github.com/ElmaHarmsen</h2></a
         >
         <a
           href="https://drive.google.com/file/d/1Pj7Q5WT-dUnqJ_0f3keKfio07Coyuew5/view?usp=sharing"
           class="link-element"
           target="_blank"
-          ><h3>Curriculum Vitae</h3></a
+          ><h2>Curriculum Vitae</h2></a
         >
         <a href="mailto:contact.elma@tuta.com" class="link-element"
-          ><h3>contact.elma@tuta.com</h3></a
+          ><h2>contact.elma@tuta.com</h2></a
         >
       </div>
       <h4 class="text-element">Last updated 26 August 2025</h4>
@@ -84,10 +84,6 @@
         display: flex;
         flex-flow: column nowrap;
         row-gap: 0.25rem;
-
-        &__description {
-          font-family: 'DM Sans Bold';
-        }
       }
     }
 
@@ -105,7 +101,7 @@
       }
 
       .link-element:hover {
-        text-decoration: underline solid var(--clr-gray-100) 1.75px;
+        text-decoration: underline solid var(--clr-gray-100) 2.5px;
       }
     }
 

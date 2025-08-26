@@ -132,6 +132,8 @@ import { RouterLink } from 'vue-router'
     margin: 0 -1rem;
 
     .project-item {
+      width: 100%;
+      height: 100%;
       aspect-ratio: 4 / 5;
       display: grid;
       grid-template-rows: repeat(2, 1fr);
