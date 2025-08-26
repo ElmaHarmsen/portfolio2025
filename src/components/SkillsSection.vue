@@ -2,52 +2,66 @@
 
 <template>
   <section class="section" id="skills-section">
+    <h1 class="section__title">Skills & Services</h1>
     <div class="section__content">
       <div class="service-item">
-        <div class="img interaction-design"></div>
         <div class="service-item__description">
-          <div class="container column">
-            <h1>Interaction Design</h1>
-            <h4>
-              User Interface Design <br />
-              User Experience Design <br />
-              User Research <br />
-              Usability <br />
-              Testing
-            </h4>
+          <h1>Interaction Design</h1>
+          <div class="container">
+            <h4>Measuring & Analysing UI</h4>
+            <h4>Usability Testing</h4>
+            <h4>User Research</h4>
           </div>
-          <div class="container row"></div>
         </div>
       </div>
       <div class="service-item">
-        <div class="img frontend-development"></div>
         <div class="service-item__description">
-          <div class="container column">
-            <h1>Frontend Development</h1>
-            <h4>
-              JavaScript <br />
-              HTML & CSS <br />
-              React Js <br />
-              Vue Js <br />
-              Git & Github
-            </h4>
+          <h1>UI/UX Design</h1>
+          <div class="container">
+            <h4>Design Principles</h4>
+            <h4>Lofi & Hifi Prototyping</h4>
+            <h4>Design Cycle</h4>
           </div>
-          <div class="container row"></div>
         </div>
       </div>
       <div class="service-item">
-        <div class="img hci"></div>
         <div class="service-item__description">
-          <div class="container column">
-            <h1>Human-Computer Interaction</h1>
-            <h4>
-              User Centred Design <br />
-              Embodied Interaction <br />
-              Measuring & Analysing UX <br />
-              Non-exclusive Design
-            </h4>
+          <h1>HCI</h1>
+          <div class="container">
+            <h4>User Centred Design</h4>
+            <h4>Embodied Interaction</h4>
+            <h4>Non-exclusive Design</h4>
           </div>
-          <div class="container row"></div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-item__description">
+          <h1>Frontend Dev</h1>
+          <div class="container">
+            <h4>HTML & CSS</h4>
+            <h4>JavaScript</h4>
+            <h4>Git & Github</h4>
+          </div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-item__description">
+          <h1>Frameworks</h1>
+          <div class="container">
+            <h4>React Js</h4>
+            <h4>&</h4>
+            <h4>Vue Js</h4>
+          </div>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-item__description">
+          <h1>Personal Skills</h1>
+          <div class="container">
+            <h4>Creative & Innovative</h4>
+            <h4>Organised Approach</h4>
+            <h4>Detail Oriented</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -61,64 +75,39 @@
   width: 100%;
   padding-bottom: 10rem;
 
+  &__title {
+    font-family: 'DM Sans Bold';
+    font-size: 3rem;
+    line-height: 1.2;
+    color: var(--clr-gray-100);
+    text-align: center;
+  }
+
   &__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 32px;
-    margin: 0 -1rem;
+    margin: 5rem -1rem 0 -1rem;
 
     .service-item {
-      display: grid;
-      grid-template-rows: repeat(2, 50%);
+      aspect-ratio: 1 / 1;
       transition: all 0.2s ease;
+      background-color: #ffffff;
       box-shadow:
         rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-
-      .img {
-        background-color: #ffffff;
-        opacity: 0.8;
-        aspect-ratio: 16 / 9;
-      }
-
-      .interaction-design {
-        background-image:
-          linear-gradient(#3c534a 2.6px, transparent 2.6px),
-          linear-gradient(90deg, #3c534a 2.6px, transparent 2.6px),
-          linear-gradient(#3c534a 1.3px, transparent 1.3px),
-          linear-gradient(90deg, #3c534a 1.3px, #ffffff 1.3px);
-        background-size:
-          65px 65px,
-          65px 65px,
-          13px 13px,
-          13px 13px;
-        background-position:
-          -2.6px -2.6px,
-          -2.6px -2.6px,
-          -1.3px -1.3px,
-          -1.3px -1.3px;
-      }
-
-      .frontend-development {
-        background-image: linear-gradient(45deg, #3c534a 50%, #ffffff 50%);
-        background-size: 15px 15px;
-      }
-
-      .hci {
-        background-image:
-          repeating-radial-gradient(circle at 0 0, transparent 0, #ffffff 15px),
-          repeating-linear-gradient(#e8edec, #3c534a);
-      }
 
       &__description {
         flex-grow: 1;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         row-gap: 1rem;
         background-color: var(--clr-white);
         padding: 1rem;
-        aspect-ratio: 16 / 9;
+        height: 100%;
 
         h1 {
           color: var(--clr-gray-100);
@@ -128,7 +117,9 @@
 
         .container {
           display: flex;
-          justify-content: space-between;
+          flex-flow: column nowrap;
+          align-items: center;
+          row-gap: 0.25rem;
 
           h4 {
             color: var(--clr-gray-100);
@@ -156,7 +147,7 @@
     &__content {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(6, 1fr);
       margin: 0 2rem;
 
       .service-item {

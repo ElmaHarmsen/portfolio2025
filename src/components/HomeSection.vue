@@ -22,8 +22,8 @@ const scrollIntoView = (id) => {
           >
         </h1>
       </div>
-      <!-- <img src="../assets/blob.svg" class="blob" alt="Blob" />
-      <img src="../assets/home-img.png" class="home-img" alt="Cat" /> -->
+      <!-- <img src="../assets/blob.svg" class="blob" alt="Just a blob" /> -->
+      <!-- <img src="../assets/home-img.png" class="home-img" alt="Cat" /> -->
       <div class="btn-container">
         <button class="home-btn" @click="scrollIntoView('intro-section')">
           <img src="../assets/icons/arrow--down.svg" class="home-btn__icon" alt="" />
@@ -89,7 +89,7 @@ const scrollIntoView = (id) => {
 
     .blob {
       position: relative;
-      z-index: 1;
+      z-index: -1;
       width: 150%;
       height: 150%;
       transform: translateX(-20%);
@@ -169,10 +169,12 @@ const scrollIntoView = (id) => {
       }
 
       .blob {
+        display: none;
         position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
+        z-index: -1;
+        width: 125%;
+        height: 125%;
+        transform: translateY(0%) translateX(-20%);
       }
 
       .home-img {

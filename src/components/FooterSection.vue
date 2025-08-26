@@ -20,7 +20,7 @@
           ><h3>contact.elma@tuta.com</h3></a
         >
       </div>
-      <h4 class="text-element">Last updated 25 August 2025</h4>
+      <h4 class="text-element">Last updated 26 August 2025</h4>
     </div>
   </section>
 </template>
@@ -51,22 +51,25 @@
       }
 
       .link-element:hover {
-        text-decoration: underline solid var(--clr-white-10) 1.5px;
+        text-decoration: underline solid var(--clr-gray-100) 1.5px;
       }
     }
 
     .text-element {
+      font-family: 'DM Sans Medium';
       align-self: flex-end;
-      color: var(--clr-white-10);
+      color: var(--clr-gray-100);
     }
 
     h3 {
-      color: var(--clr-white-10);
+      font-family: 'DM Sans SemiBold';
+
+      color: var(--clr-gray-100);
     }
   }
 
   .footer {
-    background-color: var(--clr-green);
+    background-color: var(--clr-orange);
     height: 370px;
     padding: 6rem 0 4rem 0;
     gap: 32px;

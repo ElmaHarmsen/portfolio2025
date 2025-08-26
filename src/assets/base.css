@@ -24,8 +24,8 @@
   --clr-blue-20: #d0e2ff;
   --clr-blue-10: #edf5ff;
 
-  --clr-light: #e8edec; /*#f7f2f2*/
-  --clr-green: #3c534a; /*#f72f2f*/
+  --clr-orange: #ffad00; /*#ffba00 #FFC40C #7fffdf #c8fff1 #e8edec #f7f2f2*/
+  --clr-green: #013220; /*#3c534a; #f72f2f*/
 
   --clr-text-light: var(--clr-gray-100);
   --clr-text-dark: var(--clr-white);
@@ -66,7 +66,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--clr-light);
+  background: var(--clr-orange);
   transition:
     color 0.5s,
     background-color 0.5s;
