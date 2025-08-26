@@ -153,7 +153,7 @@ import { RouterLink } from 'vue-router'
         flex-flow: column nowrap;
         justify-content: space-between;
         row-gap: 1rem;
-        padding: 1rem;
+        padding: 2rem 1.5rem;
 
         .container {
           display: flex;
@@ -196,6 +196,10 @@ import { RouterLink } from 'vue-router'
       .project-item {
         display: flex;
         flex-flow: column nowrap;
+
+        &__description {
+          padding: 1.5rem 1rem;
+        }
       }
     }
   }

@@ -112,8 +112,8 @@ const scrollIntoView = (id) => {
     justify-content: space-between;
 
     .nav-btn {
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -122,13 +122,11 @@ const scrollIntoView = (id) => {
       box-shadow:
         rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-      width: 3rem;
-      height: 3rem;
       border-radius: 1px;
       transition: 0.1s ease;
 
       &__icon {
-        width: 24px;
+        width: 32px;
       }
     }
 
@@ -144,7 +142,7 @@ const scrollIntoView = (id) => {
       row-gap: 0.25rem;
       position: absolute;
       left: -2rem;
-      top: 3rem;
+      top: 4rem;
       z-index: 2;
       background-color: var(--clr-white);
       box-shadow:
@@ -234,12 +232,22 @@ const scrollIntoView = (id) => {
     &__content {
       grid-column-start: 1;
       grid-column-end: 2;
-      margin: 0 2rem;
+      margin: 0 1rem;
+
+      .nav-btn {
+        width: 3rem;
+        height: 3rem;
+
+        &__icon {
+          width: 24px;
+        }
+      }
 
       .nav-items {
         grid-column-start: 1;
         grid-column-end: 2;
         left: 0;
+        top: 3rem;
         width: 100%;
       }
     }

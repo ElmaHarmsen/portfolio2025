@@ -24,33 +24,33 @@
       <div class="items">
         <div class="item">
           <h4 class="item__title">Background</h4>
-          <h3 class="item__description">
-            Human-Computer Interaction, <br />
-            Web Development, <br />
-            Multimedia Design
-          </h3>
+          <div class="item__description">
+            <h3>Human-Computer Interaction</h3>
+            <h3>Web Development</h3>
+            <h3>Multimedia Design</h3>
+          </div>
         </div>
         <div class="item">
           <h4 class="item__title">Previous job roles</h4>
-          <h3 class="item__description">
-            Web Developer <br />
-            User Interface Designer <br />
-          </h3>
+          <div class="item__description">
+            <h3>Web Developer</h3>
+            <h3>User Interface Designer</h3>
+          </div>
         </div>
         <div class="item">
           <h4 class="item__title">Languages</h4>
-          <h3 class="item__description">Dutch, English, Swedish</h3>
+          <h3>Dutch, English, Swedish</h3>
         </div>
         <div class="item">
           <h4 class="item__title">Location</h4>
-          <h3 class="item__description">
-            Stockholm, Uppsala <br />
-            Sweden
-          </h3>
+          <div class="item__description">
+            <h3>Stockholm,</h3>
+            <h3>Uppsala Sweden</h3>
+          </div>
         </div>
         <div class="item">
           <h4 class="item__title">Experience</h4>
-          <h3 class="item__description">1,5+ years</h3>
+          <h3>1,5+ years</h3>
         </div>
       </div>
     </div>
@@ -141,10 +141,6 @@
       .text-element {
         grid-column-start: 1;
         grid-column-end: 2;
-      }
-
-      .link-element {
-        text-decoration: underline solid var(--clr-gray-100) 1.75px;
       }
     }
 

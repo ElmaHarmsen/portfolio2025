@@ -79,8 +79,8 @@ const scrollIntoView = (id) => {
       grid-column-end: 16;
       align-self: flex-end;
       justify-self: flex-start;
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -93,13 +93,13 @@ const scrollIntoView = (id) => {
         box-shadow:
           rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
           rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 100%;
         transition: 0.1s ease;
 
         &__icon {
-          width: 24px;
+          width: 32px;
         }
       }
 
@@ -133,9 +133,20 @@ const scrollIntoView = (id) => {
 
       .btn-container {
         position: relative;
-        left: 2rem;
+        left: 1rem;
         bottom: 2rem;
         transform: translateY(-100%);
+        width: 3rem;
+        height: 3rem;
+
+        .home-btn {
+          width: 3rem;
+          height: 3rem;
+
+          &__icon {
+            width: 24px;
+          }
+        }
       }
     }
   }
