@@ -4,19 +4,22 @@
   <section class="section-wide">
     <div class="container">
       <div class="inside-container">
-        <h4 class="text-container">
-          Starting from September this year, I will be taking a full-time language course in
-          Swedish. I believe that speaking the local language where you live and work will benefit
-          not only the social aspect of life, but also strengthens my position as an internaltional
-          professional in the job market. Meanwhile I am still actively looking and applying for a
-          position as interaction designer or frontend developer within the Swedish creative and IT
-          sector, and I will be full-time available from January next year. I am truly excited to
-          continue my work within design and development here in Sweden, and I look forward to
-          further expand my knowledge and skillset in my next position. <br />
-          <br />
-          If you are interested to hear more or have something to share, please reach out either
-          through LinkedIn or via my email.
-        </h4>
+        <div class="text-container">
+          <h2>What's next?</h2>
+          <p>
+            Starting from September this year, I will be taking a full-time language course in
+            Swedish. I believe that speaking the local language where you live and work will benefit
+            not only the social aspect of life, but also strengthens my position as an
+            internaltional professional in the job market. Meanwhile I am still actively looking and
+            applying for a position as interaction designer or frontend developer within the Swedish
+            creative and IT sector, and I will be full-time available from January next year. I am
+            truly excited to continue my work within design and development here in Sweden, and I
+            look forward to further expand my knowledge and skillset in my next position. <br />
+            <br />
+            If you are interested to hear more or have something to share, please reach out either
+            through LinkedIn or via my email.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -44,6 +47,9 @@
       margin: 0 -1rem;
 
       .text-container {
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 1.25rem;
         grid-column-start: 2;
         grid-column-end: 3;
       }
@@ -61,10 +67,18 @@
 
       .inside-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 3rem 1fr;
         grid-template-rows: 1fr;
         gap: 2rem 0;
         margin: 0 2rem;
+
+        .text-container {
+          grid-row-start: 1;
+          grid-row-end: 2;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          row-gap: 0.75rem;
+        }
       }
     }
   }

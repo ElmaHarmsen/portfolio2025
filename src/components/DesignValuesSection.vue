@@ -13,7 +13,6 @@ const onProgress = (e) => {
   <section class="section" id="about-section">
     <div class="section__content">
       <div class="inside-container">
-        <h1 class="title">Design Values</h1>
         <swiper-container
           :slides-per-view="1"
           :space-between="spaceBetween"
@@ -29,21 +28,24 @@ const onProgress = (e) => {
           @wpiderslidechange="onSlideChange"
           class="my-swiper"
         >
-          <swiper-slide class="my-slide"
-            ><h1>Designing with Thought</h1>
-            <h4>
+          <swiper-slide class="my-slide">
+            <h2>Design Value #1</h2>
+            <h2>Designing with Thought</h2>
+            <p>
               To be perceptive to the significance of design choices on individuals and collectives
               of people
-            </h4></swiper-slide
+            </p></swiper-slide
           >
-          <swiper-slide class="my-slide"
-            ><h1>Understanding the Problem</h1>
-            <h4>To understand a given problem from different perspectives</h4></swiper-slide
+          <swiper-slide class="my-slide">
+            <h2>Design Value #2</h2>
+            <h2>Understanding the Problem</h2>
+            <p>To understand a given problem from different perspectives</p></swiper-slide
           >
-          <swiper-slide class="my-slide"
-            ><h1>Listening to Users</h1>
-            <h4>To be an active listener to users' needs</h4></swiper-slide
-          >
+          <swiper-slide class="my-slide">
+            <h2>Design Value #3</h2>
+            <h2>Listening to Users</h2>
+            <p>To be an active listener to users' needs</p>
+          </swiper-slide>
         </swiper-container>
       </div>
     </div>
@@ -87,6 +89,7 @@ const onProgress = (e) => {
           justify-content: center;
           align-items: center;
           row-gap: 1rem;
+          text-align: center;
 
           .bold {
             font-family: 'DM Sans SemiBold';
