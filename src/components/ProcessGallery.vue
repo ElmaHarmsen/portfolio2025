@@ -43,12 +43,15 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 0 !important;
 
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    padding: 10rem 0;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
 
     .picture {
       aspect-ratio: 1 / 1;
@@ -66,6 +69,26 @@
     .pic-f {
       grid-column-start: 1;
       grid-column-end: 3;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, auto);
+      width: calc(100vw - (2 * 2rem));
+      margin: 0 2rem;
+
+      .pic-e,
+      .pic-f {
+        grid-column-start: unset;
+        grid-column-end: unset;
+      }
     }
   }
 }

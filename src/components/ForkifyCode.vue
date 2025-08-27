@@ -381,16 +381,12 @@ export const uploadRecipe = async function (newRecipe) {
         width: calc(100% + 2rem);
         margin: 0 -1rem;
         border-radius: 3px;
-
-        pre {
-          overflow-x: scroll;
-        }
+        overflow-x: scroll;
 
         code {
           background-color: var(--clr-white);
           font-family: 'DM Mono Regular';
           font-size: 1rem;
-          overflow: auto;
         }
 
         .img {
@@ -404,6 +400,35 @@ export const uploadRecipe = async function (newRecipe) {
 
       .no-bg {
         background-color: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      .code-item {
+        margin: 0 2rem;
+        width: calc(100vw - (2 * 2rem));
+
+        h1 {
+          text-align: center;
+        }
+
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 100%;
+          margin: 0;
+
+          .code {
+            font-size: 0.9375rem;
+          }
+        }
       }
     }
   }

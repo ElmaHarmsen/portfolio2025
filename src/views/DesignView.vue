@@ -26,4 +26,12 @@ import DesignOutcomes from '@/components/DesignOutcomes.vue'
   width: 100%;
   min-height: 100vh;
 }
+
+@media (max-width: 450px) {
+  .view {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
 </style>

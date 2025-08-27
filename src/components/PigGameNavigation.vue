@@ -77,13 +77,6 @@ const scrollIntoView = (id) => {
         row-gap: 2rem;
         margin-top: 2rem;
 
-        .title {
-          font-family: 'DM Sans Bold';
-          font-size: 3rem;
-          line-height: 1.2;
-          color: var(--clr-gray-100);
-        }
-
         .items {
           display: flex;
           flex-flow: column nowrap;
@@ -94,14 +87,6 @@ const scrollIntoView = (id) => {
             flex-flow: column nowrap;
             row-gap: 0.25rem;
             width: fit-content;
-
-            &__title {
-              color: var(--clr-gray-70);
-            }
-
-            &__description {
-              font-family: 'DM Sans SemiBold';
-            }
           }
 
           .link {

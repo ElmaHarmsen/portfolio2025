@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="section-wide">
+  <section class="section">
     <div class="container">
       <img class="img" src="../assets/photos/piggame-coverimage.png" alt="" />
     </div>
@@ -9,11 +9,12 @@
 </template>
 
 <style scoped lang="scss">
-.section-wide {
+.section {
   grid-column-start: 1;
   grid-column-end: 17;
   width: 100%;
   height: calc(100vh - 7rem);
+  padding-top: 0 !important;
 
   .container {
     display: grid;
@@ -36,7 +37,7 @@
 }
 
 @media (max-width: 450px) {
-  .section-wide {
+  .section {
     grid-column-start: 1;
     grid-column-end: 2;
     background-image: url('../assets/photos/piggame-coverimage.png');
@@ -49,10 +50,6 @@
 
       .img {
         display: none;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        width: calc(100% - 4rem);
-        margin: 0 2rem;
       }
     }
   }

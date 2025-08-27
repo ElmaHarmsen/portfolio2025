@@ -239,16 +239,12 @@ reset() {
         width: calc(100% + 2rem);
         margin: 0 -1rem;
         border-radius: 3px;
-
-        pre {
-          overflow-x: scroll;
-        }
+        overflow-x: scroll;
 
         code {
           background-color: var(--clr-white);
           font-family: 'DM Mono Regular';
           font-size: 1rem;
-          overflow: auto;
         }
 
         .img {
@@ -257,6 +253,35 @@ reset() {
           box-shadow:
             rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
             rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      .code-item {
+        margin: 0 2rem;
+        width: calc(100vw - (2 * 2rem));
+
+        h1 {
+          text-align: center;
+        }
+
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 100%;
+          margin: 0;
+
+          .code {
+            font-size: 0.9375rem;
+          }
         }
       }
     }

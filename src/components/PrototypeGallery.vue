@@ -28,6 +28,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     padding: 10rem 0;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
 
     .picture {
       aspect-ratio: 2 / 3;
@@ -36,6 +38,20 @@
       box-shadow:
         rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, auto);
+      width: calc(100vw - (2 * 2rem));
+      margin: 0 2rem;
     }
   }
 }

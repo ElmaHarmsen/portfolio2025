@@ -45,7 +45,7 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
-  padding-top: 10rem;
+  padding: 10rem 0;
 
   &__content {
     display: grid;
@@ -72,6 +72,24 @@
     .pic-g {
       grid-column-start: 1;
       grid-column-end: 3;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(7, auto);
+      width: calc(100vw - (2 * 2rem));
+      margin: 0 2rem;
+
+      .pic-g {
+        display: none;
+      }
     }
   }
 }

@@ -49,4 +49,30 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .section-wide {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      display: block;
+
+      .inside-container {
+        display: grid;
+        grid-template-columns: 3rem 1fr;
+        gap: 2rem 0;
+        margin: 0 2rem;
+
+        .text-container {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          row-gap: 0.75rem;
+        }
+      }
+    }
+  }
+}
 </style>

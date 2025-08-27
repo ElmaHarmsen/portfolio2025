@@ -3,6 +3,7 @@
 <template>
   <section class="section" id="purchase-ui">
     <div class="section__content">
+      <h1>Receipt Redesign</h1>
       <img
         src="../assets/photos/purchase-receipt--steam.jpg"
         class="picture pic-a"
@@ -26,7 +27,7 @@
       <img
         src="../assets/photos/purchase-receipt--3.png"
         class="picture pic-e"
-        alt="purchase receipt colour sceme"
+        alt="purchase receipt"
       />
     </div>
   </section>
@@ -37,9 +38,6 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
   padding-top: 10rem;
 
   &__content {
@@ -48,6 +46,11 @@
     gap: 32px;
     width: calc(100% + 2rem);
     margin-left: -1rem;
+
+    h1 {
+      grid-column-start: -1;
+      grid-column-end: 1;
+    }
 
     .picture {
       aspect-ratio: 2 / 3;
@@ -67,6 +70,34 @@
     .pic-e {
       grid-column-start: 2;
       grid-column-end: 4;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, auto);
+      width: calc(100vw - (2 * 2rem));
+      margin: 0 2rem;
+
+      h1 {
+        text-align: center;
+      }
+    }
+
+    .pic-d {
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+
+    .pic-e {
+      grid-column-start: unset;
+      grid-column-end: unset;
     }
   }
 }

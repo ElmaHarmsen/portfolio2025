@@ -3,6 +3,7 @@
 <template>
   <section class="section" id="chart-ui">
     <div class="section__content">
+      <h1>Analysis Chart</h1>
       <img
         src="../assets/photos/analysis-chart--1.png"
         class="picture pic-a"
@@ -41,6 +42,11 @@
     width: calc(100% + 2rem);
     margin-left: -1rem;
 
+    h1 {
+      grid-column-start: -1;
+      grid-column-end: 1;
+    }
+
     .picture {
       aspect-ratio: 3 / 2;
       width: 100%;
@@ -61,9 +67,42 @@
       grid-column-end: 3;
     }
 
+    .pic-b {
+      align-self: flex-end;
+    }
+
     .pic-d {
       grid-column-start: 2;
       grid-column-end: 4;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, auto);
+      width: calc(100vw - (2 * 2rem));
+      margin: 0 2rem;
+
+      h1 {
+        text-align: center;
+      }
+
+      .pic-a,
+      .pic-d {
+        grid-column-start: unset;
+        grid-column-end: unset;
+      }
+
+      .pic-c {
+        grid-row-start: 5;
+        grid-row-end: 6;
+      }
     }
   }
 }

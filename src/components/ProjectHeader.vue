@@ -3,18 +3,16 @@
 <template>
   <section class="section">
     <div class="section__content">
-      <div class="container">
-        <img
-          src="../assets/photos/project-1/navigation-map.png"
-          class="picture pic-a"
-          alt="fynder screen"
-        />
-        <img
-          src="../assets/photos/project-1/fynder-logo.png"
-          class="picture pic-a offset"
-          alt="fynder logo"
-        />
-      </div>
+      <img
+        src="../assets/photos/project-1/navigation-map.png"
+        class="picture pic-a"
+        alt="fynder screen"
+      />
+      <img
+        src="../assets/photos/project-1/fynder-logo.png"
+        class="picture pic-d offset"
+        alt="fynder logo"
+      />
       <img src="../assets/photos/project-1/events.png" class="picture pic-b" alt="fynder screen" />
       <img
         src="../assets/photos/project-1/new-event.png"
@@ -39,18 +37,10 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 32px;
     width: calc(100% + 2rem);
     margin-left: -1rem;
-
-    .container {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-between;
-      row-gap: 1rem;
-    }
 
     .picture {
       width: 100%;
@@ -67,15 +57,77 @@
     .pic-b {
       grid-column-start: 2;
       grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 4;
     }
 
     .pic-c {
       grid-column-start: 3;
       grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+
+    .pic-d {
+      justify-self: flex-end;
     }
 
     .offset {
       width: calc(50% - 1rem);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 0;
+      width: 100vw;
+      height: 100%;
+      margin-left: 0;
+
+      .picture {
+        box-shadow: none;
+      }
+
+      .pic-a {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-self: flex-end;
+      }
+
+      .pic-b {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-self: flex-end;
+      }
+
+      .pic-c {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .pic-d {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .offset {
+        width: 75%;
+        justify-self: start;
+      }
     }
   }
 }

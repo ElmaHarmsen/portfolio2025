@@ -23,4 +23,12 @@ import MaptyCode from '@/components/MaptyCode.vue'
     padding-top: 10rem;
   }
 }
+
+@media (max-width: 450px) {
+  .view {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
 </style>

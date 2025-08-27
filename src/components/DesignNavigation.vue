@@ -13,17 +13,11 @@ const scrollIntoView = (id) => {
     <div class="container">
       <div class="container__content">
         <div class="page-intro">
-          <h1 class="title">Daily UI Designs</h1>
+          <h1>Daily UI Designs</h1>
           <div class="items">
             <div class="item">
-              <h4 class="item__title">Ongoing project</h4>
-              <h3 class="item__description">Since June 2024</h3>
-            </div>
-            <div class="item">
-              <h4 class="item__title">Context</h4>
-              <a href="https://www.dailyui.co/" class="item__link" target="_blank"
-                ><h3 class="item__description">Daily UI Challenges</h3></a
-              >
+              <h3>Since June 2024</h3>
+              <h3 class="item__description">Daily UI Challenges</h3>
             </div>
           </div>
         </div>
@@ -31,15 +25,15 @@ const scrollIntoView = (id) => {
           <div class="nav-items">
             <div class="nav-item" @click="scrollIntoView('musicplayer-ui')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Music Player UI</h1>
+              <h2>Music Player UI</h2>
             </div>
             <div class="nav-item" @click="scrollIntoView('purchase-ui')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Purchase Receipt UI</h1>
+              <h2>Purchase Receipt UI</h2>
             </div>
             <div class="nav-item" @click="scrollIntoView('chart-ui')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Analysis Chart UI</h1>
+              <h2>Analysis Chart UI</h2>
             </div>
           </div>
         </div>
@@ -72,13 +66,6 @@ const scrollIntoView = (id) => {
         row-gap: 2rem;
         margin-top: 2rem;
 
-        .title {
-          font-family: 'DM Sans Bold';
-          font-size: 3rem;
-          line-height: 1.2;
-          color: var(--clr-gray-100);
-        }
-
         .items {
           display: flex;
           flex-flow: column nowrap;
@@ -88,23 +75,6 @@ const scrollIntoView = (id) => {
             display: flex;
             flex-flow: column nowrap;
             row-gap: 0.25rem;
-
-            &__title {
-              color: var(--clr-gray-70);
-            }
-
-            &__link {
-              color: var(--clr-gray-100);
-            }
-
-            &__link:hover {
-              cursor: pointer;
-              text-decoration: underline solid var(--clr-gray-100) 1.5px;
-            }
-
-            &__description {
-              font-family: 'DM Sans SemiBold';
-            }
           }
         }
       }
@@ -133,6 +103,23 @@ const scrollIntoView = (id) => {
             color: var(--clr-green);
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section-wide {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 2rem;
+
+      &__content {
+        grid-column-start: 1;
+        grid-column-end: 2;
       }
     }
   }

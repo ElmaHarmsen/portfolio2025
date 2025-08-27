@@ -6,7 +6,7 @@ import ProjectObjective from '@/components/ProjectObjective.vue'
 import ProcessGallery from '@/components/ProcessGallery.vue'
 import ProjectDescription from '@/components/ProjectDescription.vue'
 import PrototypeGallery from '@/components/PrototypeGallery.vue'
-import OutcomesSection from '@/components/ProjectOutcomes.vue'
+import ProjectOutcomes from '@/components/ProjectOutcomes.vue'
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import OutcomesSection from '@/components/ProjectOutcomes.vue'
     <ProcessGallery />
     <ProjectDescription />
     <PrototypeGallery />
-    <OutcomesSection />
+    <ProjectOutcomes />
   </main>
 </template>
 
@@ -29,5 +29,13 @@ import OutcomesSection from '@/components/ProjectOutcomes.vue'
   gap: 0 2rem;
   width: 100%;
   min-height: 100vh;
+}
+
+@media (max-width: 450px) {
+  .view {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
 }
 </style>

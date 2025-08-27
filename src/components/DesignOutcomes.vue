@@ -5,15 +5,13 @@
     <div class="container">
       <div class="inside-container">
         <h3 class="text-container">
-          The
-          <a href="https://www.dailyui.co/" class="link" target="_blank">Daily UI</a>
-          Challenges have inspired me to become a better designer. So far I have experimented with
-          many different style guides, layouts, screen dimensions and design systems. I have learned
-          to be efficient while designing UIs and to explore different angles, but at the same time
-          to be critical and not afraid to iterate on the designs. The challenge isn’t over yet, as
-          I have many more Daily UI Design Challenges to complete, which is why this page will be
-          updated on an ongoing basis with new designs. So be sure to tune in every once in a while
-          to check out my latest UI designs.
+          The Daily UI Challenges have inspired me to become a better designer. So far I have
+          experimented with many different style guides, layouts, screen dimensions and design
+          systems. I have learned to be efficient while designing UIs and to explore different
+          angles, but at the same time to be critical and not afraid to iterate on the designs. The
+          challenge isn’t over yet, as I have many more Daily UI Design Challenges to complete,
+          which is why this page will be updated on an ongoing basis with new designs. So be sure to
+          tune in every once in a while to check out my latest UI designs.
         </h3>
       </div>
     </div>
@@ -44,14 +42,31 @@
       .text-container {
         grid-column-start: 2;
         grid-column-end: 3;
+      }
+    }
+  }
+}
 
-        .link {
-          color: var(--clr-green);
-          transition: 0.1s ease;
-        }
+@media (max-width: 450px) {
+  .section-wide {
+    grid-column-start: 1;
+    grid-column-end: 2;
 
-        .link:hover {
-          text-decoration: var(--clr-green) underline 1.5px;
+    .container {
+      display: block;
+
+      .inside-container {
+        display: grid;
+        grid-template-columns: 3rem 1fr;
+        gap: 2rem 0;
+        margin: 0 2rem;
+
+        .text-container {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 3;
+          row-gap: 0.75rem;
         }
       }
     }
