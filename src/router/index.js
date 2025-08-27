@@ -20,11 +20,6 @@ const router = createRouter({
       component: () => import('../views/ProjectView.vue'),
     },
     {
-      path: '/development',
-      name: 'development',
-      component: () => import('../views/DevelopmentView.vue'),
-    },
-    {
       path: '/maptyproject',
       name: 'maptyproject',
       component: () => import('../views/MaptyView.vue'),
