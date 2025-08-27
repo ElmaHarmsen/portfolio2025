@@ -133,10 +133,9 @@ import { RouterLink } from 'vue-router'
 
     .project-item {
       width: 100%;
-      height: 100%;
       aspect-ratio: 4 / 5;
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
+      display: flex;
+      flex-flow: column nowrap;
       background-color: var(--clr-white);
       box-shadow:
         rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
@@ -196,6 +195,7 @@ import { RouterLink } from 'vue-router'
       .project-item {
         display: flex;
         flex-flow: column nowrap;
+        height: 100%;
 
         &__description {
           padding: 1.5rem 1rem;

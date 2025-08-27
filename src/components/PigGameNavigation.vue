@@ -13,24 +13,18 @@ const scrollIntoView = (id) => {
     <div class="container">
       <div class="container__content">
         <div class="page-intro">
-          <h1 class="title">Pig Game Project</h1>
+          <h1>Pig Game Project</h1>
           <div class="items">
             <div class="item">
-              <h4 class="item__title">Completed in</h4>
-              <h3 class="item__description">
-                The Complete JavaScript Course 2025: From Zero to Expert
-              </h3>
-            </div>
-            <div class="item">
-              <h4 class="item__title">Design</h4>
-              <h3 class="item__description">Courtesy of Jonas Schmedtmann</h3>
+              <h4>Completed in The Complete JavaScript Course 2025: From Zero to Expert</h4>
+              <h4>Design courtesy of Jonas Schmedtmann</h4>
             </div>
             <div class="item">
               <a href="https://jscourse-piggame.netlify.app/" class="link" target="_blank"
-                ><h4>jscourse-piggame.netlify.app</h4></a
+                ><h3>jscourse-piggame.netlify.app</h3></a
               >
               <a href="https://github.com/ElmaHarmsen/pig-game" class="link" target="_blank"
-                ><h4>github.com/ElmaHarmsen/pig-game</h4></a
+                ><h3>github.com/ElmaHarmsen/pig-game</h3></a
               >
             </div>
           </div>
@@ -39,19 +33,19 @@ const scrollIntoView = (id) => {
           <div class="nav-items">
             <div class="nav-item" @click="scrollIntoView('reset-function')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Game Initalization</h1>
+              <h2>Game Initalization</h2>
             </div>
             <div class="nav-item" @click="scrollIntoView('diceroll-function')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Diceroll Functionality</h1>
+              <h2>Diceroll Functionality</h2>
             </div>
             <div class="nav-item" @click="scrollIntoView('scoring-function')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Scoring Functionality</h1>
+              <h2>Scoring Functionality</h2>
             </div>
             <div class="nav-item" @click="scrollIntoView('switchplayer-function')">
               <img src="../assets/icons/text--new-line.svg" class="icon" alt="new line" />
-              <h1>Switch Player Functionality</h1>
+              <h2>Switch Player Functionality</h2>
             </div>
           </div>
         </div>
@@ -100,6 +94,7 @@ const scrollIntoView = (id) => {
             display: flex;
             flex-flow: column nowrap;
             row-gap: 0.25rem;
+            width: fit-content;
 
             &__title {
               color: var(--clr-gray-70);
@@ -111,12 +106,11 @@ const scrollIntoView = (id) => {
           }
 
           .link {
-            color: var(--clr-gray-70);
-          }
-
-          .link:hover {
             cursor: pointer;
-            text-decoration: underline solid var(--clr-gray-100) 1.5px;
+
+            h3 {
+              font-family: 'DM Sans SemiBold';
+            }
           }
         }
       }
@@ -146,6 +140,23 @@ const scrollIntoView = (id) => {
             color: var(--clr-green);
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .section-wide {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    .container {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 2rem;
+
+      &__content {
+        grid-column-start: 1;
+        grid-column-end: 2;
       }
     }
   }

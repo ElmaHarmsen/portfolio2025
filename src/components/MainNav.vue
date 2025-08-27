@@ -19,6 +19,13 @@ const scrollIntoView = (id) => {
         <img src="../assets/icons/close.svg" class="nav-btn__icon" v-if="mainNavOpen" />
       </div>
       <div class="nav-items" v-if="mainNavOpen">
+        <RouterLink to="/" class="nav-item">
+          <div class="nav-item__container">
+            <div class="item-container">
+              <h2 class="item">Home Page</h2>
+            </div>
+          </div>
+        </RouterLink>
         <div class="nav-item" @click="scrollIntoView('intro-section')">
           <div class="nav-item__container">
             <div class="item-container">

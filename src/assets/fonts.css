@@ -25,3 +25,17 @@
   font-display: swap;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'DM Mono Regular';
+  src: url('../assets/fonts/DMMono-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Mono Medium';
+  src: url('../assets/fonts/DMMono-Medium.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+}

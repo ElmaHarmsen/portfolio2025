@@ -388,7 +388,7 @@ export const uploadRecipe = async function (newRecipe) {
 
         code {
           background-color: var(--clr-white);
-          font-family: 'Courier';
+          font-family: 'DM Mono Regular';
           font-size: 1rem;
           overflow: auto;
         }
