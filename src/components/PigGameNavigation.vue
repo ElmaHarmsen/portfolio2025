@@ -16,8 +16,7 @@ const scrollIntoView = (id) => {
           <h1>Pig Game Project</h1>
           <div class="items">
             <div class="item">
-              <h4>Completed in The Complete JavaScript Course 2025: From Zero to Expert</h4>
-              <h4>Design courtesy of Jonas Schmedtmann</h4>
+              <h4>As part of The Complete JavaScript Course 2025: From Zero to Expert</h4>
             </div>
             <div class="item">
               <a href="https://jscourse-piggame.netlify.app/" class="link" target="_blank"

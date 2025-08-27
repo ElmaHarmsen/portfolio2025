@@ -125,7 +125,7 @@ const scrollIntoView = (id) => {
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      background-color: var(--clr-green);
+      background-color: var(--clr-gray-100);
       box-shadow:
         rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
         rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;

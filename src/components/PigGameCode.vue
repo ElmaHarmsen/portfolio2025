@@ -4,7 +4,7 @@
   <section class="section">
     <div class="container">
       <div class="code-item" id="reset-function">
-        <h1>Initializing the Game Functionality</h1>
+        <h1>Initializing the Gameplay Functionality</h1>
         <div class="container">
           <pre><code>const init = function () {
   // Points for both players
@@ -190,6 +190,10 @@ init();</code></pre>
           grid-template-columns: 1fr;
           width: 100%;
           margin: 0;
+
+          .code {
+            font-size: 0.9375rem;
+          }
         }
       }
     }

@@ -39,12 +39,16 @@
   .section-wide {
     grid-column-start: 1;
     grid-column-end: 2;
+    background-image: url('../assets/photos/piggame-coverimage.png');
+    background-size: cover;
+    background-position: center;
 
     .container {
       grid-template-columns: repeat(1, 1fr);
       width: 100vw;
 
       .img {
+        display: none;
         grid-column-start: 1;
         grid-column-end: 2;
         width: calc(100% - 4rem);

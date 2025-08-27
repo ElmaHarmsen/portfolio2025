@@ -22,12 +22,10 @@ const scrollIntoView = (id) => {
             & Frontend <br />
             Developer
           </h1>
+          <button class="home-btn" @click="scrollIntoView('intro-section')">
+            <img src="../assets/icons/arrow--down.svg" class="home-btn__icon" alt="" />
+          </button>
         </div>
-      </div>
-      <div class="btn-container">
-        <button class="home-btn" @click="scrollIntoView('intro-section')">
-          <img src="../assets/icons/arrow--down.svg" class="home-btn__icon" alt="" />
-        </button>
       </div>
     </div>
   </section>
@@ -51,10 +49,9 @@ const scrollIntoView = (id) => {
       grid-column-end: 14;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(1, 1fr);
       gap: 2rem;
       padding: 1rem;
-      margin: 5rem -1rem 0 -1rem;
+      margin: 0 -1rem;
       height: 100%;
 
       .title {
@@ -71,40 +68,28 @@ const scrollIntoView = (id) => {
         h1 {
           text-align: center;
         }
-      }
-    }
 
-    .btn-container {
-      grid-column-start: 2;
-      grid-column-end: 16;
-      align-self: flex-end;
-      justify-self: flex-start;
-      width: 4rem;
-      height: 4rem;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 2rem;
+        .home-btn {
+          cursor: pointer;
+          background-color: var(--clr-green);
+          border: 4px solid var(--clr-green);
+          box-shadow:
+            rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+            rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          width: 4.5rem;
+          height: 4.5rem;
+          border-radius: 100%;
+          transition: 0.1s ease-out;
+          margin-top: 2rem;
 
-      .home-btn {
-        background-color: var(--clr-green);
-        border: 1px solid var(--clr-green);
-        box-shadow:
-          rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-          rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 100%;
-        transition: 0.1s ease;
-
-        &__icon {
-          width: 32px;
+          &__icon {
+            width: 32px;
+          }
         }
-      }
 
-      .home-btn:hover {
-        cursor: pointer;
+        .home-btn:hover {
+          transform: translateY(0.25rem);
+        }
       }
     }
   }
@@ -128,23 +113,15 @@ const scrollIntoView = (id) => {
           grid-column-start: 1;
           grid-column-end: 2;
           row-gap: 0.5rem;
-        }
-      }
 
-      .btn-container {
-        position: relative;
-        left: 1rem;
-        bottom: 2rem;
-        transform: translateY(-100%);
-        width: 3rem;
-        height: 3rem;
+          .home-btn {
+            width: 4rem;
+            height: 4rem;
+            margin-top: 2rem;
 
-        .home-btn {
-          width: 3rem;
-          height: 3rem;
-
-          &__icon {
-            width: 24px;
+            &__icon {
+              width: 28px;
+            }
           }
         }
       }
