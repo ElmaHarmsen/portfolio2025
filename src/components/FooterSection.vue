@@ -70,6 +70,7 @@
     gap: 2rem;
     align-items: start;
     padding-bottom: 2rem;
+    padding-top: 10rem;
 
     .items {
       grid-column-start: 2;

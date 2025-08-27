@@ -66,7 +66,7 @@
   grid-column-start: 4;
   grid-column-end: 14;
   width: 100%;
-  padding-bottom: 10rem;
+  padding: 10rem 0;
 
   &__content {
     display: grid;

@@ -67,7 +67,7 @@ const onProgress = (e) => {
     .inside-container {
       grid-column-start: 4;
       grid-column-end: 14;
-      padding: 0rem 0 10rem 0;
+      padding: 10rem 0;
       margin: 0 -1rem;
 
       .title {

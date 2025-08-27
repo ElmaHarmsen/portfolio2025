@@ -2,6 +2,7 @@
 import BankistHeader from '@/components/BankistHeader.vue'
 import BankistNavigation from '@/components/BankistNavigation.vue'
 import BankistCode from '@/components/BankistCode.vue'
+import FooterSection from '../components/FooterSection.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import BankistCode from '@/components/BankistCode.vue'
     <BankistHeader />
     <BankistNavigation />
     <BankistCode />
+    <FooterSection />
   </main>
 </template>
 
@@ -18,10 +20,6 @@ import BankistCode from '@/components/BankistCode.vue'
   grid-template-columns: repeat(16, 1fr);
   gap: 0 2rem;
   width: 100%;
-
-  .section {
-    padding-top: 10rem;
-  }
 }
 
 @media (max-width: 450px) {

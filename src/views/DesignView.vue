@@ -5,6 +5,7 @@ import MusicplayerUI from '@/components/MusicplayerUI.vue'
 import PortraitGallery from '@/components/PortraitGallery.vue'
 import LandscapeGallery from '@/components/LandscapeGallery.vue'
 import DesignOutcomes from '@/components/DesignOutcomes.vue'
+import FooterSection from '../components/FooterSection.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import DesignOutcomes from '@/components/DesignOutcomes.vue'
     <PortraitGallery />
     <LandscapeGallery />
     <DesignOutcomes />
+    <FooterSection />
   </main>
 </template>
 

@@ -2,6 +2,7 @@
 import PigGameHeader from '@/components/PigGameHeader.vue'
 import PigGameNavigation from '@/components/PigGameNavigation.vue'
 import PigGameCode from '@/components/PigGameCode.vue'
+import FooterSection from '../components/FooterSection.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import PigGameCode from '@/components/PigGameCode.vue'
     <PigGameHeader />
     <PigGameNavigation />
     <PigGameCode />
+    <FooterSection />
   </main>
 </template>
 
@@ -18,10 +20,6 @@ import PigGameCode from '@/components/PigGameCode.vue'
   grid-template-columns: repeat(16, 1fr);
   gap: 0 2rem;
   width: 100%;
-
-  .section {
-    padding-top: 10rem;
-  }
 }
 
 @media (max-width: 450px) {

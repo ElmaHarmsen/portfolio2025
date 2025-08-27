@@ -7,6 +7,7 @@ import ProcessGallery from '@/components/ProcessGallery.vue'
 import ProjectDescription from '@/components/ProjectDescription.vue'
 import PrototypeGallery from '@/components/PrototypeGallery.vue'
 import ProjectOutcomes from '@/components/ProjectOutcomes.vue'
+import FooterSection from '../components/FooterSection.vue'
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import ProjectOutcomes from '@/components/ProjectOutcomes.vue'
     <ProjectDescription />
     <PrototypeGallery />
     <ProjectOutcomes />
+    <FooterSection />
   </main>
 </template>
 

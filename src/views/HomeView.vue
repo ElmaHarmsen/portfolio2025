@@ -26,10 +26,6 @@ import FooterSection from '../components/FooterSection.vue'
   grid-template-columns: repeat(16, 1fr);
   gap: 0 2rem;
   width: 100%;
-
-  .section {
-    padding-top: 10rem;
-  }
 }
 
 @media (max-width: 450px) {
