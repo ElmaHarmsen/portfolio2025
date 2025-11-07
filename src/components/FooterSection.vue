@@ -131,6 +131,7 @@
     .container {
       grid-template-columns: 1fr;
       gap: 4rem;
+      padding-top: 10rem;
 
       .items {
         grid-column-start: 1;

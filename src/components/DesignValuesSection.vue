@@ -110,7 +110,7 @@ const onProgress = (e) => {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 0rem;
 
     &__content {
       grid-template-columns: repeat(1, 1fr);
@@ -122,6 +122,7 @@ const onProgress = (e) => {
         grid-column-start: 1;
         grid-column-end: 2;
         margin: 0;
+        padding: 10rem 0;
 
         .my-swiper {
           width: calc(100vw - (2 * 2rem));

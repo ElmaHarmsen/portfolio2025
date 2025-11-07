@@ -134,7 +134,6 @@ const scrollIntoView = (id) => {
           width: 5rem;
           height: 5rem;
           bottom: -2.5rem;
-          left: -1rem;
 
           &__icon {
             width: 28px;

@@ -74,7 +74,7 @@
       .inside-container {
         display: block;
         margin: 0 2rem;
-        padding: 10rem 0;
+        padding: 10rem 0 20rem 0;
       }
     }
   }
