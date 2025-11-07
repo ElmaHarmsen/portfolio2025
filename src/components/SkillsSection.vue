@@ -11,9 +11,9 @@
         <div class="service-item__description">
           <h2>Frontend Dev</h2>
           <div class="container">
-            <h3>HTML & CSS</h3>
-            <h3>JavaScript</h3>
-            <h3>Git & Github</h3>
+            <h2>HTML & CSS</h2>
+            <h2>JavaScript</h2>
+            <h2>Git & Github</h2>
           </div>
         </div>
       </div>
@@ -21,9 +21,8 @@
         <div class="service-item__description">
           <h2>Frameworks</h2>
           <div class="container">
-            <h3>React Js</h3>
-            <h3>&</h3>
-            <h3>Vue Js</h3>
+            <h2>React Js</h2>
+            <h2>Vue Js</h2>
           </div>
         </div>
       </div>
@@ -31,19 +30,19 @@
         <div class="service-item__description">
           <h2>Interaction Design</h2>
           <div class="container">
-            <h3>Measuring & Analysing UI</h3>
-            <h3>Usability Testing</h3>
-            <h3>User Research</h3>
+            <h2>Measuring & Analysing UI</h2>
+            <h2>Usability Testing</h2>
+            <h2>User Research</h2>
           </div>
         </div>
       </div>
       <div class="service-item">
         <div class="service-item__description">
-          <h2>UI/UX Design</h2>
+          <h2>UI/UX</h2>
           <div class="container">
-            <h3>Design Principles</h3>
-            <h3>Lofi & Hifi Prototyping</h3>
-            <h3>Design Cycle</h3>
+            <h2>Design Principles</h2>
+            <h2>Lofi & Hifi Prototyping</h2>
+            <h2>Design Cycle</h2>
           </div>
         </div>
       </div>
@@ -51,9 +50,9 @@
         <div class="service-item__description">
           <h2>HCI</h2>
           <div class="container">
-            <h3>User Centred Design</h3>
-            <h3>Embodied Interaction</h3>
-            <h3>Non-exclusive Design</h3>
+            <h2>User Centred Design</h2>
+            <h2>Embodied Interaction</h2>
+            <h2>Non-exclusive Design</h2>
           </div>
         </div>
       </div>
@@ -70,28 +69,22 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
     margin: 0 -1rem;
 
     .title {
-      font-family: 'DM Sans Bold';
-      font-size: 3rem;
-      line-height: 1.2;
-      color: var(--clr-gray-100);
       text-align: center;
       justify-self: center;
       align-self: center;
+      color: var(--clr-blue);
     }
 
     .service-item {
       aspect-ratio: 1 / 1;
       transition: all 0.2s ease;
-      background-color: #ffffff;
-      box-shadow:
-        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      background-color: var(--clr-blue);
 
       &__description {
         flex-grow: 1;
@@ -99,9 +92,9 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        row-gap: 1rem;
-        background-color: var(--clr-white);
-        padding: 1rem;
+        text-align: center;
+        row-gap: 2rem;
+        padding: 2rem;
         height: 100%;
 
         .container {
@@ -109,10 +102,6 @@
           flex-flow: column nowrap;
           align-items: center;
           row-gap: 0.25rem;
-
-          h4 {
-            color: var(--clr-gray-100);
-          }
         }
 
         .column {

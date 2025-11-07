@@ -26,13 +26,6 @@ const scrollIntoView = (id) => {
             </div>
           </div>
         </RouterLink>
-        <div class="nav-item" @click="scrollIntoView('intro-section')">
-          <div class="nav-item__container">
-            <div class="item-container">
-              <h2 class="item">About Me</h2>
-            </div>
-          </div>
-        </div>
         <div class="nav-item">
           <div class="nav-item__container">
             <div class="item-container" @click="scrollIntoView('projects-section')">
@@ -76,6 +69,13 @@ const scrollIntoView = (id) => {
                 <h3>Forkify Project</h3>
               </div>
             </RouterLink>
+          </div>
+        </div>
+        <div class="nav-item" @click="scrollIntoView('intro-section')">
+          <div class="nav-item__container">
+            <div class="item-container">
+              <h2 class="item">About Me</h2>
+            </div>
           </div>
         </div>
         <div class="nav-item" @click="scrollIntoView('skills-section')">
@@ -126,15 +126,8 @@ const scrollIntoView = (id) => {
       justify-content: center;
       align-items: center;
       background-color: var(--clr-gray-100);
-      box-shadow:
-        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-      border-radius: 1px;
+      border: 0.25rem solid var(--clr-gray-100);
       transition: 0.1s ease;
-
-      &__icon {
-        width: 32px;
-      }
     }
 
     .nav-btn:hover {
@@ -149,12 +142,13 @@ const scrollIntoView = (id) => {
       row-gap: 0.25rem;
       position: absolute;
       left: -2rem;
-      top: 4rem;
+      top: 6rem;
       z-index: 2;
-      background-color: var(--clr-white);
-      box-shadow:
-        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      background-color: var(--clr-gray-100);
+      // box-shadow: var(--clr-gray-100) -12px 16px 0px -4px;
+      // box-shadow:
+      //   rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      //   rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
       min-width: 200px;
       height: auto;
       padding: 2rem 1rem;
@@ -165,6 +159,8 @@ const scrollIntoView = (id) => {
         justify-content: start;
         column-gap: 0.5rem;
         height: 100%;
+        color: var(--clr-white);
+        transition: 0.2s ease;
 
         &__container {
           display: flex;
@@ -195,8 +191,8 @@ const scrollIntoView = (id) => {
             height: 100%;
 
             .icon {
-              width: 1rem;
-              height: 1rem;
+              width: 2rem;
+              height: 2rem;
             }
           }
         }
@@ -204,9 +200,7 @@ const scrollIntoView = (id) => {
         .submenu {
           display: flex;
           flex-flow: column nowrap;
-          background-color: var(--clr-white);
           border-radius: 0 0 0.25rem 0.25rem;
-          color: var(--clr-gray-100);
           width: auto;
           padding: 0 1rem;
 
@@ -216,6 +210,7 @@ const scrollIntoView = (id) => {
             align-items: center;
             height: 40px;
             padding: 0 1rem;
+            color: var(--clr-white);
           }
 
           .submenu-item:hover {
@@ -227,6 +222,10 @@ const scrollIntoView = (id) => {
             }
           }
         }
+      }
+
+      .nav-item:hover {
+        transform: translateX(1rem);
       }
     }
   }
@@ -242,8 +241,8 @@ const scrollIntoView = (id) => {
       margin: 0 1rem;
 
       .nav-btn {
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
 
         &__icon {
           width: 24px;
@@ -254,8 +253,12 @@ const scrollIntoView = (id) => {
         grid-column-start: 1;
         grid-column-end: 2;
         left: 0;
-        top: 3rem;
+        top: 5.5rem;
         width: 100%;
+
+        .nav-item:hover {
+          transform: translateX(0);
+        }
       }
     }
   }

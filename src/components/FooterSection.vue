@@ -4,6 +4,7 @@
   <section class="section" id="footer-section">
     <div class="container">
       <div class="container__links">
+        <h3>Links</h3>
         <a href="https://www.linkedin.com/in/elma-harmsen/" class="link-element" target="_blank"
           ><h2>linkedin.com/elma-harmsen</h2></a
         >
@@ -20,37 +21,37 @@
           ><h2>contact.elma@tuta.com</h2></a
         >
       </div>
-      <h4 class="text-element">Last updated 26 August 2025</h4>
+      <h3 class="text-element">Last updated 7 November 2025</h3>
       <div class="items">
         <div class="item">
-          <h4 class="item__title">Background</h4>
+          <h3 class="item__title">Background</h3>
           <div class="item__description">
-            <h3>Human-Computer Interaction</h3>
-            <h3>Web Development</h3>
-            <h3>Multimedia Design</h3>
+            <h2>Human-Computer Interaction</h2>
+            <h2>Web Development</h2>
+            <h2>Multimedia Design</h2>
           </div>
         </div>
         <div class="item">
-          <h4 class="item__title">Previous job roles</h4>
+          <h3 class="item__title">Previous job roles</h3>
           <div class="item__description">
-            <h3>Web Developer</h3>
-            <h3>User Interface Designer</h3>
+            <h2>Web Developer</h2>
+            <h2>User Interface Designer</h2>
           </div>
         </div>
         <div class="item">
-          <h4 class="item__title">Languages</h4>
-          <h3>Dutch, English, Swedish</h3>
+          <h3 class="item__title">Languages</h3>
+          <h2>Dutch, English, Swedish</h2>
         </div>
         <div class="item">
-          <h4 class="item__title">Location</h4>
+          <h3 class="item__title">Location</h3>
           <div class="item__description">
-            <h3>Stockholm,</h3>
-            <h3>Uppsala Sweden</h3>
+            <h2>Stockholm,</h2>
+            <h2>Uppsala Sweden</h2>
           </div>
         </div>
         <div class="item">
-          <h4 class="item__title">Experience</h4>
-          <h3>1,5+ years</h3>
+          <h3 class="item__title">Experience</h3>
+          <h2>1,5+ years</h2>
         </div>
       </div>
     </div>
@@ -59,18 +60,17 @@
 
 <style scoped lang="scss">
 .section {
-  grid-column-start: 2;
-  grid-column-end: 16;
+  grid-column-start: 1;
+  grid-column-end: 17;
   width: 100%;
-  background-color: var(--clr-orange);
+  background-color: var(--clr-blue);
 
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: start;
-    padding-bottom: 2rem;
-    padding-top: 10rem;
+    padding: 20rem 2rem 2rem 2rem;
 
     .items {
       grid-column-start: 2;
@@ -102,7 +102,7 @@
       }
 
       .link-element:hover {
-        text-decoration: underline solid var(--clr-gray-100) 2.5px;
+        transform: translateX(1rem);
       }
     }
 
@@ -130,7 +130,6 @@
 
     .container {
       grid-template-columns: 1fr;
-      margin: 0 2rem;
       gap: 4rem;
 
       .items {
@@ -143,10 +142,6 @@
         grid-column-start: 1;
         grid-column-end: 2;
       }
-    }
-
-    .footer {
-      padding: 6rem 2rem 4rem 2rem;
     }
   }
 }

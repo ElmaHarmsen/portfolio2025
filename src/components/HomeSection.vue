@@ -12,20 +12,18 @@ const scrollIntoView = (id) => {
   <section class="section-wide" id="home-section">
     <div class="container">
       <div class="inside-container">
+        <span></span>
         <div class="title">
-          <h2>Elma Harmsen</h2>
           <h1>
-            Interaction <br />
-            Designer
+            Frontend Developer <br />
+            with awareness of<br />
+            Interaction Design
           </h1>
-          <h1>
-            & Frontend <br />
-            Developer
-          </h1>
-          <button class="home-btn" @click="scrollIntoView('intro-section')">
-            <img src="../assets/icons/arrow--down.svg" class="home-btn__icon" alt="" />
-          </button>
+          <h2 class="title__item">Elma Harmsen</h2>
         </div>
+        <button class="home-btn" @click="scrollIntoView('projects-section')">
+          <img src="../assets/icons/arrow--down.svg" class="home-btn__icon" alt="" />
+        </button>
       </div>
     </div>
   </section>
@@ -36,7 +34,8 @@ const scrollIntoView = (id) => {
   grid-column-start: 1;
   grid-column-end: 17;
   width: 100%;
-  height: calc(100vh - 7rem);
+  height: calc(75vh);
+  background-color: var(--clr-orange);
 
   .container {
     display: grid;
@@ -47,11 +46,9 @@ const scrollIntoView = (id) => {
     .inside-container {
       grid-column-start: 4;
       grid-column-end: 14;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      padding: 1rem;
-      margin: 0 -1rem;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
       height: 100%;
 
       .title {
@@ -63,35 +60,48 @@ const scrollIntoView = (id) => {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        row-gap: 1rem;
+        row-gap: 2rem;
+
+        &__item {
+          color: var(--clr-blue);
+          text-transform: uppercase;
+          font-family: 'DM Sans Bold';
+        }
 
         h1 {
           text-align: center;
         }
+      }
 
-        .home-btn {
-          cursor: pointer;
-          background-color: var(--clr-green);
-          border: 4px solid var(--clr-green);
-          box-shadow:
-            rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-            rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-          width: 4.5rem;
-          height: 4.5rem;
-          border-radius: 100%;
-          transition: 0.1s ease-out;
-          margin-top: 2rem;
+      .small-icon {
+        width: 100px;
+        background-color: orangered;
+        padding: 0.5rem;
+        border-radius: 100%;
+      }
 
-          &__icon {
-            width: 32px;
-          }
-        }
+      .home-btn {
+        position: relative;
+        bottom: -3rem;
+        align-self: center;
+        cursor: pointer;
+        background: linear-gradient(90deg, var(--clr-orange) 50%, var(--clr-blue) 50%);
+        border: none;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 100%;
+        transition: 0.25s ease-out;
 
-        .home-btn:hover {
-          transform: translateY(0.25rem);
+        &__icon {
+          width: 32px;
+          display: none;
         }
       }
     }
+  }
+
+  .home-btn:hover {
+    transform: rotate(360deg);
   }
 }
 
@@ -104,25 +114,31 @@ const scrollIntoView = (id) => {
       display: block;
 
       .inside-container {
-        display: grid;
-        grid-template-columns: 1fr;
         margin: 0 2rem;
         padding: 0;
 
         .title {
-          grid-column-start: 1;
-          grid-column-end: 2;
-          row-gap: 0.5rem;
+          align-self: flex-start;
+          align-items: flex-start;
 
-          .home-btn {
-            width: 4rem;
-            height: 4rem;
-            margin-top: 2rem;
-
-            &__icon {
-              width: 28px;
-            }
+          h1 {
+            text-align: left;
           }
+        }
+
+        .home-btn {
+          width: 5rem;
+          height: 5rem;
+          bottom: -2.5rem;
+          left: -1rem;
+
+          &__icon {
+            width: 28px;
+          }
+        }
+
+        .home-btn:hover {
+          transform: rotate(0);
         }
       }
     }

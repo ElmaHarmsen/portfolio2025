@@ -4,10 +4,10 @@
   <section class="section-wide" id="intro-section">
     <div class="container">
       <div class="inside-container">
-        <img src="../assets/me.jpg" class="picture-me" alt="" />
+        <!-- <img src="../assets/me.jpg" class="picture-me" alt="" /> -->
         <div class="text-container">
-          <h2 class="title">Hi, my name is Elma</h2>
-          <p>
+          <p class="title">Hello!</p>
+          <h2>
             I am an interaction designer and frontend developer established in Sweden since 2022. My
             deep interest in design has inspired me to become an User Interface and Interaction
             Designer, whereas my love for building made me become a developer as well. I have a
@@ -18,7 +18,7 @@
             my next career opportunity here in Sweden, I am working to improve my design and
             development skills, so be sure to check out my latest development projects and designs
             below.
-          </p>
+          </h2>
         </div>
       </div>
     </div>
@@ -29,7 +29,6 @@
 .section-wide {
   grid-column-start: 1;
   grid-column-end: 17;
-  background-color: var(--clr-white);
   width: 100%;
 
   .container {
@@ -43,22 +42,20 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
-      padding: 10rem 0 10rem 0;
-      margin: 0 -1rem;
-
-      .picture-me {
-        width: 75%;
-        grid-row-start: 1;
-        grid-row-end: 4;
-        justify-self: flex-end;
-      }
+      padding: 20rem 0;
 
       .text-container {
         display: flex;
         flex-flow: column nowrap;
         row-gap: 1.25rem;
-        grid-column-start: 2;
+        grid-column-start: 1;
         grid-column-end: 3;
+
+        .title {
+          color: var(--clr-blue);
+          text-transform: uppercase;
+          font-family: 'DM Sans Bold';
+        }
       }
     }
   }
@@ -73,27 +70,9 @@
       display: block;
 
       .inside-container {
-        display: grid;
-        grid-template-columns: 3rem 1fr;
-        grid-template-rows: repeat(3, auto);
-        gap: 2rem 0;
+        display: block;
         margin: 0 2rem;
-
-        .picture-me {
-          width: 100%;
-          grid-row-start: 1;
-          grid-row-end: 2;
-          grid-column-start: 2;
-          grid-column-end: 3;
-        }
-
-        .text-container {
-          grid-row-start: 2;
-          grid-row-end: 3;
-          grid-column-start: 2;
-          grid-column-end: 3;
-          row-gap: 0.75rem;
-        }
+        padding: 10rem 0;
       }
     }
   }

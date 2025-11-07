@@ -11,9 +11,9 @@ import FooterSection from '../components/FooterSection.vue'
 <template>
   <main class="view">
     <HomeSection />
-    <IntroSection />
-    <ProjectsSection />
     <DesignValuesSection />
+    <ProjectsSection />
+    <IntroSection />
     <SkillsSection />
     <CareerSection />
     <FooterSection />

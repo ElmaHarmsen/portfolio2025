@@ -5,6 +5,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <section class="section" id="projects-section">
     <div class="section__content">
+      <h1 class="title">Design & Dev Projects</h1>
       <RouterLink to="/project">
         <div class="project-item">
           <img
@@ -13,8 +14,8 @@ import { RouterLink } from 'vue-router'
             alt=""
           />
           <div class="project-item__description">
-            <div class="container column">
-              <h2>Fynder Project</h2>
+            <h2>Fynder Project</h2>
+            <!-- <div class="container column">
               <p>
                 A university project with the objective to reduce the negative environmental impact
                 of modern day’s consumer culture in the fashion industry by targeting the circular
@@ -22,7 +23,7 @@ import { RouterLink } from 'vue-router'
               </p>
             </div>
 
-            <h4>11/2022</h4>
+            <h4>11/2022</h4> -->
           </div>
         </div>
       </RouterLink>
@@ -34,15 +35,15 @@ import { RouterLink } from 'vue-router'
             alt=""
           />
           <div class="project-item__description">
-            <div class="container column">
-              <h2>Daily UI Designs</h2>
+            <h2>Daily UI Designs</h2>
+            <!-- <div class="container column">
               <p>
                 A selection of UI designs I created during the 100 day Daily UI Challenge. It's
                 still a work-in-progress so this page will be updated continuously.
               </p>
             </div>
 
-            <h4>06/2024</h4>
+            <h4>06/2024</h4> -->
           </div>
         </div>
       </RouterLink>
@@ -50,8 +51,8 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/photos/piggame-coverimage.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <div class="container column">
-              <h2>Pig Game Project</h2>
+            <h2>Pig Game Project</h2>
+            <!-- <div class="container column">
               <p>
                 A small coding project as part of The Complete JavaScript Course 2025. It's a game
                 of strategy and rolling dice where two players compete to reach 100 points. Holding
@@ -59,7 +60,7 @@ import { RouterLink } from 'vue-router'
               </p>
             </div>
 
-            <h4>03/2025</h4>
+            <h4>03/2025</h4> -->
           </div>
         </div>
       </RouterLink>
@@ -67,8 +68,8 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/photos/mapty-coverimage.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <div class="container column">
-              <h2>Mapty Project</h2>
+            <h2>Mapty Project</h2>
+            <!-- <div class="container column">
               <p>
                 The first big project in The Complete JavaScript Course 2025. It is based on Object
                 Oriented Programming and includes geolocation as well as external libraries such as
@@ -76,7 +77,7 @@ import { RouterLink } from 'vue-router'
               </p>
             </div>
 
-            <h4>06/2025</h4>
+            <h4>06/2025</h4> -->
           </div>
         </div>
       </RouterLink>
@@ -84,8 +85,8 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/bankist-business.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <div class="container column">
-              <h2>Bankist Project</h2>
+            <h2>Bankist Project</h2>
+            <!-- <div class="container column">
               <p>
                 Also part of The Complete JavaScript Course 2025, this project consists of both a
                 website and a minimalist banking application. This project is all about arrays and
@@ -94,7 +95,7 @@ import { RouterLink } from 'vue-router'
               </p>
             </div>
 
-            <h4>06/2025</h4>
+            <h4>06/2025</h4> -->
           </div>
         </div>
       </RouterLink>
@@ -102,15 +103,15 @@ import { RouterLink } from 'vue-router'
         <div class="project-item">
           <img src="../assets/photos/forkify-coverimage.png" class="project-item__img" alt="" />
           <div class="project-item__description">
-            <div class="container column">
-              <h2>Forkify Project</h2>
+            <h2>Forkify Project</h2>
+            <!-- <div class="container column">
               <p>
                 A modern JavaScript application from the final project of The Complete JavaScript
                 Course 2025 using the Model View Controller architecture. It includes features such
                 as search, pagination and bookmarks, and works with localstorage.
               </p>
             </div>
-            <h4>07/2025</h4>
+            <h4>07/2025</h4> -->
           </div>
         </div>
       </RouterLink>
@@ -128,18 +129,26 @@ import { RouterLink } from 'vue-router'
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 2rem;
     margin: 0 -1rem;
+
+    .title {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      text-align: center;
+      justify-self: center;
+      align-self: center;
+      padding-bottom: 10rem;
+      color: var(--clr-blue);
+    }
 
     .project-item {
       width: 100%;
-      aspect-ratio: 4 / 5;
+      // aspect-ratio: 4 / 5;
       display: flex;
       flex-flow: column nowrap;
-      background-color: var(--clr-white);
-      box-shadow:
-        rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      background-color: var(--clr-blue);
+      transition: 0.1s ease;
 
       &__img {
         width: 100%;
@@ -152,15 +161,11 @@ import { RouterLink } from 'vue-router'
         flex-flow: column nowrap;
         justify-content: space-between;
         row-gap: 1rem;
-        padding: 2rem 1.5rem;
+        padding: 1rem 1.5rem;
 
         .container {
           display: flex;
           justify-content: space-between;
-
-          h4 {
-            color: var(--clr-gray-100);
-          }
 
           .icon {
             width: 24px;
@@ -178,6 +183,12 @@ import { RouterLink } from 'vue-router'
         }
       }
     }
+
+    .project-item:hover {
+      cursor: pointer;
+      box-shadow: var(--clr-blue) -16px 16px 0px 0px;
+      transform: translateX(16px) translateY(-16px);
+    }
   }
 }
 
@@ -192,6 +203,12 @@ import { RouterLink } from 'vue-router'
       grid-template-rows: repeat(6, 1fr);
       margin: 0 2rem;
 
+      .title {
+        grid-column-start: unset;
+        grid-column-end: unset;
+        padding: unset;
+      }
+
       .project-item {
         display: flex;
         flex-flow: column nowrap;
@@ -200,6 +217,11 @@ import { RouterLink } from 'vue-router'
         &__description {
           padding: 1.5rem 1rem;
         }
+      }
+
+      .project-item:hover {
+        transform: translateX(0) translateY(0);
+        box-shadow: none;
       }
     }
   }

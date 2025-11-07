@@ -29,22 +29,22 @@ const onProgress = (e) => {
           class="my-swiper"
         >
           <swiper-slide class="my-slide">
-            <h2>Design Value #1</h2>
-            <h2>Designing with Thought</h2>
-            <p>
+            <p class="slide-nr">Design Value #1</p>
+            <h1>Designing with Thought</h1>
+            <h2>
               To be perceptive to the significance of design choices on individuals and collectives
               of people
-            </p></swiper-slide
+            </h2></swiper-slide
           >
           <swiper-slide class="my-slide">
-            <h2>Design Value #2</h2>
-            <h2>Understanding the Problem</h2>
-            <p>To understand a given problem from different perspectives</p></swiper-slide
+            <p class="slide-nr">Design Value #2</p>
+            <h1>Understanding the Problem</h1>
+            <h2>To understand a given problem from different perspectives</h2></swiper-slide
           >
           <swiper-slide class="my-slide">
-            <h2>Design Value #3</h2>
-            <h2>Listening to Users</h2>
-            <p>To be an active listener to users' needs</p>
+            <p class="slide-nr">Design Value #3</p>
+            <h1>Listening to Users</h1>
+            <h2>To be an active listener to users' needs</h2>
           </swiper-slide>
         </swiper-container>
       </div>
@@ -57,7 +57,9 @@ const onProgress = (e) => {
   grid-column-start: 1;
   grid-column-end: 17;
   width: 100%;
-  background-color: var(--clr-white);
+  height: 75vh;
+  background-color: var(--clr-blue);
+  margin-bottom: 20rem;
 
   &__content {
     display: grid;
@@ -67,14 +69,13 @@ const onProgress = (e) => {
     .inside-container {
       grid-column-start: 4;
       grid-column-end: 14;
-      padding: 10rem 0;
+      padding: 20rem 0;
       margin: 0 -1rem;
 
       .title {
         font-family: 'DM Sans Bold';
         font-size: 3rem;
         line-height: 1.2;
-        color: var(--clr-gray-100);
         text-align: center;
       }
 
@@ -83,13 +84,18 @@ const onProgress = (e) => {
 
         .my-slide {
           min-height: 300px;
-          padding: 1rem;
+          padding: 2rem;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           align-items: center;
           row-gap: 1rem;
           text-align: center;
+
+          .slide-nr {
+            text-transform: uppercase;
+            font-family: 'DM Sans Bold';
+          }
 
           .bold {
             font-family: 'DM Sans SemiBold';
@@ -105,6 +111,7 @@ const onProgress = (e) => {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 100%;
+    margin-bottom: 10rem;
 
     &__content {
       grid-template-columns: repeat(1, 1fr);
