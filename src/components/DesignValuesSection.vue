@@ -57,9 +57,8 @@ const onProgress = (e) => {
   grid-column-start: 1;
   grid-column-end: 17;
   width: 100%;
-  height: 75vh;
   background-color: var(--clr-blue);
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 
   &__content {
     display: grid;

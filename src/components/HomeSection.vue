@@ -12,7 +12,7 @@ const scrollIntoView = (id) => {
   <section class="section-wide" id="home-section">
     <div class="container">
       <div class="inside-container">
-        <span></span>
+        <span class="empty"></span>
         <div class="title">
           <h1>
             Frontend Developer <br />
@@ -34,13 +34,13 @@ const scrollIntoView = (id) => {
   grid-column-start: 1;
   grid-column-end: 17;
   width: 100%;
-  height: calc(75vh);
+  height: calc(100vh - (6rem + 2rem));
   background-color: var(--clr-orange);
 
   .container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    gap: 32px;
+    gap: 2rem;
     height: 100%;
 
     .inside-container {
@@ -50,6 +50,10 @@ const scrollIntoView = (id) => {
       flex-flow: column nowrap;
       justify-content: space-between;
       height: 100%;
+
+      .empty {
+        height: 6rem;
+      }
 
       .title {
         grid-row-start: 1;
